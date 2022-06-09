@@ -1,0 +1,40 @@
+.structure{
+	margin: 200px 0 100px;
+		&-thumb{
+			position: relative;
+				&.__1{
+					max-width: 585px;
+					margin-left: 100px;
+						&:before{
+							content: '';
+							position: absolute;
+							inset: -250px;
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center left;
+							background-image: url(../images/structure/shadow-1.svg);
+							z-index: -1;
+							pointer-events: none;
+						}
+				}
+				&.__2{
+				
+				}
+		}
+		&-description{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+				&.__1{
+					max-width: 790px;
+					margin-bottom: 255px;
+					margin-top: -325px;
+					justify-content: flex-start;
+				}
+				&.__2{
+					max-width: 500px;
+				}
+		}
+}

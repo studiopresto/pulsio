@@ -1,0 +1,28 @@
+.hero{
+	background-color: var(--color-black-100);
+		&-banner{
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			text-align: right;
+				img, picture{
+					height: 100%;
+				}
+		}
+		&-content{
+			height: 100vh;
+			//max-height: 900px;
+			min-height: 700px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+				.logo{
+					margin-bottom: 32px;
+				}
+				.rating{
+					margin-top: 53px;
+				}
+		}
+}

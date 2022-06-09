@@ -1,0 +1,57 @@
+h1{
+	font-size: 40px;
+	font-family: var(--font-bold);
+	text-transform: uppercase;
+	line-height: 1.325em;
+}
+
+h2{
+	font-size: 38px;
+	font-family: var(--font-bold);
+	line-height: 1.184em;
+}
+
+h3{
+	font-size: 36px;
+	font-family: var(--font-bold);
+	line-height: 1em;
+}
+
+h4{
+	font-size: 34px;
+	font-family: var(--font-semibold);
+	line-height: 1em;
+}
+
+h5{
+	font-size: 30px;
+	font-family: var(--font-bold);
+	line-height: 1em;
+}
+
+h6{
+	font-size: 22px;
+	font-family: var(--font-bold);
+	line-height: 1.227em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		strong, b{
+			font-weight: normal;
+		}
+}
+
+p, li, span{
+	font-size: inherit;
+	line-height: inherit;
+		strong, b{
+			font-weight: normal;
+		}
+}
+
+a{
+	color: inherit;
+		&:hover{
+			text-decoration: none;
+		}
+}

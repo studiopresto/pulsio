@@ -1,0 +1,186 @@
+.h-1{
+  @extend h1;
+}
+
+.h-2{
+  @extend h2;
+}
+
+.h-3{
+  @extend h3;
+}
+
+.h-4{
+  @extend h4;
+}
+
+.h-5{
+  @extend h5;
+}
+
+.h-6 {
+  @extend h6;
+}
+
+.paragraph{
+
+}
+
+.color{
+
+}
+
+.hidden{
+  display: none !important;
+}
+
+.font{
+  /*
+  Weight
+   */
+  &-regular{
+    font-family: var(--font-regular);
+  }
+  &-medium{
+    font-family: var(--font-medium);
+  }
+  &-semibold{
+    font-family: var(--font-semibold);
+  }
+  &-bold{
+    font-family: var(--font-bold);
+  }
+  /*
+  Styles
+   */
+  &-uppercase{
+    text-transform: uppercase;
+  }
+  /*
+  Sizes
+   */
+  &-10{
+    font-size: 10px;
+  }
+  &-12{
+    font-size: 12px;
+  }
+  &-14{
+    font-size: 14px;
+  }
+  &-16{
+    font-size: 16px;
+  }
+  &-18{
+    font-size: 18px;
+  }
+  &-20{
+    font-size: 20px;
+  }
+  &-22{
+    font-size: 22px;
+  }
+  &-24{
+    font-size: 24px;
+  }
+  &-26{
+    font-size: 26px;
+  }
+  &-28{
+    font-size: 28px;
+  }
+  &-30{
+    font-size: 30px;
+  }
+  &-64{
+    font-size: 64px;
+  }
+  &-72{
+    font-size: 72px;
+    line-height: 1em;
+  }
+  &-80{
+    font-size: 80px;
+    line-height: 1em;
+  }
+  /*
+  Colors
+   */
+  &-grey{
+    color: var(--color-black-300);
+  }
+  &-gradient{
+    background: linear-gradient(180deg, #6595B0 23.44%, #FFFFFF 77.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  /*
+  Abstract
+   */
+  &-dot{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      &-item{
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #739FB8;
+        margin: 0 10px;
+      }
+  }
+}
+
+.color{
+  &-primary{
+    color: var(--color-primary);
+  }
+  &-black{
+    color: var(--color-black);
+  }
+  &-white{
+    color: var(--color-white);
+  }
+  &-blue{
+    color: var(--color-blue);
+  }
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.hidden{
+    &-top{
+      transition: transform .6s var(--ease), opacity .6s var(--ease);
+      transition-delay: .2s;
+      transform: translateY(-200%);
+      opacity: 0;
+        &.is-inview{
+          transform: translateY(0);
+          opacity: 1;
+        }
+    }
+    &-bottom{
+      transform: translateY(130%);
+      transition: transform .6s var(--ease);
+      transition-delay: .2s;
+        &.is-inview{
+          transform: translateY(0);
+        }
+    }
+    &-right{
+      transition: transform 1s var(--ease), opacity .6s var(--ease);
+      transition-delay: .2s;
+      transform: translateX(50%);
+      opacity: 0;
+        &.is-inview{
+          transform: translateX(0);
+          opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.splide{
+		&__pagination{
+			position: absolute;
+			bottom: 8px;
+			left: 50%;
+			transform: translateX(-50%);
+				li{
+					width: 10px;
+					height: 10px;
+						&:not(:last-child){
+							margin-right: 12px;
+						}
+				}
+				button{
+					width: 100%;
+					height: 100%;
+					padding: 0;
+					border: none;
+					background-color: var(--color-white);
+					border-radius: 50%;
+					transition: background-color var(--duration) var(--ease);
+				}
+				.is-active{
+					background-color: var(--color-primary);
+				}
+		}
+		&__arrows{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+		}
+		&__arrow{
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			border: none;
+			background-color: var(--color-white);
+			padding: 20px;
+			margin: 0 8px;
+				&--prev{
+					transform: scaleX(-1);
+				}
+				svg{
+					width: 100%;
+					height: 100%;
+				}
+				@include hover($md){
+					&:hover{
+						background-color: var(--color-primary);
+					}
+				}
+		}
+}

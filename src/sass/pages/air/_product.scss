@@ -1,0 +1,159 @@
+.product{
+	background-color: var(--color-white);
+	color: var(--color-black-200);
+	//min-height: 100vh;
+	padding: 134px 0;
+		&-photos{
+		
+		}
+		&-description{
+			padding-left: 30px;
+				&-text{
+					max-width: 500px;
+						p{
+							&:not(:last-child){
+								margin-bottom: 15px;
+							}
+						}
+				}
+				&-price{
+					margin: 25px 0 35px;
+				}
+				&-action{
+					margin: 45px 0 35px;
+						.btn{
+							flex: 1;
+						}
+				}
+				&-attention{
+					border-radius: 42px;
+					background-color: #E8F9FF;
+					padding: 20px 30px;
+				}
+				.logo{
+					margin: 18px 0 12px;
+				}
+		}
+		&-carousel{
+			background-color: #F0F9FE;
+				&-item{
+					height: 502px;
+					padding-bottom: 20px;
+						img{
+							@include imageContain(center);
+						}
+				}
+		}
+		&-additional{
+			margin-bottom: 10px;
+				&-icon{
+					width: 78px;
+					height: 28px;
+					margin-right: 15px;
+				}
+		}
+		&-video{
+			height: 320px;
+			margin-top: 30px;
+			background-color: var(--color-black);
+		}
+		&-thumb{
+			height: 320px;
+			margin-top: 30px;
+				img, picture{
+					@include imageCover(center);
+				}
+		}
+		&-banner{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.accordion{
+			margin-top: 48px;
+		}
+		.list{
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 530px;
+			margin: 32px 0;
+				&-item{
+					width: 33.33%;
+					position: relative;
+					font-family: var(--font-medium);
+					padding-left: 25px;
+					padding-right: 20px;
+					margin-bottom: 26px;
+					line-height: 1.2em;
+						&:before{
+							content: attr(data-value);
+							position: absolute;
+							top: 0;
+							left: 0;
+							font-family: var(--font-bold);
+							color: #6797B1;
+						}
+				}
+		}
+}
+
+.colors{
+	&-checkbox{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin: 10px 0 40px;
+			&-item{
+				&:not(:last-child){
+					margin-right: 10px;
+				}
+			}
+	}
+}
+
+.color-checkbox{
+	height: 42px;
+	border-radius: 20px;
+	display: inline-flex;
+	align-items: center;
+	padding: 7px;
+	position: relative;
+	z-index: 1;
+		&-item{
+			&:checked ~ .color-checkbox-border{
+				border-width: 2px;
+				border-color: var(--color-primary);
+				background-color: #E7F8FF;
+			}
+		}
+		&-title{
+			margin-right: 10px;
+		}
+		&-icon{
+			width: 27px;
+			height: 27px;
+			border-radius: 50%;
+			margin-right: 8px;
+			position: relative;
+			overflow: hidden;
+			pointer-events: none;
+				&:before{
+					content: '';
+					position: absolute;
+					inset: 0 0 -5px 0;
+					background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%);
+					background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,1) 100%);
+					background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,1) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+				}
+		}
+		&-border{
+			position: absolute;
+			inset: 0;
+			border-radius: 20px;
+			border: 1px #EFEFEF solid;
+			transition: all var(--duration) var(--ease);
+			z-index: -1;
+		}
+}

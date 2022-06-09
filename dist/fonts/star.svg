@@ -1,0 +1,8 @@
+export default {
+      id: "star-usage",
+      viewBox: "0 0 18 15",
+      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/star.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

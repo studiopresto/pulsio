@@ -1,0 +1,79 @@
+.btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 58px;
+	line-height: 58px;
+	border-radius: 48px;
+	border: none;
+	background-color: var(--color-primary);
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 0 40px;
+	font-family: var(--font-bold);
+	color: var(--color-white);
+	text-align: center;
+	white-space: nowrap;
+	transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease);
+		@include hover($md){
+			&:hover{
+				background-color: var(--color-black-200);
+			}
+		}
+		/*
+		Colors
+		 */
+		&-grey{
+			background-color: #F3F3F3;
+			color: var(--color-black);
+			text-transform: none;
+			font-family: var(--font-semibold);
+				@include hover($md){
+					&:hover{
+						background-color: var(--color-primary);
+						color: var(--color-white);
+					}
+				}
+		}
+		&-icon{
+			width: 24px;
+			height: 24px;
+			position: relative;
+				.svg{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+				}
+				& ~ .btn-title{
+					margin-left: 10px;
+				}
+		}
+}
+
+.link{
+	font-size: 15px;
+	font-family: var(--font-medium);
+	transition: color var(--duration) var(--ease);
+		&-icon{
+				&-24{
+					width: 24px;
+					height: 24px;
+				}
+		}
+		@include hover($md){
+			&:hover{
+				color: var(--color-primary);
+			}
+		}
+}
+
+.btns-group{
+	display: flex;
+	align-items: center;
+		.btn{
+			&:not(:last-child){
+				margin-right: 15px;
+			}
+		}
+}

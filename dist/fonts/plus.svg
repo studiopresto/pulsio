@@ -1,0 +1,8 @@
+export default {
+      id: "plus-usage",
+      viewBox: "0 0 21 21",
+      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/plus.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

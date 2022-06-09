@@ -1,0 +1,15 @@
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	padding: 27px 0;
+		&-logo{
+			width: 162px;
+			display: inline-block;
+		}
+		&-nav{
+		
+		}
+}

@@ -1,0 +1,38 @@
+.features{
+	padding: 88px 0 80px;
+		&-box{
+			margin-top: 58px;
+			margin-bottom: 20px;
+				&-icon{
+					height: 54px;
+				}
+				&-title{
+					margin-bottom: 12px;
+				}
+				&-description{
+					max-width: 210px;
+				}
+				&-value{
+					display: flex;
+					align-items: flex-end;
+					margin-top: 8px;
+					margin-bottom: 2px;
+				}
+		}
+}
+
+.value{
+	&-item{
+		font-size: 68px;
+		font-family: var(--font-medium);
+		display: inline-block;
+		line-height: .9em;
+		margin-right: 5px;
+	}
+	&-label{
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: var(--font-medium);
+		display: inline-block;
+	}
+}

@@ -1,0 +1,35 @@
+.progress{
+	padding: 15px 0;
+	width: 100%;
+		&-value{
+			height: 13px;
+			background-color: #282D41;
+			border-radius: 20px;
+			position: relative;
+			overflow: hidden;
+				&-item{
+					position: relative;
+					border-radius: 20px;
+					width: 0;
+					height: 100%;
+					background: linear-gradient(90deg, #004C77 1.88%, #D0F2FF 101.88%);
+					transition: width .8s var(--ease);
+					transition-delay: .2s;
+						&:not(.is-inview){
+							width: 0 !important;
+						}
+				}
+		}
+		&-detail{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-top: 10px;
+				&-item{
+				
+				}
+		}
+		.logo{
+			width: 134px;
+		}
+}

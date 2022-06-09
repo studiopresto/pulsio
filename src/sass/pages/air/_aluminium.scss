@@ -1,0 +1,25 @@
+.aluminium{
+		&-description{
+			max-width: 505px;
+			padding: 126px 0 50px;
+				.h-1{
+					max-width: 480px;
+				}
+				.paragraph{
+					padding-top: 20px;
+						p{
+							&:not(:last-child){
+								margin-bottom: 20px;
+							}
+						}
+				}
+		}
+		&-banner{
+			height: 642px;
+			margin-left: 50px;
+			overflow: hidden;
+				img, picture{
+					@include imageCover(center);
+				}
+		}
+}

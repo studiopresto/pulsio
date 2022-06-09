@@ -1,0 +1,8 @@
+export default {
+      id: "basket-usage",
+      viewBox: "0 0 24 24",
+      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/basket.svg",
+      toString: function () {
+        return this.url;
+      }
+    }
