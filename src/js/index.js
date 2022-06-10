@@ -1,4 +1,5 @@
 import '../sass/index.scss';
+import {preload} from "./content/preload";
 import {scrollListener} from "./scroll/scrollListener";
 import {initBannersCarousel} from "./carousel/initBannersCarousel";
 import {initProductCarousel} from "./carousel/initProductCarousel";
@@ -42,4 +43,9 @@ subscribeFormValidation();
 
 document.addEventListener('DOMContentLoaded', function(event) {
 	setStickyBannerPosition();
+
+	/*
+	Preload animation
+ */
+	preload();
 });
