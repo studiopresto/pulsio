@@ -9,7 +9,11 @@ export const attachmentSwitcher = () => {
 			let anchorId = points[i].getAttribute('data-anchor');
 			if (!points[i].classList.contains('is-active')) {
 				points[i].classList.add('is-active');
-				inScale(points[i], points[i].querySelector('.attachment-thumb'));
+				if (window.innerWidth > 991) {
+					inScale(points[i], points[i].querySelector('.attachment-thumb'))
+				} else {
+					locoScroll.scrollTo(document.querySelector('.attachment-box'));
+				}
 				/*
 				Hide
 			 */
@@ -25,7 +29,7 @@ export const attachmentSwitcher = () => {
 				});
 			} else {
 				!!activePoint ? activePoint.classList.remove('is-active') : null;
-				outScale(points[i], points[i].querySelector('.attachment-thumb'));
+				window.innerWidth > 991 ? outScale(points[i], points[i].querySelector('.attachment-thumb')) : null;
 			}
 		});
 	}

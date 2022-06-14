@@ -119,11 +119,13 @@
 							}
 						}
 						&.is-active{
-							cursor: zoom-out;
-							.attachment-points-icon{
-								top: 50%;
-								left: 50%;
-								opacity: 0;
+							@include m($md + 1){
+								cursor: zoom-out;
+									.attachment-points-icon{
+										top: 50%;
+										left: 50%;
+										opacity: 0;
+									}
 							}
 						}
 				}
