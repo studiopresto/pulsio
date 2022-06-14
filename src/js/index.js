@@ -10,6 +10,9 @@ import {setStickyBannerPosition} from "./content/images/setStickyBannerPosition"
 import {initReviewsCarousel} from "./carousel/initReviewsCarousel";
 import {subscribeFormValidation} from "./validation/subscribeForm";
 import {attachmentSwitcher} from "./content/attachmentSwitcher";
+import {initCompareCarousel} from "./carousel/initCompareCarousel";
+import {initReviewsCommentsCarousel} from "./carousel/initReviewsCommentsCarousel";
+import {closeNav, toggleNavListener} from "./content/toggleNav";
 
 scrollListener();
 
@@ -28,6 +31,8 @@ Splide.js carousels
 initBannersCarousel();
 initProductCarousel();
 initReviewsCarousel();
+initCompareCarousel();
+initReviewsCommentsCarousel();
 
 /*
 Content
@@ -36,6 +41,7 @@ initAccordion();
 loadVimeoPlayer();
 initVimeoPlayer();
 attachmentSwitcher();
+toggleNavListener();
 /*
 Validation
  */
@@ -48,4 +54,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	Preload animation
  */
 	preload();
+});
+
+window.addEventListener('scroll', () => {
+	closeNav();
 });

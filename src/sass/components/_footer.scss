@@ -15,6 +15,18 @@
 			}
 		}
 		.payments{
-			padding: 52px 0 16px;
+			padding: 0 0 16px;
+				@include m($md + 1){
+					margin-top: -75px;
+				}
+				@include d($md){
+					justify-content: center;
+					margin-top: 20px;
+				}
+		}
+		.rating-row{
+			@include d($md){
+				justify-content: center;
+			}
 		}
 }

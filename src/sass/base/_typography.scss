@@ -3,18 +3,36 @@ h1{
 	font-family: var(--font-bold);
 	text-transform: uppercase;
 	line-height: 1.325em;
+		@include d($sm){
+			font-size: 34px;
+		}
 }
 
 h2{
 	font-size: 38px;
 	font-family: var(--font-bold);
 	line-height: 1.184em;
+		@include d($xl){
+			font-size: 32px;
+		}
+		@include d($sm){
+			font-size: 30px;
+		}
 }
 
 h3{
 	font-size: 36px;
 	font-family: var(--font-bold);
 	line-height: 1em;
+		@include d($lg){
+			font-size: 34px;
+		}
+		@include d($md){
+			font-size: 32px;
+		}
+		@include d($sm){
+			font-size: 28px;
+		}
 }
 
 h4{
@@ -27,6 +45,9 @@ h5{
 	font-size: 30px;
 	font-family: var(--font-bold);
 	line-height: 1em;
+		@include d($lg){
+			font-size: 28px;
+		}
 }
 
 h6{

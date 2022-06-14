@@ -6,11 +6,9 @@
 		.link{
 				&:not(:last-child){
 					margin-right: 48px;
-				}
-				&-icon{
-					&:last-child{
-						margin-left: 53px;
-					}
+						@include d($lg){
+							margin-right: 40px;
+						}
 				}
 		}
 }

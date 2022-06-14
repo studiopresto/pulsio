@@ -1,0 +1,8 @@
+export default {
+      id: "tiktok-usage",
+      viewBox: "0 0 17 18",
+      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/tiktok.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

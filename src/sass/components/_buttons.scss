@@ -49,6 +49,9 @@
 					margin-left: 10px;
 				}
 		}
+		@include d($sm){
+			padding: 0 25px;
+		}
 }
 
 .link{
@@ -66,14 +69,19 @@
 				color: var(--color-primary);
 			}
 		}
+		@include d($lg){
+			font-size: 14px;
+		}
 }
 
 .btns-group{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 		.btn{
-			&:not(:last-child){
-				margin-right: 15px;
-			}
+			margin-bottom: 20px;
+				&:not(:last-child){
+					margin-right: 15px;
+				}
 		}
 }

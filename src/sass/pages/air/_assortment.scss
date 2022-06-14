@@ -7,13 +7,23 @@
 				&:nth-child(even){
 					[class^=col-]{
 						&:nth-child(1){
-							order: 2;
+								@include m($sm + 1){
+									order: 2;
+								}
 						}
 						&:nth-child(2){
-							order: 1;
+								@include m($sm + 1){
+									order: 1;
+								}
 								.assortment-description{
 									padding-left: 130px;
 									max-width: 100%;
+										@include d($lg){
+											padding-left: 30px;
+										}
+										@include d($sm){
+											padding-left: 0;
+										}
 								}
 						}
 					}
@@ -78,6 +88,15 @@
 					position: relative;
 					z-index: 1;
 				}
+				@include d($xl){
+					height: 480px;
+				}
+				@include d($lg){
+					height: 45vw;
+				}
+				@include d($md){
+					height: 60vw;
+				}
 		}
 		&-description{
 			max-width: 484px;
@@ -92,5 +111,16 @@
 							margin-top: 30px;
 						}
 				}
+				@include d($sm){
+					max-width: 100%;
+				}
+		}
+		@include d($xl){
+			margin-bottom: -50px;
+			padding: 160px 0 0;
+		}
+		@include d($md){
+			margin-bottom: 0;
+			padding: 100px 0;
 		}
 }

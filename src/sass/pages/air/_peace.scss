@@ -34,5 +34,9 @@
 				.paragraph{
 					color: #6D6D6D;
 				}
+				@include d($md){
+					margin-bottom: 30px;
+					height: auto;
+				}
 		}
 }

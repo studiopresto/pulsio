@@ -13,6 +13,10 @@
 							}
 						}
 				}
+				@include d($md){
+					padding: 100px 0;
+					max-width: 100%;
+				}
 		}
 		&-banner{
 			height: 642px;
@@ -20,6 +24,17 @@
 			overflow: hidden;
 				img, picture{
 					@include imageCover(center);
+				}
+				@include d($xl){
+					height: 100%;
+						& > div{
+							height: 100%;
+						}
+				}
+				@include d($md){
+					margin-left: -15px;
+					margin-right: -15px;
+					height: auto;
 				}
 		}
 }

@@ -21,6 +21,7 @@ body{
 
 #wrapper{
 	position: relative;
+	overflow: hidden;
 }
 
 .section{
@@ -47,6 +48,9 @@ body{
 		}
 		&-xl{
 			width: 336px;
+				@include d($lg){
+					width: 290px;
+				}
 		}
 }
 
@@ -56,6 +60,12 @@ body{
 			height: 80vh;
 				img{
 					@include imageCover(center);
+				}
+				@include d($xl){
+					min-height: 0;
+				}
+				@include d($md){
+					height: 500px;
 				}
 		}
 }
@@ -125,4 +135,5 @@ body{
 
 .copyright{
 	padding: 45px 0 3px;
+	opacity: .7;
 }

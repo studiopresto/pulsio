@@ -25,6 +25,9 @@
 			inset: 0;
 			overflow: hidden;
 			transition: opacity var(--duration) var(--ease);
+				img, picture{
+					@include imageCover(center);
+				}
 		}
 		&.is-playing{
 			.video{

@@ -2,6 +2,7 @@
 		&-row{
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 				.rating{
 					&-value{
 						margin-top: 0;

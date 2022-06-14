@@ -20,7 +20,7 @@
 					margin: 25px 0 35px;
 				}
 				&-action{
-					margin: 45px 0 35px;
+					margin: 45px 0 15px;
 						.btn{
 							flex: 1;
 						}
@@ -33,6 +33,21 @@
 				.logo{
 					margin: 18px 0 12px;
 				}
+				.btn{
+					&-grey{
+						@include d($md){
+							max-width: 58px;
+								.btn-icon{
+									& ~ .btn-title{
+										display: none;
+									}
+								}
+						}
+					}
+				}
+				@include d($md){
+					padding-left: 0;
+				}
 		}
 		&-carousel{
 			background-color: #F0F9FE;
@@ -41,6 +56,15 @@
 					padding-bottom: 20px;
 						img{
 							@include imageContain(center);
+						}
+						@include d($lg){
+							height: 42vw;
+						}
+						@include d($md){
+							height: 70vw;
+						}
+						@include d($sm){
+							height: 90vw;
 						}
 				}
 		}
@@ -56,12 +80,24 @@
 			height: 320px;
 			margin-top: 30px;
 			background-color: var(--color-black);
+				@include d($xl){
+					height: 23vw;
+				}
+				@include d($md){
+					height: 40vw;
+				}
 		}
 		&-thumb{
 			height: 320px;
 			margin-top: 30px;
 				img, picture{
 					@include imageCover(center);
+				}
+				@include d($xl){
+					height: 23vw;
+				}
+				@include d($md){
+					height: 40vw;
 				}
 		}
 		&-banner{
@@ -94,7 +130,13 @@
 							font-family: var(--font-bold);
 							color: #6797B1;
 						}
+						@include d($sm){
+							width: 50%;
+						}
 				}
+		}
+		@include d($md){
+			padding: 50px 0;
 		}
 }
 
@@ -103,11 +145,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		margin: 10px 0 40px;
+		flex-wrap: wrap;
+		margin: 10px 0 30px;
 			&-item{
-				&:not(:last-child){
-					margin-right: 10px;
-				}
+				margin-bottom: 10px;
+					&:not(:last-child){
+						margin-right: 10px;
+					}
 			}
 	}
 }

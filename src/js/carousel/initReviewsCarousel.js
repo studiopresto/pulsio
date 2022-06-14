@@ -13,6 +13,21 @@ export const initReviewsCarousel = () => {
 			speed: 800,
 			easing: 'ease',
 			updateOnMove: true,
+			breakpoints: {
+				991: {
+					autoWidth: true,
+					perPage: 1,
+					perMove: 1,
+					focus: 'center',
+				},
+				767: {
+					gap: 15,
+					autoWidth: true,
+					perPage: 1,
+					perMove: 1,
+					focus: 'center',
+				},
+			},
 		});
 
 		carousel.mount();

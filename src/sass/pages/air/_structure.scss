@@ -16,6 +16,9 @@
 							z-index: -1;
 							pointer-events: none;
 						}
+						@include d($lg){
+							margin-left: 0;
+						}
 				}
 				&.__2{
 				
@@ -32,9 +35,22 @@
 					margin-bottom: 255px;
 					margin-top: -325px;
 					justify-content: flex-start;
+						@include d($lg){
+							margin-top: -300px;
+						}
+						@include d($md){
+							margin-top: -230px;
+						}
+						@include d($sm){
+							margin-top: 10px;
+							margin-bottom: 70px;
+						}
 				}
 				&.__2{
 					max-width: 500px;
 				}
+		}
+		@include d($md){
+			margin: 100px 0;
 		}
 }

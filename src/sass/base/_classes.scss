@@ -73,12 +73,18 @@
   }
   &-18{
     font-size: 18px;
+      @include d($lg){
+        font-size: 16px;
+      }
   }
   &-20{
     font-size: 20px;
   }
   &-22{
     font-size: 22px;
+      @include d($lg){
+        font-size: 18px;
+      }
   }
   &-24{
     font-size: 24px;
@@ -91,6 +97,9 @@
   }
   &-30{
     font-size: 30px;
+      @include d($lg){
+        font-size: 28px;
+      }
   }
   &-64{
     font-size: 64px;
@@ -98,10 +107,28 @@
   &-72{
     font-size: 72px;
     line-height: 1em;
+      @include d($xl){
+        font-size: 62px;
+      }
+      @include d($md){
+        font-size: 50px;
+      }
+      @include d($sm){
+        font-size: 46px;
+      }
   }
   &-80{
     font-size: 80px;
     line-height: 1em;
+      @include d($xl){
+        font-size: 70px;
+      }
+      @include d($sm){
+        font-size: 54px;
+      }
+      @include d(350){
+        font-size: 48px;
+      }
   }
   /*
   Colors
@@ -123,6 +150,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
       &-item{
         position: relative;
         display: inline-block;
@@ -131,6 +159,9 @@
         border-radius: 50%;
         background-color: #739FB8;
         margin: 0 10px;
+          @include d($lg){
+            display: none;
+          }
       }
   }
 }

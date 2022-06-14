@@ -28,6 +28,9 @@
 		display: inline-block;
 		line-height: .9em;
 		margin-right: 5px;
+			@include d($lg){
+				font-size: 60px;
+			}
 	}
 	&-label{
 		text-transform: uppercase;
