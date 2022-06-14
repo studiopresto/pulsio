@@ -42,8 +42,14 @@
 							margin-top: -230px;
 						}
 						@include d($sm){
-							margin-top: 10px;
-							margin-bottom: 70px;
+							margin-top: -320px;
+							margin-bottom: 40vw;
+							//margin-top: 10px;
+							//margin-bottom: 70px;
+						}
+						@include d($xs){
+							margin-top: -55vw;
+							margin-left: -40px;
 						}
 				}
 				&.__2{

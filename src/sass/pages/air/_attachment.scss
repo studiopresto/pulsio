@@ -8,6 +8,9 @@
 			inset: 0;
 			background: linear-gradient(180deg, #80A7BE 0%, rgba(231, 248, 255, 0) 100%);
 			pointer-events: none;
+				@include d($md){
+					background: linear-gradient(180deg, #CBECFA 0%, rgba(231, 248, 255, 0) 100%);
+				}
 		}
 		&-box{
 			background-color: var(--color-white);
@@ -119,6 +122,15 @@
 							}
 						}
 						&.is-active{
+							.attachment-points-icon{
+								background-color: transparent;
+									&:after{
+										border-color: #024E78;
+									}
+									&:before{
+										opacity: 1;
+									}
+							}
 							@include m($md + 1){
 								cursor: zoom-out;
 									.attachment-points-icon{
@@ -201,5 +213,6 @@
 		}
 		@include d($md){
 			padding: 100px 0;
+			background-color: var(--color-black);
 		}
 }

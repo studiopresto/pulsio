@@ -67,6 +67,12 @@ body{
 				@include d($md){
 					height: 500px;
 				}
+				@include d($sm){
+					height: 385px;
+				}
+			@include d($xs){
+					height: 285px;
+				}
 		}
 }
 

@@ -12,6 +12,7 @@ export const attachmentSwitcher = () => {
 				if (window.innerWidth > 991) {
 					inScale(points[i], points[i].querySelector('.attachment-thumb'))
 				} else {
+					!!activePoint ? activePoint.classList.remove('is-active') : null;
 					locoScroll.scrollTo(document.querySelector('.attachment-box'));
 				}
 				/*

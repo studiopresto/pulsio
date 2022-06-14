@@ -42,13 +42,14 @@ loadVimeoPlayer();
 initVimeoPlayer();
 attachmentSwitcher();
 toggleNavListener();
+setStickyBannerPosition();
 /*
 Validation
  */
 subscribeFormValidation();
 
 document.addEventListener('DOMContentLoaded', function(event) {
-	setStickyBannerPosition();
+	setTimeout(() => setStickyBannerPosition(), 1000);
 
 	/*
 	Preload animation

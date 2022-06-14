@@ -40,11 +40,20 @@
 						.rating-value{
 							justify-content: center;
 						}
+						.hr{
+							@include d($sm){
+								margin: 8px 0;
+							}
+						}
 						@include m($md + 1){
 							max-width: 252px;
 						}
-						@include d($md){
+						@include d($md) {
 							width: 80vw;
+						}
+						@include d($sm){
+							padding: 28px 28px 15px;
+							margin-bottom: 20px;
 						}
 				}
 				@include m($md + 1){

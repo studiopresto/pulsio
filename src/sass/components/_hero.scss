@@ -61,14 +61,16 @@
 							position: absolute;
 							margin-top: 0;
 							left: 15px;
-							top: 52vh;
+							//top: 52vh;
+							top: 350px;
 						}
 				}
 				@include d($xl){
 					min-height: 600px;
 				}
 				@include d($sm){
-					min-height: 100vh;
+					//min-height: 100vh;
+					height: 645px;
 					align-items: center;
 					justify-content: flex-start;
 					text-align: center;
