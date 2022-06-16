@@ -31,8 +31,19 @@
 												margin-left: auto;
 											}
 									}
+									@include d($xs){
+										max-width: 55vw;
+									}
 							}
 							&-description{
+									&-title{
+										@include d($xs){
+											max-width: 45vw;
+											margin-left: auto;
+											margin-top: -45vw;
+											margin-bottom: 30vw;
+										}
+									}
 									@include m($md + 1){
 										margin-left: 74px;
 										justify-content: flex-start;
@@ -51,8 +62,19 @@
 									margin: -43px 0 0 -219px;
 									height: 560px;
 								}
+								@include d($xs){
+									max-width: 60vw;
+									margin-left: auto;
+								}
 						}
 						&-description{
+								&-title{
+									@include d($xs){
+										max-width: 53vw;
+										margin-top: -45vw;
+										margin-bottom: 27vw;
+									}
+								}
 								@include m($md + 1){
 									padding-left: 115px;
 									max-width: 100%;
@@ -94,20 +116,31 @@
 								&:before {
 									background-image: url(../images/assortment/shadow-purple.svg);
 								}
-								@include m($md + 1){
-									margin-top: -95px;
-									height: 600px;
-								}
 								img, picture{
 									margin-left: 0;
 									max-width: 524px;
 								}
+								@include m($md + 1){
+									margin-top: -95px;
+									height: 600px;
+								}
+								@include d($xs){
+									max-width: 65vw;
+									margin-left: auto;
+								}
 						}
 						&-description{
-							@include m($md + 1){
-								margin-left: 142px;
-								margin-top: -32px;
-							}
+								&-title{
+										@include d($xs){
+											max-width: 50vw;
+											margin-top: -45vw;
+											margin-bottom: 30vw;
+										}
+								}
+								@include m($md + 1){
+									margin-left: 142px;
+									margin-top: -32px;
+								}
 						}
 					}
 				}
@@ -150,6 +183,9 @@
 				}
 				@include d($md){
 					height: 60vw;
+				}
+				@include d($xs){
+					height: 80vw;
 				}
 		}
 		&-description{
