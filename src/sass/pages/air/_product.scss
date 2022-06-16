@@ -1,13 +1,12 @@
 .product{
 	background-color: var(--color-white);
 	color: var(--color-black-200);
-	//min-height: 100vh;
-	padding: 134px 0;
+	padding: 75px 0 135px;
 		&-photos{
 		
 		}
 		&-description{
-			padding-left: 30px;
+			padding-left: 17px;
 				&-text{
 					max-width: 500px;
 						p{
@@ -17,12 +16,15 @@
 						}
 				}
 				&-price{
-					margin: 25px 0 35px;
+					margin: 25px 0 40px;
 				}
 				&-action{
-					margin: 45px 0 15px;
+					margin: 41px 0 15px;
 						.btn{
 							flex: 1;
+								&-grey{
+									font-size: 15px;
+								}
 						}
 				}
 				&-attention{
@@ -30,8 +32,11 @@
 					background-color: #E8F9FF;
 					padding: 20px 30px;
 				}
+				&-item{
+					color: #222222;
+				}
 				.logo{
-					margin: 18px 0 12px;
+					margin: 18px 0 5px;
 				}
 				.btn{
 					&-grey{
@@ -45,8 +50,14 @@
 						}
 					}
 				}
+				.h-4{
+					&.font-bold{
+						font-family: var(--font-bold);
+					}
+				}
 				@include d($md){
 					padding-left: 0;
+					padding-top: 10px;
 				}
 		}
 		&-carousel{
@@ -79,12 +90,13 @@
 		&-video{
 			height: 320px;
 			margin-top: 30px;
-			background-color: var(--color-black);
+			background-color: #000000;
 				@include d($xl){
 					height: 23vw;
 				}
 				@include d($md){
 					height: 40vw;
+					display: none;
 				}
 		}
 		&-thumb{
@@ -98,6 +110,7 @@
 				}
 				@include d($md){
 					height: 40vw;
+					display: none;
 				}
 		}
 		&-banner{
@@ -106,6 +119,19 @@
 			flex-direction: column;
 			justify-content: center;
 		}
+		&.__2{
+			padding: 84px 0 57px;
+				.product{
+					&-additional{
+						color: #6D6D6D;
+					}
+					&-description{
+						&-price{
+							margin-top: 33px;
+						}
+					}
+				}
+		}
 		.accordion{
 			margin-top: 48px;
 		}
@@ -113,12 +139,12 @@
 			display: flex;
 			flex-wrap: wrap;
 			max-width: 530px;
-			margin: 32px 0;
+			margin: 35px 0 7px;
 				&-item{
 					width: 33.33%;
 					position: relative;
 					font-family: var(--font-medium);
-					padding-left: 25px;
+					padding-left: 30px;
 					padding-right: 20px;
 					margin-bottom: 26px;
 					line-height: 1.2em;

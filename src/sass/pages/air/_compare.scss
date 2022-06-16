@@ -1,6 +1,6 @@
 .compare{
 	overflow: hidden;
-	padding: 75px 0;
+	padding: 75px 0 70px;
 		&:before{
 			content: '';
 			position: absolute;
@@ -12,9 +12,8 @@
 			justify-content: center;
 		}
 		&-list{
-			padding-top: 77px;
+			padding-top: 82px;
 				&-item{
-					//max-width: 265px;
 					background: rgba(255, 255, 255, 0.2);
 					border-radius: 14px;
 					margin: 0 14px 14px;
@@ -31,9 +30,10 @@
 											font-family: var(--font-bold);
 										}
 										&-item{
-											&:before{
-												background-image: url(../images/check.svg);
-											}
+											color: #171717;
+												&:before{
+													background-image: url(../images/check.svg);
+												}
 										}
 								}
 						}
@@ -46,10 +46,14 @@
 							}
 						}
 						@include m($md + 1){
+							max-width: 280px;
+						}
+						@include d($lg){
 							max-width: 252px;
 						}
 						@include d($md) {
 							width: 80vw;
+							max-width: 100%;
 						}
 						@include d($sm){
 							padding: 28px 28px 15px;
@@ -144,6 +148,11 @@
 				@include d($md) {
 					padding-right: 15px !important;
 				}
+			}
+		}
+		.h-4{
+			&.font-bold{
+				font-family: var(--font-bold);
 			}
 		}
 }

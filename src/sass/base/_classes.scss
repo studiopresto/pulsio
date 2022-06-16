@@ -49,6 +49,9 @@
   }
   &-bold{
     font-family: var(--font-bold);
+      &-extra{
+        font-family: var(--font-extra-bold);
+      }
   }
   /*
   Styles
@@ -64,6 +67,9 @@
   }
   &-12{
     font-size: 12px;
+  }
+  &-13{
+    font-size: 13px;
   }
   &-14{
     font-size: 14px;
@@ -158,7 +164,7 @@
         height: 10px;
         border-radius: 50%;
         background-color: #739FB8;
-        margin: 0 10px;
+        margin: 0 20px;
           @include d($lg){
             display: none;
           }

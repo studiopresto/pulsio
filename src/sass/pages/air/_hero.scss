@@ -1,7 +1,8 @@
 .hero.air{
 		.hero{
 				&-content{
-					padding-top: 15vh;
+					padding-top: 14vh;
+					max-width: 370px;
 						@include d($sm){
 							padding-top: 125px;
 						}

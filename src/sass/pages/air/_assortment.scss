@@ -1,6 +1,6 @@
 .assortment{
-	padding: 200px 0 0;
-	margin-bottom: -90px;
+	padding: 172px 0 0;
+	margin-bottom: -106px;
 	z-index: 1;
 		&-item{
 			margin: 50px 0;
@@ -15,50 +15,104 @@
 								@include m($sm + 1){
 									order: 1;
 								}
-								.assortment-description{
-									padding-left: 130px;
-									max-width: 100%;
-										@include d($lg){
-											padding-left: 30px;
-										}
-										@include d($sm){
-											padding-left: 0;
-										}
-								}
 						}
 					}
 				}
 				&:nth-child(1){
-					.assortment-thumb{
-						&:before{
-							background-image: url(../images/assortment/shadow-grey.svg);
-						}
+					.assortment{
+							&-thumb {
+								text-align: right;
+									&:before {
+										background-image: url(../images/assortment/shadow-grey.svg);
+									}
+									img, picture {
+											@include m($md + 1){
+												max-width: 448px;
+												margin-left: auto;
+											}
+									}
+							}
+							&-description{
+									@include m($md + 1){
+										margin-left: 74px;
+										justify-content: flex-start;
+										padding-top: 22px;
+									}
+							}
 					}
 				}
 				&:nth-child(2){
-					.assortment-thumb{
-						&:before{
-							background-image: url(../images/assortment/shadow-black.svg);
+					.assortment{
+						&-thumb {
+								&:before {
+									background-image: url(../images/assortment/shadow-black.svg);
+								}
+								@include m($md + 1){
+									margin: -43px 0 0 -219px;
+									height: 560px;
+								}
+						}
+						&-description{
+								@include m($md + 1){
+									padding-left: 115px;
+									max-width: 100%;
+									padding-bottom: 50px;
+								}
+								@include d($lg){
+									padding-left: 30px;
+								}
+								@include d($sm){
+									padding-left: 0;
+								}
 						}
 					}
 				}
 				&:nth-child(3){
-					.assortment-thumb{
-						&:before{
-							background-image: url(../images/assortment/shadow-red.svg);
+					.assortment{
+						&-thumb {
+								&:before {
+									background-image: url(../images/assortment/shadow-red.svg);
+								}
+								@include m($md + 1){
+									margin-top: -95px;
+									margin-right: -174px;
+									height: 570px;
+								}
+						}
+						&-description{
+							@include m($md + 1){
+								margin-left: 86px;
+								justify-content: flex-start;
+								padding-top: 27px;
+							}
 						}
 					}
 				}
 				&:nth-child(4){
-					.assortment-thumb{
-						&:before{
-							background-image: url(../images/assortment/shadow-purple.svg);
+					.assortment{
+						&-thumb {
+								&:before {
+									background-image: url(../images/assortment/shadow-purple.svg);
+								}
+								@include m($md + 1){
+									margin-top: -95px;
+									height: 600px;
+								}
+								img, picture{
+									margin-left: 0;
+									max-width: 524px;
+								}
+						}
+						&-description{
+							@include m($md + 1){
+								margin-left: 142px;
+								margin-top: -32px;
+							}
 						}
 					}
 				}
 				&:last-child{
 					margin-bottom: 0;
-					margin-top: 100px;
 						.assortment{
 								&-description {
 									justify-content: flex-start;
@@ -106,10 +160,14 @@
 			justify-content: center;
 			align-items: flex-start;
 				.paragraph{
-					margin: 30px 0 10px;
+					margin: 18px 0 13px;
+					max-width: 95%;
 						& ~ [class^="h-"]{
 							margin-top: 30px;
 						}
+				}
+				.progress{
+					padding: 15px 0 6px;
 				}
 				@include d($sm){
 					max-width: 100%;

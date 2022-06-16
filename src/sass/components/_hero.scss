@@ -46,8 +46,8 @@
 		}
 		&-content{
 			height: 100vh;
-			//max-height: 900px;
-			min-height: 700px;
+			min-height: 900px;
+			//min-height: 700px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -56,7 +56,7 @@
 					margin-bottom: 32px;
 				}
 				.rating{
-					margin-top: 53px;
+					margin-top: 80px;
 						@include d($sm){
 							position: absolute;
 							margin-top: 0;

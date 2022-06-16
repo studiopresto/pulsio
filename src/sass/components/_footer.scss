@@ -1,6 +1,6 @@
 .footer{
 	background: radial-gradient(72.09% 72.09% at 50% 0%, #84AABF 0%, #003C5F 52.6%, #000000 100%);
-	padding: 60px 0 30px;
+	padding: 62px 0 30px;
 		a:not(.social-item){
 			transition: color var(--duration) var(--ease);
 			@include hover($md){

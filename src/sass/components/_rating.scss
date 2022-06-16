@@ -195,8 +195,8 @@
 		&-xl{
 			.rating{
 				&-star{
-					width: 30px;
-					height: 30px;
+					width: 40px;
+					height: 40px;
 						.svg{
 							margin-top: -13px;
 							margin-left: -13px;
@@ -208,5 +208,8 @@
 					}
 				}
 			}
+		}
+		img{
+			height: 100px;
 		}
 }

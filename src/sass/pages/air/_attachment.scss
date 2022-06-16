@@ -1,6 +1,6 @@
 .attachment{
 	background-color: var(--color-white);
-	padding: 206px 0;
+	padding: 206px 0 110px;
 	color: var(--color-black);
 		&:before{
 			content: '';
@@ -16,12 +16,19 @@
 			background-color: var(--color-white);
 			border-radius: 22px;
 			box-shadow: 15px 9px 40px rgba(53, 54, 54, 0.3);
-			padding: 45px 54px;
+			padding: 40px 54px 54px;
 			max-width: 490px;
 			margin-left: 43px;
+				&-title{
+				
+				}
+				&-subtitle{
+					color: #888888;
+				}
 				.paragraph{
+					padding-top: 3px;
 						@include m($md + 1){
-							max-width: 340px;
+							max-width: 320px;
 						}
 				}
 				@include d($md){
@@ -36,6 +43,8 @@
 		}
 		&-switcher{
 			position: relative;
+			padding-top: 41px;
+			padding-bottom: 17px;
 				&-item{
 					&:nth-child(n + 2){
 						display: none;
@@ -214,5 +223,6 @@
 		@include d($md){
 			padding: 100px 0;
 			background-color: var(--color-black);
+			background: linear-gradient(180deg, #CBECFA 0%, rgba(231, 248, 255, 0) 100%);
 		}
 }

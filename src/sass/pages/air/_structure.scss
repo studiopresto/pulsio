@@ -1,10 +1,9 @@
 .structure{
-	margin: 200px 0 100px;
+	margin: 150px 0 92px;
 		&-thumb{
 			position: relative;
 				&.__1{
 					max-width: 585px;
-					margin-left: 100px;
 						&:before{
 							content: '';
 							position: absolute;
@@ -16,12 +15,16 @@
 							z-index: -1;
 							pointer-events: none;
 						}
-						@include d($lg){
-							margin-left: 0;
+						@include m($lg + 1){
+							margin-left: 65px;
 						}
 				}
 				&.__2{
-				
+					max-width: 640px;
+						@include m($md + 1){
+							margin-left: -45px;
+							margin-top: 34px;
+						}
 				}
 		}
 		&-description{
@@ -30,10 +33,14 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: flex-start;
+				&-title{
+					margin-bottom: 25px;
+				}
 				&.__1{
 					max-width: 790px;
-					margin-bottom: 255px;
-					margin-top: -325px;
+					margin-bottom: 228px;
+					margin-top: -321px;
+					margin-left: -21px;
 					justify-content: flex-start;
 						@include d($lg){
 							margin-top: -300px;
@@ -54,6 +61,13 @@
 				}
 				&.__2{
 					max-width: 500px;
+					justify-content: flex-start;
+					padding-top: 38px;
+				}
+				.paragraph{
+					p:not(:last-child){
+						margin-bottom: 35px;
+					}
 				}
 		}
 		@include d($md){

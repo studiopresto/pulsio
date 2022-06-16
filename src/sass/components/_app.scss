@@ -1,5 +1,5 @@
 body{
-	background-color: var(--color-black);
+	background-color: var(--color-black-bg);
 	color: var(--color-white);
 	font-family: var(--font-regular);
 	line-height: 1.714em;
@@ -79,6 +79,7 @@ body{
 .price{
 		&-old{
 			text-decoration: line-through;
+			color: #BABABA;
 		}
 }
 
