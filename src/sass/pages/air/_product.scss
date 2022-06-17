@@ -118,6 +118,19 @@
 			flex-direction: column;
 			justify-content: center;
 		}
+		&-detail{
+			color: var(--color-black);
+				&-item{
+					margin-bottom: 37px;
+				}
+				&-icon{
+					height: 32px;
+					margin-bottom: 17px;
+				}
+				&-title{
+					margin-bottom: 16px;
+				}
+		}
 		&.__2{
 			padding: 84px 0 57px;
 				.product{
@@ -162,6 +175,9 @@
 		}
 		@include d($md){
 			padding: 50px 0;
+		}
+		@include d($xs){
+			padding: 30px 0;
 		}
 }
 

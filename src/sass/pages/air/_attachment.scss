@@ -239,4 +239,7 @@
 			background-color: var(--color-black);
 			background: linear-gradient(180deg, #CBECFA 0%, rgba(231, 248, 255, 0) 100%);
 		}
+		@include d($xs){
+			padding: 47px 0;
+		}
 }

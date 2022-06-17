@@ -347,7 +347,7 @@
 								<button class="btn">
 									<span class="btn-title">Buy it now</span>
 								</button>
-								<button class="btn btn-grey">
+								<button class="btn btn-grey open-modal" data-modal-id="#product-detail">
 									<span class="btn-icon">
 										<svg class="svg svg-24">
 										<use xlink:href="../images/sprite/sprite.svg#info"></use>
@@ -536,7 +536,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
+				<div class="col-lg-10 offset-lg-1 d-none d-md-block">
 					<div class="overflow">
 						<p class="font-12 hidden-bottom" data-scroll>*In an internal study conducted with 45 massage guns of different brands.</p>
 					</div>
@@ -1151,7 +1151,7 @@
 							<button class="btn">
 								<span class="btn-title">Buy it now</span>
 							</button>
-							<button class="btn btn-grey">
+							<button class="btn btn-grey open-modal" data-modal-id="#product-detail">
 								<span class="btn-icon">
 									<svg class="svg svg-24">
 									<use xlink:href="../images/sprite/sprite.svg#info"></use>
@@ -2338,6 +2338,72 @@
 		</div>
 	</footer>
 </main>
+
+<div class="modal" id="product-detail">
+	<div class="modal-bg"></div>
+	<div class="modal-box">
+		<div class="modal-bg-close close-modal"></div>
+		<div class="modal-box-item">
+			<div class="modal-box-btn close-modal"></div>
+			<div class="product-detail">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="product-detail-item">
+							<div class="product-detail-icon">
+								<img src="../images/product/icon-3.svg" alt="Try For 30 Days Risk Free"/>
+							</div>
+							<div class="product-detail-title font-20 font-semibold">
+								<p>Try For 30 Days Risk Free</p>
+							</div>
+							<div class="product-detail-description font-medium">
+								<p>Try your purchase for 30 days—satisfaction guaranteed . If you’re not delighted, return it for a refund. You can also exchange it for up to 30 days</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="product-detail-item">
+							<div class="product-detail-icon">
+								<img src="../images/product/icon-4.svg" alt="Free 48 Hour Delivery"/>
+							</div>
+							<div class="product-detail-title font-20 font-semibold">
+								<p>Free 48 Hour Delivery</p>
+							</div>
+							<div class="product-detail-description font-medium">
+								<p>We dispatch all orders within 24 hours Monday-Friday from our UK warehouse and offer Free 48 hour Tracked Delivery included. Can’t wait to receive your Pulsio order? Upgrade to 24 hour or Next Day delivery.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="product-detail-item">
+							<div class="product-detail-icon">
+								<img src="../images/product/icon-5.svg" alt="1 Year Warranty"/>
+							</div>
+							<div class="product-detail-title font-20 font-semibold">
+								<p>1 Year Warranty</p>
+							</div>
+							<div class="product-detail-description font-medium">
+								<p>Buy with confidence that your Pulsio AIR will last. We offer a transparent 1 year manufacturer warranty complimentary with each purchase</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="product-detail-item">
+							<div class="product-detail-icon">
+								<img src="../images/product/icon-6.svg" alt="Take Home For Only £22"/>
+							</div>
+							<div class="product-detail-title font-20 font-semibold">
+								<p>Take Home For Only £22</p>
+							</div>
+							<div class="product-detail-description font-medium">
+								<p>Split your payment into three easy interest free monthly payments of £22 with Klarna. Simply select Klarna at checkout for this option</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>

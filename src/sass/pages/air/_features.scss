@@ -11,6 +11,9 @@
 				}
 				&-description{
 					max-width: 210px;
+						@include d($sm){
+							display: none;
+						}
 				}
 				&-value{
 					display: flex;

@@ -13,6 +13,7 @@ import {attachmentSwitcher} from "./content/attachmentSwitcher";
 import {initCompareCarousel} from "./carousel/initCompareCarousel";
 import {initReviewsCommentsCarousel} from "./carousel/initReviewsCommentsCarousel";
 import {closeNav, toggleNavListener} from "./content/toggleNav";
+import {toggleModal} from "./content/modal/toggleModal";
 
 scrollListener();
 
@@ -43,6 +44,7 @@ initVimeoPlayer();
 attachmentSwitcher();
 toggleNavListener();
 setStickyBannerPosition();
+toggleModal();
 /*
 Validation
  */
