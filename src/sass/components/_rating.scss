@@ -201,11 +201,20 @@
 							margin-top: -13px;
 							margin-left: -13px;
 						}
+						@include d($sm){
+							width: 26px;
+							height: 26px;
+						}
 				}
 				&-value{
 					&-item{
 						height: 30px;
 					}
+				}
+			}
+			& + div .font-16{
+				@include d($sm){
+					font-size: 12px;
 				}
 			}
 		}

@@ -10,6 +10,7 @@
 			pointer-events: none;
 				@include d($md){
 					background: linear-gradient(180deg, #CBECFA 0%, rgba(231, 248, 255, 0) 100%);
+					opacity: .5;
 				}
 		}
 		&-box{
@@ -24,9 +25,13 @@
 				}
 				&-subtitle{
 					color: #888888;
+						@include d($md){
+							color: var(--color-white);
+						}
 				}
 				.paragraph{
 					padding-top: 3px;
+					color: #6D6D6D;
 						@include m($md + 1){
 							max-width: 320px;
 						}
@@ -49,6 +54,9 @@
 					&:nth-child(n + 2){
 						display: none;
 					}
+				}
+				@include d($xs){
+					padding-bottom: 0;
 				}
 		}
 		&-points{
@@ -215,6 +223,11 @@
 				}
 		}
 		&-header{
+				&-value{
+					@include d($md){
+						font-size: 60px;
+					}
+				}
 				.font-grey{
 					@include d($md){
 						color: var(--color-white);

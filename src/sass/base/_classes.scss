@@ -106,6 +106,12 @@
       @include d($lg){
         font-size: 28px;
       }
+      @include d($md){
+        font-size: 26px;
+      }
+      @include d($sm){
+        font-size: 24px;
+      }
   }
   &-64{
     font-size: 64px;
@@ -147,6 +153,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+      &.__from{
+        &-right{
+          background: linear-gradient(90deg, #FFFFFF 16.18%, #6595B0 39.65%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &-left{
+          background: linear-gradient(270deg, #FFFFFF -11.85%, #6595B0 78.13%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
   }
   /*
   Abstract
@@ -165,8 +183,8 @@
         border-radius: 50%;
         background-color: #739FB8;
         margin: 0 20px;
-          @include d($lg){
-            display: none;
+          @include d($lg) {
+            margin: 10px 0;
           }
       }
   }

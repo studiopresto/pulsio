@@ -18,6 +18,11 @@
 					overflow: hidden;
 					position: relative;
 					background-color: var(--color-black);
+						&:nth-child(1){
+							@include d($md){
+								margin-left: 15px;
+							}
+						}
 						@include d($xl){
 							height: 30vw;
 						}
@@ -28,6 +33,11 @@
 						@include d($sm){
 							height: 90vw;
 							width: 70vw;
+						}
+				}
+				.splide__track{
+						@include d($md){
+							padding-right: 15px;
 						}
 				}
 				@include d($md){
@@ -63,7 +73,7 @@
 					@include d($md){
 						margin-left: -15px;
 						margin-right: -15px;
-						padding-bottom: 50px;
+						padding-bottom: 100px;
 					}
 			}
 		}
@@ -71,6 +81,11 @@
 			&.font-semibold{
 				font-family: var(--font-semibold);
 				margin-top: 8px;
+			}
+		}
+		.rating{
+			@include d($md){
+				justify-content: center;
 			}
 		}
 }

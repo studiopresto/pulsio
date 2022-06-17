@@ -6,6 +6,10 @@
 			position: absolute;
 			inset: 0;
 			background: linear-gradient(180deg, #101314 21.88%, rgba(25, 105, 149, 0.47) 100%, rgba(51, 81, 98, 0.57) 100%);
+				@include d($md){
+					//background: linear-gradient(180deg, #00507C 0%, rgba(165, 165, 165, 0.19) 100%);
+					background: linear-gradient(180deg, #8FB4C9 0%, #000000 100%);
+				}
 		}
 		&-wrap{
 			display: flex;
@@ -35,12 +39,18 @@
 													background-image: url(../images/check.svg);
 												}
 										}
+										&-price{
+											color: #1B617B;
+										}
 								}
 						}
 						.rating-value{
 							justify-content: center;
 						}
 						.hr{
+							@include d($md){
+								opacity: 0;
+							}
 							@include d($sm){
 								margin: 8px 0;
 							}
@@ -52,12 +62,15 @@
 							max-width: 252px;
 						}
 						@include d($md) {
-							width: 80vw;
+							width: 88vw;
 							max-width: 100%;
 						}
 						@include d($sm){
-							padding: 28px 28px 15px;
+							padding: 28px 15px 25px;
 							margin-bottom: 20px;
+						}
+						@include d($xs){
+							margin: 0 10px 12px;
 						}
 				}
 				@include m($md + 1){
@@ -84,6 +97,12 @@
 		&-title{
 			text-align: center;
 		}
+		&-price{
+			text-align: center;
+			margin-top: 10px;
+			padding-bottom: 10px;
+			color: var(--color-white);
+		}
 		&-item{
 			font-family: var(--font-semibold);
 			position: relative;
@@ -93,9 +112,18 @@
 						@include m($md + 1){
 							display: none;
 						}
+						@include d($md){
+							width: 40%;
+							text-align: right;
+						}
 				}
 				&-value{
-				
+						@include d($md){
+							width: 60%;
+						}
+				}
+				.rating-value{
+					justify-content: flex-start;
 				}
 				@include m($md + 1){
 					padding-left: 26px;
@@ -115,7 +143,7 @@
 				}
 				@include d($md){
 					display: flex;
-					align-items: center;
+					align-items: flex-start;
 				}
 		}
 		&-detail{
@@ -154,5 +182,8 @@
 			&.font-bold{
 				font-family: var(--font-bold);
 			}
+		}
+		@include d($md){
+			background-color: var(--color-white);
 		}
 }

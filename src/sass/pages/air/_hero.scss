@@ -6,6 +6,9 @@
 						@include d($sm){
 							padding-top: 125px;
 						}
+						@include d($md){
+							max-width: 100%;
+						}
 				}
 		}
 }

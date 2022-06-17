@@ -39,6 +39,9 @@ h4{
 	font-size: 34px;
 	font-family: var(--font-semibold);
 	line-height: 1em;
+		@include d($sm){
+			font-size: 30px;
+		}
 }
 
 h5{
@@ -47,6 +50,15 @@ h5{
 	line-height: 1em;
 		@include d($lg){
 			font-size: 28px;
+		}
+		@include d($md){
+			font-size: 26px;
+		}
+		@include d($sm){
+			font-size: 24px;
+		}
+		@include d($xs){
+			font-size: 20px;
 		}
 }
 

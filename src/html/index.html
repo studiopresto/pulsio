@@ -291,6 +291,20 @@
 								<p class="font-30 font-semibold mr-3 price">£64.99</p>
 								<p class="font-20 price-old">£149.99</p>
 							</div>
+							<div class="d-md-none mb-4">
+								<div class="d-flex align-items-center product-additional">
+									<div class="product-additional-icon">
+										<img src="../images/product/icon-1.png" alt=""/>
+									</div>
+									<p class="font-12">Pay in 3 installments of £22</p>
+								</div>
+								<div class="d-flex align-items-center product-additional">
+									<div class="product-additional-icon">
+										<img src="../images/product/icon-2.png" alt=""/>
+									</div>
+									<p class="font-12">Pay in 4 installments of £16.25</p>
+								</div>
+							</div>
 							<p class="font-12 font-uppercase font-semibold">select colour</p>
 							<div class="colors-checkbox">
 								<div class="colors-checkbox-item">
@@ -342,17 +356,19 @@
 									<span class="btn-title">Shop with confidence</span>
 								</button>
 							</div>
-							<div class="d-flex align-items-center product-additional">
-								<div class="product-additional-icon">
-									<img src="../images/product/icon-1.png" alt=""/>
+							<div class="d-none d-md-block">
+								<div class="d-flex align-items-center product-additional">
+									<div class="product-additional-icon">
+										<img src="../images/product/icon-1.png" alt=""/>
+									</div>
+									<p class="font-12">Pay in 3 installments of £22</p>
 								</div>
-								<p class="font-12">Pay in 3 installments of £22</p>
-							</div>
-							<div class="d-flex align-items-center product-additional">
-								<div class="product-additional-icon">
-									<img src="../images/product/icon-2.png" alt=""/>
+								<div class="d-flex align-items-center product-additional">
+									<div class="product-additional-icon">
+										<img src="../images/product/icon-2.png" alt=""/>
+									</div>
+									<p class="font-12">Pay in 4 installments of £16.25</p>
 								</div>
-								<p class="font-12">Pay in 4 installments of £16.25</p>
 							</div>
 							<div class="accordion">
 								<div class="accordion-item">
@@ -409,7 +425,11 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="overflow">
-						<h5 class="h-4 font-uppercase font-dot hidden-bottom" data-scroll>Professional features <span class="font-dot-item"></span> Designed For Everyone</h5>
+						<div class="d-flex flex-column flex-xl-row hidden-bottom font-dot" data-scroll>
+							<h5 class="h-4 font-uppercase">Professional features</h5>
+							<span class="font-dot-item"></span>
+							<h5 class="h-4 font-uppercase">Designed For Everyone</h5>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -797,7 +817,9 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="d-lg-none text-center attachment-header">
-						<p class="h-2 font-uppercase mb-2 attachment-box-title">4 premium attachment heads</p>
+						<p class="h-2 font-uppercase mb-2 attachment-box-title">
+							<span class="attachment-header-value">4</span> premium attachment heads
+						</p>
 						<p class="font-16 font-uppercase font-semibold attachment-box-subtitle">Target Muscles With Precision</p>
 					</div>
 					<div class="attachment-points">
@@ -914,7 +936,7 @@
 							<p class="h-1 mb-2 hidden-bottom" data-scroll>built using aircraft grade</p>
 						</div>
 						<div class="overflow">
-							<p class="font-80 font-gradient font-bold font-uppercase hidden-bottom" data-scroll>aluminium</p>
+							<p class="font-80 font-gradient __from-left font-bold font-uppercase hidden-bottom" data-scroll>aluminium</p>
 						</div>
 						<div class="overflow">
 							<div class="paragraph font-18 font-medium hidden-bottom" data-scroll>
@@ -943,7 +965,7 @@
 				<div class="col-12 d-sm-none">
 					<div class="overflow">
 						<div class="structure-description-title text-right">
-							<p class="h-2 font-uppercase hidden-bottom" data-scroll>A New Generation Of <span class="font-72 font-gradient">Power</span></p>
+							<p class="h-2 font-uppercase hidden-bottom" data-scroll>A New Generation Of <span class="font-72 font-gradient __from-right">Power</span></p>
 						</div>
 					</div>
 				</div>
@@ -964,7 +986,7 @@
 						<div>
 							<div class="overflow d-none d-sm-block">
 								<div class="structure-description-title">
-									<p class="h-2 font-uppercase hidden-bottom" data-scroll>A New Generation Of <span class="font-72 font-gradient">Power</span></p>
+									<p class="h-2 font-uppercase hidden-bottom" data-scroll>A New Generation Of <span class="font-72 font-gradient __from-right">Power</span></p>
 								</div>
 							</div>
 							<div class="overflow">
@@ -981,7 +1003,7 @@
 					<div class="structure-description __2">
 						<div class="structure-description-title">
 							<div class="overflow">
-								<p class="font-72 font-gradient font-bold hidden-bottom mb-3" data-scroll>
+								<p class="font-72 font-gradient __from-right font-bold hidden-bottom mb-3" data-scroll>
 									<span data-scroll data-scroll-call="counter" data-number="30">0</span>%</p>
 							</div>
 							<div class="overflow">
@@ -1148,7 +1170,8 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="overflow">
-						<h4 class="h-4 font-bold font-uppercase text-center hidden-bottom" data-scroll>How DO We Comapre?</h4>
+						<h4 class="h-4 font-bold font-uppercase text-center hidden-bottom m-1" data-scroll>How DO We Comapre?</h4>
+						<p class="d-lg-none font-18 font-uppercase text-center hidden-bottom" data-scroll>Swip left</p>
 					</div>
 				</div>
 			</div>
@@ -1165,7 +1188,7 @@
 							</div>
 							<hr class="hr"/>
 							<div class="compare-item">
-								<div class="compare-item-label">Model</div>
+								<div class="compare-item-label">Price</div>
 							</div>
 							<hr class="hr"/>
 							<div class="compare-item">
@@ -1203,42 +1226,84 @@
 											</picture>
 										</div>
 										<p class="compare-title font-22">Pulsio Air</p>
-										<hr class="hr"/>
-										<div class="rating">
-											<div class="rating-value">
-												<div class="rating-value-item" data-rating="4.5">
-													<div class="rating-star">
-														<svg class="svg svg-16">
-															<use xlink:href="../images/sprite/sprite.svg#star"></use>
-														</svg>
-													</div>
-													<div class="rating-star">
-														<svg class="svg svg-16">
-															<use xlink:href="../images/sprite/sprite.svg#star"></use>
-														</svg>
-													</div>
-													<div class="rating-star">
-														<svg class="svg svg-16">
-															<use xlink:href="../images/sprite/sprite.svg#star"></use>
-														</svg>
-													</div>
-													<div class="rating-star">
-														<svg class="svg svg-16">
-															<use xlink:href="../images/sprite/sprite.svg#star"></use>
-														</svg>
-													</div>
-													<div class="rating-star">
-														<svg class="svg svg-16">
-															<use xlink:href="../images/sprite/sprite.svg#star"></use>
-														</svg>
+										<p class="compare-price font-24 font-bold d-lg-none">£64.99</p>
+										<div class="d-none d-lg-block">
+											<hr class="hr"/>
+											<div class="rating">
+												<div class="rating-value">
+													<div class="rating-value-item" data-rating="4.5">
+														<div class="rating-star">
+															<svg class="svg svg-16">
+																<use xlink:href="../images/sprite/sprite.svg#star"></use>
+															</svg>
+														</div>
+														<div class="rating-star">
+															<svg class="svg svg-16">
+																<use xlink:href="../images/sprite/sprite.svg#star"></use>
+															</svg>
+														</div>
+														<div class="rating-star">
+															<svg class="svg svg-16">
+																<use xlink:href="../images/sprite/sprite.svg#star"></use>
+															</svg>
+														</div>
+														<div class="rating-star">
+															<svg class="svg svg-16">
+																<use xlink:href="../images/sprite/sprite.svg#star"></use>
+															</svg>
+														</div>
+														<div class="rating-star">
+															<svg class="svg svg-16">
+																<use xlink:href="../images/sprite/sprite.svg#star"></use>
+															</svg>
+														</div>
 													</div>
 												</div>
 											</div>
+											<hr class="hr"/>
+											<div class="compare-item">
+												<div class="compare-item-label">Price</div>
+												<div class="compare-item-value">£64.99</div>
+											</div>
 										</div>
-										<hr class="hr"/>
-										<div class="compare-item">
-											<div class="compare-item-label">Model</div>
-											<div class="compare-item-value">£64.99</div>
+										<div class="d-lg-none">
+											<hr class="hr"/>
+											<div class="compare-item">
+												<div class="compare-item-label pt-1">Trustpilot</div>
+												<div class="compare-item-value">
+													<div class="rating">
+														<div class="rating-value">
+															<div class="rating-value-item" data-rating="4.5">
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 										<hr class="hr"/>
 										<div class="compare-item">
@@ -1279,8 +1344,10 @@
 											</picture>
 										</div>
 										<p class="compare-title font-22">Physion Mini</p>
-										<hr class="hr"/>
-										<div class="rating">
+										<p class="compare-price font-24 font-bold d-lg-none">£59.99</p>
+										<div class="d-none d-lg-block">
+											<hr class="hr"/>
+											<div class="rating">
 											<div class="rating-value">
 												<div class="rating-value-item" data-rating="3">
 													<div class="rating-star">
@@ -1311,10 +1378,50 @@
 												</div>
 											</div>
 										</div>
-										<hr class="hr"/>
-										<div class="compare-item">
-											<div class="compare-item-label">Model</div>
-											<div class="compare-item-value">£59.99</div>
+											<hr class="hr"/>
+											<div class="compare-item">
+												<div class="compare-item-label">Price</div>
+												<div class="compare-item-value">£59.99</div>
+											</div>
+										</div>
+										<div class="d-lg-none">
+											<hr class="hr"/>
+											<div class="compare-item">
+												<div class="compare-item-label pt-1">Trustpilot</div>
+												<div class="compare-item-value">
+													<div class="rating">
+														<div class="rating-value">
+															<div class="rating-value-item" data-rating="4.5">
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 										<hr class="hr"/>
 										<div class="compare-item">
@@ -1355,8 +1462,10 @@
 											</picture>
 										</div>
 										<p class="compare-title font-22">Theragun</p>
-										<hr class="hr"/>
-										<div class="rating">
+										<p class="compare-price font-24 font-bold d-lg-none">£359.99</p>
+										<div class="d-none d-lg-block">
+											<hr class="hr"/>
+											<div class="rating">
 											<div class="rating-value">
 												<div class="rating-value-item" data-rating="4">
 													<div class="rating-star">
@@ -1387,10 +1496,50 @@
 												</div>
 											</div>
 										</div>
-										<hr class="hr"/>
-										<div class="compare-item">
-											<div class="compare-item-label">Model</div>
-											<div class="compare-item-value">£359.99</div>
+											<hr class="hr"/>
+											<div class="compare-item">
+												<div class="compare-item-label">Price</div>
+												<div class="compare-item-value">£359.99</div>
+											</div>
+										</div>
+										<div class="d-lg-none">
+											<hr class="hr"/>
+											<div class="compare-item">
+												<div class="compare-item-label pt-1">Trustpilot</div>
+												<div class="compare-item-value">
+													<div class="rating">
+														<div class="rating-value">
+															<div class="rating-value-item" data-rating="4.5">
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+																<div class="rating-star">
+																	<svg class="svg svg-16">
+																		<use xlink:href="../images/sprite/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 										<hr class="hr"/>
 										<div class="compare-item">
