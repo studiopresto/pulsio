@@ -76,6 +76,9 @@
   }
   &-16{
     font-size: 16px;
+      @include d($xs){
+        font-size: 14px;
+      }
   }
   &-18{
     font-size: 18px;
@@ -149,7 +152,7 @@
     color: var(--color-black-300);
   }
   &-gradient{
-    background: linear-gradient(180deg, #6595B0 23.44%, #FFFFFF 77.08%);
+    background: linear-gradient(180deg, #FFFFFF 37.5%, #8AAFC3 66.67%, #6595B0 76.04%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;

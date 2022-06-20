@@ -86,6 +86,12 @@
 								@include d($sm){
 									left: 46.4%;
 								}
+								@include d($xs){
+									left: 54.5%;
+									width: 150px;
+									height: 93px;
+									top: 77%;
+								}
 						}
 						&:nth-child(2){
 							width: 167px;
@@ -98,6 +104,12 @@
 								}
 								@include d($sm){
 									left: 12.6%;
+								}
+								@include d($xs){
+									width: 130px;
+									height: 182px;
+									top: 41.5%;
+									left: 16.6%;
 								}
 						}
 						&:nth-child(3){
@@ -112,6 +124,12 @@
 								@include d($sm){
 									left: 57%;
 								}
+								@include d($xs){
+									left: 61%;
+									top: 9%;
+									width: 128px;
+									height: 160px;
+								}
 						}
 						&:nth-child(4){
 							width: 160px;
@@ -124,6 +142,12 @@
 								}
 								@include d($sm){
 									left: 21.5%;
+								}
+								@include d($xs){
+									left: 33.5%;
+									top: -22.5%;
+									width: 124px;
+									height: 200px;
 								}
 						}
 						@include hover($md){
@@ -213,6 +237,10 @@
 				@include d($sm){
 					padding-left: 0;
 					margin-right: 0;
+				}
+				@include d($xs){
+					height: 400px;
+					margin-bottom: -27px;
 				}
 		}
 		&-thumb{

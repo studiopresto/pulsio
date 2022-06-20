@@ -96,6 +96,7 @@
 				}
 				@include d($md){
 					height: 60vw;
+					display: none;
 				}
 		}
 		&-thumb{
@@ -134,14 +135,23 @@
 		&.__2{
 			padding: 84px 0 43px;
 				.product{
-					&-additional{
-						color: #6D6D6D;
-					}
-					&-description{
-						&-price{
-							margin-top: 33px;
+						&-additional{
+							color: #6D6D6D;
 						}
-					}
+						&-description{
+							&-price{
+								margin-top: 33px;
+								justify-content: center;
+							}
+						}
+						&-banner{
+							@include d($xs){
+								margin-bottom: -30px;
+							}
+						}
+				}
+				@include d($xs){
+					padding: 84px 0 10px;
 				}
 		}
 		.accordion{
@@ -167,10 +177,17 @@
 							left: 0;
 							font-family: var(--font-bold);
 							color: #6797B1;
+							font-size: 16px;
 						}
 						@include d($sm){
 							width: 50%;
 						}
+				}
+				@include d($xs){
+					margin-top: 0;
+				}
+				@include d($xs){
+					padding-left: 18px;
 				}
 		}
 		@include d($md){

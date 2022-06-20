@@ -63,11 +63,28 @@
 					max-width: 500px;
 					justify-content: flex-start;
 					padding-top: 38px;
+						.font-72{
+							@include d($xs){
+								font-size: 60px;
+							}
+						}
 				}
 				.paragraph{
 					p:not(:last-child){
 						margin-bottom: 35px;
 					}
+				}
+				.font-gradient{
+					background: linear-gradient(270deg, #FFFFFF 24.32%, #6595B0 66.5%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					text-fill-color: transparent;
+						@include d($xs){
+							background: linear-gradient(90deg, #FFFFFF -22.95%, #6595B0 123.26%);
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;
+							text-fill-color: transparent;
+						}
 				}
 		}
 		@include d($md){

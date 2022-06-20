@@ -72,6 +72,7 @@
 						}
 						@include d($xs){
 							margin: 0 10px 12px;
+							width: 80vw;
 						}
 				}
 				@include m($md + 1){
@@ -83,6 +84,9 @@
 					margin-left: -15px;
 					width: calc(100% + 30px);
 				}
+				@include d($xs){
+					padding-top: 32px;
+				}
 		}
 		&-thumb{
 			height: 144px;
@@ -93,6 +97,9 @@
 						img{
 							@include imageContain(center);
 						}
+				}
+				@include d($xs){
+					height: 166px;
 				}
 		}
 		&-title{
@@ -186,5 +193,8 @@
 		}
 		@include d($md){
 			background-color: var(--color-white);
+		}
+		@include d($xs){
+			padding: 17px 0 50px;
 		}
 }
