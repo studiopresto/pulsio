@@ -24,7 +24,7 @@
 						position: relative;
 						z-index: 1;
 							&:last-child{
-								margin-left: 53px;
+								margin-left: 100px;
 								@include d($lg) {
 									margin-left: 35px;
 								}

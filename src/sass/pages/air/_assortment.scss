@@ -1,6 +1,6 @@
 .assortment{
-	padding: 172px 0 0;
-	margin-bottom: -106px;
+	padding: 20px 0 0;
+	margin-bottom: -103px;
 	z-index: 1;
 		&-item{
 			margin: 50px 0;
@@ -22,6 +22,7 @@
 					.assortment{
 							&-thumb {
 								text-align: right;
+								padding-right: 35px;
 									&:before {
 										background-image: url(../images/assortment/shadow-grey.svg);
 									}
@@ -45,9 +46,8 @@
 										}
 									}
 									@include m($md + 1){
-										margin-left: 74px;
-										justify-content: flex-start;
-										padding-top: 22px;
+										padding-top: 74px;
+										margin-left: -2px;
 									}
 							}
 					}
@@ -59,7 +59,7 @@
 									background-image: url(../images/assortment/shadow-black.svg);
 								}
 								@include m($md + 1){
-									margin: -43px 0 0 -219px;
+									margin: -3px 0 0 -57px;
 									height: 560px;
 								}
 								@include d($xs){
@@ -76,9 +76,11 @@
 									}
 								}
 								@include m($md + 1){
-									padding-left: 115px;
-									max-width: 100%;
+									padding-left: 193px;
+									max-width: none;
 									padding-bottom: 50px;
+									padding-top: 37px;
+									margin-right: -35px;
 								}
 								@include d($lg){
 									padding-left: 30px;
@@ -121,8 +123,13 @@
 									max-width: 524px;
 								}
 								@include m($md + 1){
-									margin-top: -95px;
+									margin-top: -68px;
 									height: 600px;
+									margin-left: 58px;
+										&:before{
+											top: 0;
+											bottom: -200px;
+										}
 								}
 								@include d($xs){
 									max-width: 65vw;
@@ -138,8 +145,18 @@
 										}
 								}
 								@include m($md + 1){
-									margin-left: 142px;
-									margin-top: -32px;
+									margin-left: 200px;
+									margin-top: -4px;
+									margin-right: -40px;
+								}
+								@include d($xl){
+									margin-left: 100px;
+								}
+								@include d($md){
+									margin-left: 50px;
+								}
+								@include d($sm){
+									margin-left: 0;
 								}
 						}
 					}
@@ -169,6 +186,9 @@
 					background-size: contain;
 					background-position: center;
 					pointer-events: none;
+						@include d($xs){
+							inset: -50px;
+						}
 				}
 				img{
 					@include imageContain(center);

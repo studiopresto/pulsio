@@ -81,6 +81,9 @@
 			&.font-semibold{
 				font-family: var(--font-semibold);
 				margin-top: 8px;
+					@include d($xs){
+						color: var(--color-black);
+					}
 			}
 		}
 		.rating{

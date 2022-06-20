@@ -1,11 +1,12 @@
 .compare{
 	overflow: hidden;
-	padding: 75px 0 70px;
+	padding: 75px 0 60px;
 		&:before{
 			content: '';
 			position: absolute;
 			inset: 0;
 			background: linear-gradient(180deg, #101314 21.88%, rgba(25, 105, 149, 0.47) 100%, rgba(51, 81, 98, 0.57) 100%);
+			pointer-events: none;
 				@include d($md){
 					//background: linear-gradient(180deg, #00507C 0%, rgba(165, 165, 165, 0.19) 100%);
 					background: linear-gradient(180deg, #8FB4C9 0%, #000000 100%);
