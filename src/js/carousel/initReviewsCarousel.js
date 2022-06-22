@@ -4,15 +4,19 @@ export const initReviewsCarousel = () => {
 	const reviewsCarousel = document.querySelector('.reviews-carousel');
 	if (!!reviewsCarousel) {
 		const carousel = new Splide('.reviews-carousel', {
-			type: 'slide',
+			type: 'loop',
 			perPage: 4,
-			perMove: 2,
+			perMove: 1,
 			gap: 32,
 			arrows: true,
 			pagination: false,
 			speed: 800,
 			easing: 'ease',
 			updateOnMove: true,
+			autoplay: true,
+			interval: 3000,
+			pauseOnHover: false,
+			resetProgress: false,
 			breakpoints: {
 				991: {
 					autoWidth: true,

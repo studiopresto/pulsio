@@ -51,6 +51,9 @@ body{
 				@include d($lg){
 					width: 290px;
 				}
+				@include d($xs){
+					width: 255px;
+				}
 		}
 }
 

@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 window.addEventListener('scroll', () => {
-	closeNav();
+	window.innerWidth < 992 ? closeNav() :null;
 });
 
 //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
