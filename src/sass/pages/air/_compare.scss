@@ -24,24 +24,24 @@
 					margin: 0 14px 14px;
 					padding: 28px;
 						&.active{
-							background-color: var(--color-white);
-							box-shadow: 0 4px 14px var(--color-white);
-							color: var(--color-black);
-								.hr{
-									background-color: #E6E6E6;
-								}
+							//background-color: var(--color-white);
+							//box-shadow: 0 4px 14px var(--color-white);
+							//color: var(--color-black);
+							//	.hr{
+							//		background-color: #E6E6E6;
+							//	}
 								.compare{
 										&-title{
 											font-family: var(--font-bold);
 										}
 										&-item{
-											color: #171717;
+											//color: #171717;
 												&:before{
 													background-image: url(../images/check.svg);
 												}
 										}
 										&-price{
-											color: #1B617B;
+											//color: #1B617B;
 										}
 								}
 						}
@@ -164,6 +164,7 @@
 						}
 						&-label{
 							display: block;
+							font-family: var(--font-semibold);
 						}
 					}
 				}
