@@ -156,18 +156,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-      &.__from{
-        &-right{
-          background: linear-gradient(90deg, #FFFFFF 16.18%, #6595B0 39.65%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        &-left{
-          background: linear-gradient(270deg, #FFFFFF -11.85%, #6595B0 78.13%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
+      //&.__from{
+      //  &-right{
+      //    background: linear-gradient(90deg, #FFFFFF 16.18%, #6595B0 39.65%);
+      //    -webkit-background-clip: text;
+      //    -webkit-text-fill-color: transparent;
+      //  }
+      //  &-left{
+      //    background: linear-gradient(270deg, #FFFFFF -11.85%, #6595B0 78.13%);
+      //    -webkit-background-clip: text;
+      //    -webkit-text-fill-color: transparent;
+      //  }
+      //}
   }
   /*
   Abstract

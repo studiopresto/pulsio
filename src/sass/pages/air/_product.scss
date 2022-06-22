@@ -225,6 +225,9 @@
 								margin-right: 2px;
 							}
 					}
+					.color-checkbox{
+						min-width: 83px;
+					}
 			}
 	}
 }
@@ -248,7 +251,7 @@
 			margin-right: 10px;
 				@include d($xs){
 					font-size: 10px;
-					margin-right: 5px;
+					margin-right: 0;
 				}
 		}
 		&-icon{
@@ -271,6 +274,7 @@
 				@include d($xs){
 					width: 22px;
 					height: 22px;
+					margin-right: 5px;
 				}
 		}
 		&-border{

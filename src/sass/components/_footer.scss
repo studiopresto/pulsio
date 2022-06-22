@@ -29,4 +29,7 @@
 				justify-content: center;
 			}
 		}
+		@include d($xs){
+			padding: 0 0 30px;
+		}
 }

@@ -9,10 +9,13 @@ export const attachmentSwitcher = () => {
 			let anchorId = points[i].getAttribute('data-anchor');
 			if (!points[i].classList.contains('is-active')) {
 				points[i].classList.add('is-active');
+				inScale(points[i], points[i].querySelector('.attachment-thumb'));
+				!!activePoint ? activePoint.classList.remove('is-active') : null;
 				if (window.innerWidth > 991) {
-					inScale(points[i], points[i].querySelector('.attachment-thumb'))
+					// !!activePoint ? activePoint.classList.remove('is-active') : null;
+					// inScale(points[i], points[i].querySelector('.attachment-thumb'));
 				} else {
-					!!activePoint ? activePoint.classList.remove('is-active') : null;
+					// !!activePoint ? activePoint.classList.remove('is-active') : null;
 					locoScroll.scrollTo(document.querySelector('.attachment-box'));
 				}
 				/*
@@ -30,7 +33,8 @@ export const attachmentSwitcher = () => {
 				});
 			} else {
 				!!activePoint ? activePoint.classList.remove('is-active') : null;
-				window.innerWidth > 991 ? outScale(points[i], points[i].querySelector('.attachment-thumb')) : null;
+				// window.innerWidth > 991 ? outScale(points[i], points[i].querySelector('.attachment-thumb')) : null;
+				outScale(points[i], points[i].querySelector('.attachment-thumb'));
 			}
 		});
 	}
@@ -39,37 +43,37 @@ export const attachmentSwitcher = () => {
 const inScale = (item, point) => {
 	const box = document.querySelector('.attachment-points');
 	box.classList.add('is-scaled');
-	Tween.set(document.querySelectorAll('.attachment-points-item'), {
-		opacity: 0,
-		pointerEvents: 'none',
-	});
-	Tween.to(item, {
-		opacity: 1,
-		duration: 0.2,
-		pointerEvents: 'auto',
-		ease: 'ease',
-	});
-	Tween.to(point, {
-		width: 300,
-		height: 300,
-		duration: 0.8,
-		ease: 'ease',
-	});
+	// Tween.set(document.querySelectorAll('.attachment-points-item'), {
+	// 	opacity: 0,
+	// 	pointerEvents: 'none',
+	// });
+	// Tween.to(item, {
+	// 	opacity: 1,
+	// 	duration: 0.2,
+	// 	pointerEvents: 'auto',
+	// 	ease: 'ease',
+	// });
+	// Tween.to(point, {
+	// 	width: 300,
+	// 	height: 300,
+	// 	duration: 0.8,
+	// 	ease: 'ease',
+	// });
 }
 
 const outScale = (item, point) => {
 	const box = document.querySelector('.attachment-points');
 	box.classList.remove('is-scaled');
-	Tween.to(point, {
-		width: '100%',
-		height: '100%',
-		duration: 0.8,
-		ease: 'ease',
-		onComplete: () => {
-			Tween.set(document.querySelectorAll('.attachment-points-item'), {
-				opacity: 1,
-				pointerEvents: 'auto',
-			});
-		},
-	});
+	// Tween.to(point, {
+	// 	width: '100%',
+	// 	height: '100%',
+	// 	duration: 0.8,
+	// 	ease: 'ease',
+	// 	onComplete: () => {
+	// 		Tween.set(document.querySelectorAll('.attachment-points-item'), {
+	// 			opacity: 1,
+	// 			pointerEvents: 'auto',
+	// 		});
+	// 	},
+	// });
 }

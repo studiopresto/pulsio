@@ -18,6 +18,9 @@ h2{
 		@include d($sm){
 			font-size: 30px;
 		}
+		@include d($xs){
+			font-size: 26px;
+		}
 }
 
 h3{

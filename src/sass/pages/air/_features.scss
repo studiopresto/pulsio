@@ -5,6 +5,9 @@
 			margin-bottom: 20px;
 				&-icon{
 					height: 54px;
+						@include d($xs){
+							text-align: center;
+						}
 				}
 				&-title{
 					margin-bottom: 12px;
