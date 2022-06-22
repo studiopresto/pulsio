@@ -16,7 +16,7 @@ export const attachmentSwitcher = () => {
 					// inScale(points[i], points[i].querySelector('.attachment-thumb'));
 				} else {
 					// !!activePoint ? activePoint.classList.remove('is-active') : null;
-					locoScroll.scrollTo(document.querySelector('.attachment-box'));
+					// locoScroll.scrollTo(document.querySelector('.attachment-box'));
 				}
 				/*
 				Hide

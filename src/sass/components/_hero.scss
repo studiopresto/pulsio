@@ -11,6 +11,7 @@
 			text-align: right;
 				img, picture{
 					height: 100%;
+					object-fit: cover;
 						@include d($md){
 							@include imageCover(left center);
 						}
@@ -29,10 +30,17 @@
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000d0f16', endColorstr='#0d0f16',GradientType=1 );
 					}
 				}
+				@include d(1440){
+					left: 40%;
+				}
+				@include d($lg){
+					left: 50%;
+				}
 				@include d($md){
 					top: 148px;
 					height: auto;
 					bottom: 90px;
+					left: 50%;
 						&:before{
 							content: '';
 							position: absolute;
@@ -85,7 +93,11 @@
 							left: 15px;
 							//top: 52vh;
 							top: 350px;
+							display: none;
 						}
+				}
+				@include m(1440){
+					min-height: 900px;
 				}
 				@include d($xl){
 					min-height: 600px;

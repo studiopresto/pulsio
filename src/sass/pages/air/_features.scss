@@ -11,6 +11,9 @@
 				}
 				&-title{
 					margin-bottom: 12px;
+						@include d($xs){
+							text-align: center;
+						}
 				}
 				&-description{
 					max-width: 210px;
@@ -23,6 +26,9 @@
 					align-items: flex-end;
 					margin-top: 8px;
 					margin-bottom: 2px;
+						@include d($xs){
+							justify-content: center;
+						}
 				}
 		}
 		&-detail{
