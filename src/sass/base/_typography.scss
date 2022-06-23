@@ -36,6 +36,9 @@ h3{
 		@include d($sm){
 			font-size: 28px;
 		}
+		@include d($xs){
+			font-size: 23px;
+		}
 }
 
 h4{
