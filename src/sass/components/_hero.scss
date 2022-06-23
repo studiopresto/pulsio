@@ -16,7 +16,7 @@
 							@include imageCover(left center);
 						}
 				}
-				@include m(1440) {
+				@include m($lg) {
 					&:after{
 						content: '';
 						position: absolute;
