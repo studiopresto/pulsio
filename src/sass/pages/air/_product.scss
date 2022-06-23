@@ -227,6 +227,9 @@
 					}
 					.color-checkbox{
 						min-width: 83px;
+							@include m($md + 1){
+								min-width: 102px;
+							}
 					}
 			}
 	}

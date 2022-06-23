@@ -2,7 +2,7 @@ import Splide from '@splidejs/splide';
 
 export const initCompareCarousel = () => {
 	const carousel = document.querySelector('.compare-carousel');
-	if (!!carousel) {
+	if (!!carousel && window.innerWidth < 992) {
 		const carousel = new Splide('.compare-carousel', {
 			destroy: true,
 			arrows: false,

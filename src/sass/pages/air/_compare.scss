@@ -17,15 +17,16 @@
 			justify-content: center;
 		}
 		&-list{
-			padding-top: 82px;
+			padding-top: 60px;
+			visibility: visible;
 				&-item{
 					background: rgba(255, 255, 255, 0.2);
 					border-radius: 14px;
-					margin: 0 14px 14px;
+					margin: 14px 14px 22px;
 					padding: 28px;
 						&.active{
 							//background-color: var(--color-white);
-							//box-shadow: 0 4px 14px var(--color-white);
+							box-shadow: 0 2px 18px var(--color-white);
 							//color: var(--color-black);
 							//	.hr{
 							//		background-color: #E6E6E6;

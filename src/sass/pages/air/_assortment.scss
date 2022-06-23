@@ -139,6 +139,7 @@
 								@include d($xs){
 									display: flex;
 									flex-direction: column;
+									margin-top: 5px;
 										span{
 											&:nth-child(2){
 												margin-top: -5px;
@@ -188,7 +189,7 @@
 								&-title{
 										.h-3{
 											@include d($xs){
-												max-width: 80%;
+												max-width: 150px;
 											}
 										}
 										@include d($xs){
