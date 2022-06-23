@@ -15,6 +15,9 @@
 						@include d($md){
 							@include imageCover(left center);
 						}
+						@include d($xs){
+							@include imageCover(center);
+						}
 				}
 				@include m($lg) {
 					&:after{
