@@ -14,8 +14,10 @@ import {initCompareCarousel} from "./carousel/initCompareCarousel";
 import {initReviewsCommentsCarousel} from "./carousel/initReviewsCommentsCarousel";
 import {closeNav, toggleNavListener} from "./content/toggleNav";
 import {toggleModal} from "./content/modal/toggleModal";
+import {initParallax} from "./scroll/parallax";
 
 scrollListener();
+initParallax();
 
 /*
 Require svg icons to stripe

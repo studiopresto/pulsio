@@ -116,13 +116,17 @@
 								&:before {
 									background-image: url(../images/assortment/shadow-red.svg);
 								}
+								img, picture{
+									@include d($xs){
+										transform: rotate(60deg);
+									}
+								}
 								@include m($md + 1){
 									margin-top: -95px;
 									margin-right: -174px;
 									height: 570px;
 								}
 								@include d($xs){
-									transform: rotate(60deg);
 									margin-right: -30vw;
 									height: 76vw;
 								}
@@ -168,6 +172,9 @@
 								img, picture{
 									margin-left: 0;
 									max-width: 524px;
+										@include d($xs){
+											transform: scaleX(-1);
+										}
 								}
 								@include m($md + 1){
 									margin-top: -68px;
@@ -181,7 +188,6 @@
 								@include d($xs){
 									max-width: 63vw;
 									margin-right: auto;
-									transform: scaleX(-1);
 									margin-left: -8vw;
 								}
 						}

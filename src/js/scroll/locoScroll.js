@@ -15,7 +15,7 @@ export const locoScroll = new LocomotiveScroll({
 		smooth: false,
 	},
 	smartphone: {
-		smooth: true,
+		smooth: false,
 	},
 });
 
