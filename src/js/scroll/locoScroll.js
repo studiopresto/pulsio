@@ -7,7 +7,7 @@ Tween.registerPlugin(ScrollTrigger);
 
 export const locoScroll = new LocomotiveScroll({
 	el: scrollContainer,
-	smooth: true,
+	smooth: false,
 	reloadOnContextChange: true,
 	resetNativeScroll: false,
 	lerp: 0.07,
