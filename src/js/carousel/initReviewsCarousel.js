@@ -13,8 +13,6 @@ export const initReviewsCarousel = () => {
 			speed: 800,
 			easing: 'ease',
 			updateOnMove: true,
-			autoplay: true,
-			interval: 3000,
 			pauseOnHover: false,
 			resetProgress: false,
 			breakpoints: {
