@@ -10,7 +10,7 @@ export const initCompareCarousel = () => {
 			breakpoints: {
 				991: {
 					destroy: false,
-					type: 'slide',
+					type: 'loop',
 					perPage: 1,
 					perMove: 1,
 					autoWidth: true,
