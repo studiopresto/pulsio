@@ -17,7 +17,6 @@ export const initParallax = () => {
 			} else {
 				to.y = 0 - ( parseFloat(speed) * 40 );
 			}
-			console.log(parseFloat(speed), to);
 			Tween.fromTo(elements[i],
 				{
 					y: 0,
