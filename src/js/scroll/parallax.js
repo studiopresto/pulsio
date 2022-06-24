@@ -9,8 +9,6 @@ export const initParallax = () => {
 		for (let i = 0; i < elements.length; i++) {
 			let speed = elements[i].getAttribute('data-scroll-speed');
 			let direction = elements[i].getAttribute('data-scroll-direction') || 'vertical';
-			console.log(parseFloat(speed));
-			console.log(direction);
 			const to = {};
 			if (direction === 'horizontal') {
 				to.x = 0 - ( parseFloat(speed) * 20 );

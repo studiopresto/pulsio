@@ -84,6 +84,9 @@ body{
 			text-decoration: line-through;
 			color: #BABABA;
 		}
+		@include d($xs){
+			font-size: 28px;
+		}
 }
 
 .paragraph{
