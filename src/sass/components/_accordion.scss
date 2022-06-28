@@ -17,10 +17,15 @@
 					right: 0;
 					width: 18px;
 					height: 18px;
-					border: 2px var(--color-primary) solid;
+					//border: 2px var(--color-primary) solid;
 					border-radius: 50%;
 					color: var(--color-primary);
+					background-repeat: no-repeat;
+					background-image: url(../images/tick.png);
+					background-size: contain;
+					background-position: center;
 						.svg{
+							display: none;
 							width: 8px;
 							height: 8px;
 							position: absolute;

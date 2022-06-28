@@ -1,5 +1,5 @@
 import {locoScroll} from "./locoScroll";
-import {switchHeader} from "../content/switchHeader";
+// import {switchHeader} from "../content/switchHeader";
 import {numbersCounter} from "../content/numbersCounter";
 
 export const scrollListener = () => {
@@ -10,8 +10,8 @@ export const scrollListener = () => {
 		}
 	});
 
-	locoScroll.on('scroll', (args) => {
-		switchHeader(args.scroll.y);
-	});
+	// locoScroll.on('scroll', (args) => {
+	// 	switchHeader(args.scroll.y);
+	// });
 
 }

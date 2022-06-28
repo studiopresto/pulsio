@@ -9,11 +9,19 @@ export const initParallax = () => {
 		for (let i = 0; i < elements.length; i++) {
 			let speed = elements[i].getAttribute('data-scroll-speed');
 			let direction = elements[i].getAttribute('data-scroll-direction') || 'vertical';
+			let start = elements[i].getAttribute('data-scroll-start');
 			const to = {};
+			const scroll = {
+				scrub: true,
+				duration: window.innerHeight,
+			};
 			if (direction === 'horizontal') {
-				to.x = 0 - ( parseFloat(speed) * window.innerWidth > 991 ? 40 : 20 );
+				to.x = 0 - ( parseFloat(speed) * window.innerWidth > 991 ? 50 : 20 );
 			} else {
-				to.y = 0 - ( parseFloat(speed) * window.innerWidth > 991 ? 80 : 40 );
+				to.y = 0 - ( parseFloat(speed) * window.innerWidth > 991 ? 90 : 40 );
+			}
+			if (!!start) {
+				scroll.start = start;
 			}
 			Tween.fromTo(elements[i],
 				{
@@ -23,9 +31,8 @@ export const initParallax = () => {
 				{
 					...to,
 					scrollTrigger: {
+						...scroll,
 						trigger: elements[i],
-						scrub: true,
-						duration: window.innerHeight,
 					}
 				});
 		}
