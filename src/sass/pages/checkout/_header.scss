@@ -1,0 +1,59 @@
+.checkout-header{
+	background-color: var(--color-black);
+	padding: 8px 0;
+	position: relative;
+	z-index: 1;
+		&-nav{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			height: 100%;
+				.link{
+					font-size: 16px;
+						@include d($xs){
+							font-size: 10px;
+						}
+				}
+				img{
+					height: 31px;
+				}
+				@include d($md){
+					position: absolute;
+					top: 5px;
+					left: 0;
+					padding: 0 12px 0 24px;
+					width: 100%;
+					height: 31px;
+					justify-content: space-between;
+				}
+		}
+		&-thumb{
+			@include m($md + 1){
+				display: none;
+			}
+		}
+		.rating{
+			height: 82px;
+			text-align: center;
+				@include d($md){
+					height: 45px;
+				}
+		}
+		.header{
+			&-logo{
+				width: 209px;
+				margin: 13px 0;
+					@include d($md){
+						margin: 0 auto;
+						width: 240px;
+					}
+			}
+		}
+		.container{
+			max-width: 1375px;
+		}
+		@include d($md){
+			border-radius: 0 0 50px 50px;
+			padding: 0;
+		}
+}

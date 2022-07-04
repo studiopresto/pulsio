@@ -15,6 +15,8 @@ import {initReviewsCommentsCarousel} from "./carousel/initReviewsCommentsCarouse
 import {closeNav, toggleNavListener} from "./content/toggleNav";
 import {toggleModal} from "./content/modal/toggleModal";
 import {initParallax} from "./scroll/parallax";
+import {initCounter} from "./content/counter";
+import {initInputMask} from "./content/input/initInputMask";
 
 scrollListener();
 initParallax();
@@ -47,6 +49,8 @@ attachmentSwitcher();
 toggleNavListener();
 setStickyBannerPosition();
 toggleModal();
+initCounter();
+initInputMask();
 /*
 Validation
  */

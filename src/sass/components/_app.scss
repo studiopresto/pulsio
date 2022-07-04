@@ -150,3 +150,46 @@ body{
 	padding: 45px 0 3px;
 	opacity: .7;
 }
+
+.list{
+		li{
+			display: flex;
+			justify-content: space-between;
+			font-size: 15px;
+			font-family: var(--font-medium);
+				&:not(:last-child){
+					margin-bottom: 7px;
+				}
+		}
+		&-bg{
+			background-color: #efefef;
+			padding: 3px 20px;
+			border-radius: 8px;
+				li{
+					margin: 0;
+					padding: 12px 0;
+						&:not(:last-child){
+							border-bottom: 1px var(--color-white) solid;
+						}
+						p{
+							line-height: 1.2em;
+						}
+						img{
+							width: 30px;
+							height: 30px;
+							min-width: 30px;
+							margin-right: 15px;
+						}
+				}
+		}
+		&-18{
+				li{
+					font-size: 18px;
+					font-family: var(--font-semibold);
+				}
+		}
+}
+
+.fieldset{
+	margin-bottom: 7px;
+}

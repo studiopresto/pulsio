@@ -8,6 +8,7 @@
 	font-size: 14px;
 	color: var(--color-black);
 	padding: 0 40px 0 20px;
+	transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
 		&-container{
 			position: relative;
 			padding-bottom: 20px;
@@ -38,6 +39,13 @@
 							color: tomato;
 						}
 				}
+				&-border{
+					margin-top: 10px;
+				}
+				&-checkbox{
+					display: flex;
+					align-items: center;
+				}
 				&.has-error{
 					.input{
 						&-container{
@@ -50,6 +58,17 @@
 						}
 					}
 				}
+		}
+		&-label{
+			position: absolute;
+			left: 18px;
+			top: -12px;
+			padding: 0 8px;
+			font-size: 12px;
+			font-family: var(--font-medium);
+			color: #A6B4C1;
+			background-color: var(--color-white);
+			text-transform: capitalize;
 		}
 		&::-webkit-input-placeholder {
 			color: #B7B7B7;
@@ -64,6 +83,19 @@
 			color: #B7B7B7;
 		}
 		/*
+		Styles
+		 */
+		&-border{
+			border: 1px #D9E5F1 solid;
+			height: 52px;
+			padding: 0 16px;
+			font-family: var(--font-medium);
+				&:focus{
+					box-shadow: 0 10px 30px rgba(185, 207, 228, 0.2);
+					border-color: #2EAADA;
+				}
+		}
+		/*
 		Types
 		 */
 		&-checkbox{
@@ -72,5 +104,41 @@
 			left: 0;
 			width: 10px;
 			height: 10px;
+				&-title{
+					font-size: 13px;
+					padding-top: 1px;
+					font-family: var(--font-medium);
+						@include d($md){
+							font-size: 12px;
+						}
+				}
+				&-icon{
+					width: 20px;
+					height: 20px;
+					border: 1px #D9E5F1 solid;
+					border-radius: 4px;
+					position: relative;
+						&:before{
+							content: '';
+							position: absolute;
+							inset: 3px;
+							background-color: #2EAADA;
+							border-radius: 2px;
+							opacity: 0;
+							transition: opacity var(--duration) var(--ease);
+							pointer-events: none;
+						}
+						& ~ .input-checkbox-title{
+							margin-left: 12px;
+						}
+				}
+				&:checked{
+					& ~ .input-checkbox-icon{
+						border-color: #2EAADA;
+						&:before{
+							opacity: 1;
+						}
+					}
+				}
 		}
 }

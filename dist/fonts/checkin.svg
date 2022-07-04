@@ -1,0 +1,8 @@
+export default {
+      id: "checkin-usage",
+      viewBox: "0 0 20 20",
+      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/checkin.svg",
+      toString: function () {
+        return this.url;
+      }
+    }
