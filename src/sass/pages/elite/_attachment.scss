@@ -1,0 +1,195 @@
+.attachment.elite{
+	padding: 140px 0 115px;
+		.attachment{
+			&-box{
+				margin-left: 68px;
+				max-width: 560px;
+				padding: 79px 30px 40px 60px;
+					.paragraph{
+						max-width: 390px;
+					}
+					@include d($md){
+						max-width: 100%;
+						margin-left: 0;
+					}
+					@include d($sm){
+						padding: 30px 20px 20px 26px;
+					}
+			}
+			&-switcher{
+				padding-top: 27px;
+				padding-bottom: 0;
+			}
+			&-points{
+				height: 600px;
+				margin-top: -15px;
+					&-item{
+						&:nth-child(1){
+							width: 254px;
+							height: 238px;
+							top: -7%;
+							left: 24.2%;
+								.attachment{
+									&-points{
+										&-icon{
+											top: 49.3%;
+											left: 47%;
+												@include d($sm){
+													top: -4%;
+													left: 34%;
+												}
+										}
+									}
+								}
+								@include d($sm){
+									width: 35vw;
+									height: auto;
+									top: -2.3%;
+									left: 22%;
+								}
+						}
+						&:nth-child(2){
+							width: 254px;
+							height: 238px;
+							top: 5.2%;
+							left: 62.2%;
+								.attachment{
+									&-points{
+										&-icon{
+											top: 16%;
+											left: 59%;
+												@include d($sm){
+													top: -4%;
+													left: 21%;
+												}
+										}
+									}
+								}
+								@include d($sm){
+									width: 35vw;
+									height: auto;
+									top: 8%;
+									left: 60%;
+								}
+						}
+						&:nth-child(3){
+							width: 230px;
+							height: 186px;
+							top: 24%;
+							left: -9%;
+								.attachment{
+									&-points{
+										&-icon{
+											top: 67%;
+											left: 46%;
+												@include d($sm){
+													top: 64%;
+													left: 39%;
+												}
+										}
+									}
+								}
+								@include d($sm){
+									width: 32vw;
+									height: auto;
+									top: 21%;
+									left: -12%;
+								}
+						}
+						&:nth-child(4){
+							width: 234px;
+							height: 151px;
+							top: 35.5%;
+							left: 26%;
+								.attachment{
+									&-points{
+										&-icon{
+											top: 6%;
+											left: 64%;
+												@include d($sm){
+													top: -6%;
+													left: 63%;
+												}
+										}
+									}
+								}
+								@include d($sm){
+									width: 35vw;
+									height: auto;
+									top: 30%;
+									left: 23%;
+								}
+						}
+						&:nth-child(5){
+							width: 266px;
+							height: 238px;
+							top: 57%;
+							left: 11%;
+								.attachment{
+									&-points{
+										&-icon{
+											top: 29%;
+											left: 55%;
+												@include d($sm){
+													top: 70%;
+													left: 43%;
+												}
+										}
+									}
+								}
+								@include d($sm){
+									width: 36vw;
+									height: auto;
+									top: 51%;
+									left: 9%;
+								}
+						}
+						&:nth-child(6){
+							width: 280px;
+							height: 238px;
+							top: 46.5%;
+							left: 61.8%;
+								.attachment{
+									&-points{
+										&-icon{
+											top: 21%;
+											left: 46%;
+												@include d($sm){
+													top: 6%;
+													left: 54%;
+												}
+										}
+									}
+								}
+								@include d($sm){
+									width: 39vw;
+									height: auto;
+									top: 41%;
+									left: 59%;
+								}
+						}
+					}
+					&-icon{
+						width: 56px;
+						height: 56px;
+						transition: none;
+							@include d($sm){
+								width: 34px;
+								height: 34px;
+							}
+					}
+					@include d($md){
+						margin-left: 15px;
+						margin-right: 0;
+						margin-top: 30px;
+					}
+					@include d($sm){
+						height: 100vw;
+					}
+			}
+		}
+		@include d($sm){
+			padding: 50px 0 54px;
+			margin-top: 21px;
+		}
+}

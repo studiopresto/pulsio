@@ -1,0 +1,38 @@
+.hero.elite{
+		.hero{
+			&-content{
+				padding-top: 9vh;
+				.paragraph{
+					line-height: 1.5em;
+						&.font-22{
+							@include d($sm){
+								font-size: 16px;
+								font-family: var(--font-semibold);
+							}
+						}
+				}
+				.rating{
+					margin-top: 77px;
+				}
+				@include d($sm){
+					padding-top: 115px;
+					padding-left: 20px;
+					padding-right: 20px;
+					height: 610px;
+				}
+			}
+			&-banner{
+				@include d($xs){
+					bottom: 0;
+					top: 150px;
+					left: 40%;
+				}
+			}
+		}
+		.logo{
+			&-lg{
+				width: 324px;
+				margin-bottom: 25px;
+			}
+		}
+}

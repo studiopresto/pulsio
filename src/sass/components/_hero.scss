@@ -33,12 +33,6 @@
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000d0f16', endColorstr='#0d0f16',GradientType=1 );
 					}
 				}
-				@include d(1440){
-					left: 40%;
-				}
-				@include d($lg){
-					left: 50%;
-				}
 				@include d($md){
 					top: 148px;
 					height: auto;

@@ -11,5 +11,13 @@
 							max-width: 100%;
 						}
 				}
+				&-banner{
+					@include d(1440){
+						left: 40%;
+					}
+					@include d($lg){
+						left: 50%;
+					}
+				}
 		}
 }

@@ -1,0 +1,5 @@
+.features.elite{
+		@include d($xs){
+			padding: 25px 0;
+		}
+}

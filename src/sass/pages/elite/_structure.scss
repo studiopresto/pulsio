@@ -1,0 +1,106 @@
+.structure.elite{
+	margin: 45px 0 96px;
+		.structure{
+			&-thumb{
+				&.__1{
+					max-width: none;
+					margin-left: -60px;
+					margin-right: -67px;
+						&:before{
+							background-image: url(../images/structure/elite/intelligent-shadow.svg);
+							inset: 0;
+						}
+						@include d($sm){
+							margin-left: -34px;
+							margin-right: -48px;
+							margin-top: -37px;
+						}
+				}
+				&.__2{
+					margin-left: -30px;
+					margin-top: -100px;
+					max-width: 507px;
+						&:before{
+							display: none;
+						}
+						@include d($lg){
+							margin-top: 0;
+						}
+						@include d($sm){
+							margin-left: 0;
+							max-width: 100%;
+							margin-top: 18px;
+							margin-bottom: 18px;
+						}
+				}
+			}
+			&-description{
+				&.__1{
+					margin-bottom: 0;
+					margin-top: 240px;
+					margin-left: -215px;
+					max-width: 610px;
+						.structure-description-title{
+							.font-gradient {
+								margin-bottom: 12px;
+							}
+						}
+						.paragraph{
+							@include d($sm){
+								font-size: 16px;
+							}
+						}
+						@include d($md){
+							margin-left: -185px;
+							margin-bottom: 100px;
+						}
+						@include d($sm){
+							margin-top: 9px;
+							max-width: 100%;
+							margin-left: 0;
+							margin-bottom: 0;
+						}
+				}
+				&.__2{
+					padding-top: 100px;
+					padding-left: 25px;
+					max-width: 640px;
+						.structure-description-title{
+							margin-bottom: 5px;
+								.font-72{
+									@include d($sm){
+										font-size: 60px;
+									}
+								}
+								@include d($sm){
+									text-transform: uppercase;
+								}
+						}
+						@include d($lg){
+							padding-left: 0;
+							padding-right: 20px;
+						}
+						@include d($sm){
+							padding-top: 64px;
+							max-width: 100%;
+							padding-left: 0;
+						}
+				}
+				&-title{
+					.font-72{
+						@include d($sm){
+							font-size: 54px;
+						}
+					}
+				}
+			}
+		}
+		.paragraph{
+			@include d($sm){
+				font-size: 16px;
+			}
+		}
+		@include d($sm){
+			margin: 72px 0 12px;
+		}
+}

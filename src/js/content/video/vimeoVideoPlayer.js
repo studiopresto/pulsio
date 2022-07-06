@@ -24,7 +24,10 @@ export const initVimeoPlayer = () => {
 					videos[i].classList.add('is-playing');
 					videos[i].classList.remove('is-loading');
 				});
-				player.on('pause', () => videos[i].classList.remove('is-playing'));
+				player.on('pause', () => {
+					videos[i].classList.remove('is-playing');
+					videos[i].classList.remove('is-loading');
+				});
 			}
 		}
 	}
