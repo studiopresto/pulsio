@@ -1,0 +1,70 @@
+.hero.gummies{
+	background: linear-gradient(180deg, #1E7EB4 0%, #000000 100%);
+	overflow: hidden;
+		.hero{
+			&-banner{
+				max-width: 912px;
+					&:after{
+						display: none;
+					}
+					img, picture{
+						@include imageContain(center bottom);
+					}
+			}
+			&-content{
+				text-align: center;
+				justify-content: flex-start;
+				padding: 160px 0 585px;
+				height: auto;
+					&-title{
+						font-size: 65px;
+						text-transform: none;
+						max-width: 760px;
+						margin: 0 auto 22px;
+						line-height: 1.1em;
+					}
+					&-subtitle{
+						margin: 0 auto;
+						max-width: 760px;
+					}
+					&-description{
+						text-align: left;
+						margin-top: 88px;
+						line-height: 1.23em;
+							p{
+								max-width: 88%;
+							}
+					}
+					.rating{
+						margin: 35px auto 0;
+					}
+					.list{
+						margin-top: 97px;
+						margin-left: -12px;
+						text-align: left;
+							li{
+								font-size: 22px;
+								font-family: var(--font-bold);
+								position: relative;
+								padding-left: 52px;
+									&:before{
+										content: '';
+										position: absolute;
+										top: -8px;
+										left: 0;
+										width: 36px;
+										height: 36px;
+										background-repeat: no-repeat;
+										background-image: url(../images/checkin-round.svg);
+										background-size: contain;
+										background-position: center;
+										pointer-events: none;
+									}
+									&:not(:last-child){
+										margin-bottom: 26px;
+									}
+							}
+					}
+			}
+		}
+}

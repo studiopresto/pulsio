@@ -77,8 +77,10 @@
 				&-item{
 					height: 502px;
 					padding-bottom: 20px;
+					background-color: #F0F9FE;
 						img{
 							@include imageContain(center);
+							mix-blend-mode: multiply;
 						}
 						@include d($lg){
 							height: 42vw;

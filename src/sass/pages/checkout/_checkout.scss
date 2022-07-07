@@ -1,4 +1,5 @@
-.checkout{
+.checkout,
+.order{
 	background-color: #E4F0FC;
 	position: relative;
 		&-bg{
@@ -327,5 +328,4 @@
 					margin-bottom: 6px;
 				}
 		}
-		
 }

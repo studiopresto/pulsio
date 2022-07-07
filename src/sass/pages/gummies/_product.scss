@@ -1,0 +1,19 @@
+.product.gummies{
+	padding: 115px 0 135px;
+		.product{
+			&-title{
+				margin: 15px 0 -4px;
+					[class^="h-"]{
+						text-transform: none;
+						font-size: 50px;
+						color: #333333;
+					}
+			}
+			&-photos{
+				padding-right: 50px;
+			}
+			&-description{
+				padding-left: 0;
+			}
+		}
+}

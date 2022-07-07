@@ -1,0 +1,35 @@
+.detail{
+	background: radial-gradient(49.34% 3157.78% at 50.66% 50%, #2981B3 0%, #000000 100%);
+	padding: 44px 0 53px;
+		&-list{
+			display: flex;
+			align-items: flex-start;
+				&-item{
+					flex: 1;
+					text-align: center;
+					position: relative;
+						&:not(:last-child){
+							&:before{
+								content: '';
+								position: absolute;
+								right: 0;
+								top: 50%;
+								transform: translateY(-50%);
+								width: 1px;
+								height: 90px;
+								background-color: rgba(255,255,255,.16);
+							}
+						}
+				}
+		}
+		&-icon{
+			height: 45px;
+			margin: 0 auto 14px;
+		}
+		&-title{
+		
+		}
+		.container{
+			max-width: 1470px;
+		}
+}

@@ -17,6 +17,7 @@ import {toggleModal} from "./content/modal/toggleModal";
 import {initParallax} from "./scroll/parallax";
 import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
+import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
 
 scrollListener();
 initParallax();
@@ -51,6 +52,7 @@ setStickyBannerPosition();
 toggleModal();
 initCounter();
 initInputMask();
+heroBannerParallax();
 /*
 Validation
  */
