@@ -1,0 +1,59 @@
+.delivery{
+  margin: 160px 0;
+  ul{
+    margin: 40px -38px 0;
+    display: flex;
+    flex-wrap: wrap;
+    @include d($md){
+      margin: 30px -28px 0;
+    }
+    li{
+      &.show-text{
+        p{
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 6;
+          overflow: hidden;
+        }
+      }
+      margin: 40px 38px;
+      width: calc((100% - (38px * 6))/ 3);
+      @include d($md){
+        margin: 30px 28px;
+        width: calc((100% - (28px * 4))/ 2);
+      }
+      @include d($sm){
+        width: calc((100% - (28px * 2)));
+      }
+      p, strong{
+        margin: 0 0 32px 0;
+      }
+      p{
+        font-size: 15px;
+        line-height: 22px;
+        color: #727683;
+      }
+      strong{
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+      span{
+        font-size: 15px;
+        line-height: 22px;
+        color: #00B8FF;
+        padding: 0 16px 0 0;
+        background-image: url("../images/faq/down-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        background-position: center right;
+      }
+    }
+  }
+}

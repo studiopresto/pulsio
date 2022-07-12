@@ -94,3 +94,44 @@ a{
 			text-decoration: none;
 		}
 }
+
+//content-pages styles
+
+.H-1{
+	font-size: 80px;
+	line-height: 82px;
+	font-weight: 800;
+	@include d($lg){
+		font-size: 60px;
+		line-height: 62px;
+	}
+	@include d($sm){
+		font-size: 50px;
+		line-height: 52px;
+	}
+	@include d($xs){
+		font-size: 40px;
+		line-height: 42px;
+	}
+}
+
+.H-2{
+	font-size: 62px;
+	line-height: 78px;
+	font-weight: 800;
+	&.uppercase{
+		text-transform: uppercase;
+	}
+	@include d($lg){
+		font-size: 52px;
+		line-height: 68px;
+	}
+	@include d($sm){
+		font-size: 42px;
+		line-height: 58px;
+	}
+	@include d($xs){
+		font-size: 32px;
+		line-height: 48px;
+	}
+}

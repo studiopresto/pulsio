@@ -18,6 +18,8 @@ import {initParallax} from "./scroll/parallax";
 import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
+import {showText} from "./content/faq";
+
 
 scrollListener();
 initParallax();
@@ -53,6 +55,7 @@ toggleModal();
 initCounter();
 initInputMask();
 heroBannerParallax();
+showText();
 /*
 Validation
  */
