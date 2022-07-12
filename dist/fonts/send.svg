@@ -1,7 +1,7 @@
 export default {
       id: "send-usage",
       viewBox: "0 0 17 17",
-      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/send.svg",
+      url: "images/sprite/" + "/Users/anton_kamarhin/Desktop/Projects/pulsio/src/images/icons/send.svg",
       toString: function () {
         return this.url;
       }

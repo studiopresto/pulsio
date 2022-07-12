@@ -1,7 +1,7 @@
 export default {
       id: "minus-usage",
       viewBox: "0 0 11 11",
-      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/minus.svg",
+      url: "images/sprite/" + "/Users/anton_kamarhin/Desktop/Projects/pulsio/src/images/icons/minus.svg",
       toString: function () {
         return this.url;
       }

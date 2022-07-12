@@ -1,7 +1,7 @@
 export default {
       id: "play-usage",
       viewBox: "0 0 16 17",
-      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/play.svg",
+      url: "images/sprite/" + "/Users/anton_kamarhin/Desktop/Projects/pulsio/src/images/icons/play.svg",
       toString: function () {
         return this.url;
       }

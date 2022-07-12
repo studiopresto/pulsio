@@ -1,7 +1,7 @@
 export default {
       id: "arrow-down-usage",
       viewBox: "0 0 8 5",
-      url: "images/sprite/" + "/Users/artem/Documents/Projects/pulsio/src/images/icons/arrow-down.svg",
+      url: "images/sprite/" + "/Users/anton_kamarhin/Desktop/Projects/pulsio/src/images/icons/arrow-down.svg",
       toString: function () {
         return this.url;
       }
