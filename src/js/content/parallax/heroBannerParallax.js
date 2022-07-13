@@ -7,7 +7,7 @@ export const heroBannerParallax = () => {
 		updateScrollY(banner);
 
 		window.addEventListener('scroll', () => {
-			updateScrollY(banner);
+			window.innerWidth > 991 ? updateScrollY(banner) : null;
 		});
 	}
 }

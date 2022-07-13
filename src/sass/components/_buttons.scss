@@ -52,6 +52,29 @@
 		@include d($sm){
 			padding: 0 25px;
 		}
+		/*
+		Sizes
+		 */
+		&-sm{
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+			padding: 0 20px;
+		}
+		&-xl{
+			height: 70px;
+			line-height: 70px;
+			font-size: 16px;
+			padding: 0 25px;
+				@include d($md){
+					height: 58px;
+					line-height: 58px;
+				}
+				@include d($xs){
+					height: 52px;
+					line-height: 52px;
+				}
+		}
 }
 
 .link{

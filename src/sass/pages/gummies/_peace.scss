@@ -1,0 +1,26 @@
+.peace.gummies{
+	padding-top: 35px;
+		.peace{
+			&-list{
+				padding-top: 35px;
+					@include d($xs){
+						padding-top: 20px;
+					}
+			}
+			&-box{
+				&-icon{
+					right: 45px;
+				}
+			}
+		}
+		.h-1{
+			@include d($xs){
+				font-size: 24px;
+				max-width: 220px;
+				margin: 0 auto;
+			}
+		}
+		@include d($xs){
+			padding-top: 25px;
+		}
+}

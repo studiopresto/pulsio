@@ -33,6 +33,11 @@ body{
 		&-dark{
 			//background-color: var(--color-black);
 		}
+		&-subtitle{
+			@include d($xs){
+				font-size: 12px;
+			}
+		}
 }
 
 .container{
@@ -192,4 +197,27 @@ body{
 
 .fieldset{
 	margin-bottom: 7px;
+}
+
+.title{
+		&-border{
+			position: relative;
+			padding-bottom: 7px;
+			text-align: center;
+				&:before{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 180px;
+					height: 3px;
+					background: linear-gradient(89.98deg, #106FA4 0.02%, #67AFBF 100%);
+					border-radius: 5px;
+					pointer-events: none;
+						@include d($xs){
+							width: 114px;
+						}
+				}
+		}
 }

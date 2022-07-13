@@ -1,0 +1,80 @@
+.faq{
+	background-color: #E8F9FF;
+	color: var(--color-black);
+	padding: 97px 0 115px;
+		.h-1{
+			@include d($xs){
+				font-size: 24px;
+			}
+		}
+		@include d($lg){
+			padding: 95px 0;
+		}
+		@include d($xs){
+			padding: 38px 0 15px;
+		}
+}
+
+.accordion{
+	&-faq{
+		max-width: 1094px;
+		width: 100%;
+		margin: 36px auto;
+		background-color: var(--color-white);
+		border-radius: 45px;
+		padding: 37px 112px;
+			.accordion{
+				&-item{
+					padding: 23px 0;
+					border-color: #CAE8F2;
+						&:last-child{
+								@include m($xs + 1){
+									border-bottom: none;
+								}
+						}
+						&-arrow{
+							background-image: url(../images/plus-circle.svg);
+							width: 24px;
+							height: 24px;
+							top: 1px;
+								@include d($xs){
+									top: 6px;
+									right: -8px;
+								}
+						}
+						&-header{
+							.font-18{
+								@include d($xs){
+									font-size: 14px;
+									line-height: 1.25em;
+								}
+							}
+							@include d($xs){
+								min-height: 37px;
+								display: flex;
+								align-items: center;
+							}
+						}
+						&.is-active{
+							.accordion{
+								&-item{
+									&-arrow{
+										background-image: url(../images/minus-circle.svg);
+									}
+								}
+							}
+						}
+						@include d($xs){
+							padding: 10px 0;
+						}
+				}
+			}
+			@include d($md){
+				padding: 35px 55px;
+			}
+			@include d($xs){
+				margin: 38px auto;
+				padding: 14px 30px 23px;
+			}
+	}
+}

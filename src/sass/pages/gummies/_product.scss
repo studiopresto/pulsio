@@ -1,5 +1,5 @@
 .product.gummies{
-	padding: 115px 0 135px;
+	padding: 115px 0 100px;
 		.product{
 			&-title{
 				margin: 15px 0 -4px;
@@ -7,13 +7,266 @@
 						text-transform: none;
 						font-size: 50px;
 						color: #333333;
+							@include d($lg){
+								font-size: 46px;
+							}
+							@include d($md){
+								font-size: 42px;
+							}
+							@include d($sm){
+								font-size: 38px;
+							}
+							@include d($xs){
+								font-size: 32px;
+							}
+					}
+			}
+			&-photos,
+			&-thumbs{
+				padding-right: 50px;
+					@include d($lg){
+						padding-right: 0;
 					}
 			}
 			&-photos{
-				padding-right: 50px;
+				@include d($md){
+					margin-top: 22px;
+				}
+			}
+			&-thumb{
+				height: 286px;
+					@include d($lg){
+						height: 23vw;
+					}
 			}
 			&-description{
 				padding-left: 0;
+					&-item{
+						max-width: 520px;
+							@include d($xs){
+								margin-top: 25px;
+							}
+					}
+					&-action{
+						margin: 50px 0 15px;
+							.btn{
+								flex: none;
+								background-color: #E7F8FF;
+									&-grey{
+											.btn-title{
+												@include d($md){
+													display: inline-block;
+												}
+											}
+											@include d($md){
+												max-width: 100%;
+											}
+											@include d($xs){
+												width: 100%;
+											}
+									}
+									@include hover($md){
+										&:hover{
+											background-color: var(--color-black);
+										}
+									}
+							}
+							@include d($lg){
+								margin: 25px 0 15px;
+							}
+							@include d($md){
+								margin: 50px 0 15px;
+							}
+							@include d($xs){
+								margin: 84px 0 15px;
+							}
+					}
 			}
+			&-carousel{
+				&-item{
+					height: 600px;
+						@include d($lg){
+							height: 45vw;
+						}
+						@include d($md){
+							height: 70vw;
+						}
+						@include d($xs){
+							height: 92vw;
+						}
+				}
+			}
+		}
+		.products{
+			padding: 38px 0 25px;
+				@include d($xs){
+					padding: 24px 0;
+				}
+		}
+		.accordion{
+			margin-top: 81px;
+				&-item{
+					padding: 17px 0;
+				}
+				@include d($lg){
+					margin-top: 25px;
+				}
+				@include d($xs){
+					margin-top: 42px;
+				}
+		}
+		@include d($md){
+			padding: 35px 0 50px;
+		}
+}
+
+.products{
+	display: flex;
+	flex-wrap: wrap;
+		&-item{
+			max-width: 160px;
+				&:not(:last-child){
+					margin-right: 57px;
+						@include d($xl){
+							margin-right: 30px;
+						}
+						@include d($lg){
+							margin-right: 16px;
+						}
+				}
+				&-thumb{
+					height: 160px;
+					width: 160px;
+					border: 2px rgba(129, 129, 129, .25) solid;
+					border-radius: 16px;
+					background: rgba(240, 249, 254, 0.4);
+					margin-bottom: 16px;
+					position: relative;
+					padding: 22px;
+						@include d($lg){
+							width: 100%;
+							height: 15vw;
+						}
+						@include d($md){
+							height: 31vw;
+						}
+						@include d($xs){
+							height: 26vw;
+							padding: 5px;
+							margin-bottom: 0;
+						}
+				}
+				&-content{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+						.product-description-price{
+							margin: 11px 0 2px;
+								@include d($xs){
+									order: 1;
+									display: flex;
+									flex-direction: column;
+									margin: 14px 0 11px;
+									min-height: 34px;
+								}
+						}
+						.btn{
+								@include d($xs){
+									order: 2;
+								}
+						}
+						.price{
+								&-old{
+									@include d($xs){
+										line-height: 1.2em;
+									}
+								}
+							@include d($xs){
+								font-size: 14px;
+								margin-right: 0 !important;
+								line-height: 1.2em;
+							}
+						}
+						@include d($xs){
+							display: flex;
+							flex-direction: column;
+							padding-bottom: 5px;
+						}
+				}
+				&-detail{
+					font-size: 8px;
+					text-align: center;
+					color: #949494;
+					line-height: 1.1em;
+				}
+				&-label{
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					padding: 0 8px;
+					height: 24px;
+					line-height: 24px;
+					border-radius: 50px;
+					background-color: #C20000;
+					font-size: 10px;
+					font-family: var(--font-bold);
+					text-transform: uppercase;
+					color: var(--color-white);
+					z-index: 1;
+					white-space: nowrap;
+						@include d($xs){
+							top: -16px;
+							right: 50%;
+							transform: translateX(50%);
+						}
+				}
+				&:nth-child(1){
+						.btn{
+							background-color: #2EAADA;
+								@include hover($md){
+									&:hover{
+										background-color: var(--color-black);
+									}
+								}
+						}
+				}
+				&:nth-child(2){
+						.btn{
+							background-color: #147CA4;
+								@include hover($md){
+									&:hover{
+										background-color: var(--color-black);
+									}
+								}
+						}
+						.price{
+							@include d($xs){
+								color: #C20000;
+							}
+						}
+				}
+				&:nth-child(3){
+						.btn{
+							background-color: #005272;
+								@include hover($md){
+									&:hover{
+										background-color: var(--color-black);
+									}
+								}
+						}
+						.price{
+							@include d($xs){
+								color: #C20000;
+							}
+						}
+				}
+				.btn{
+					white-space: normal;
+					line-height: 1em;
+				}
+				@include d($lg){
+					max-width: calc(33.33% - 11px);
+					width: 100%;
+				}
 		}
 }
