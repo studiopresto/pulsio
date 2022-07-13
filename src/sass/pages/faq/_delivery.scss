@@ -10,10 +10,15 @@
     li{
       &.show-text{
         p{
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 6;
+          max-height: 132px;
+          transition: 300ms;
           overflow: hidden;
+        }
+      }
+      &.active{
+        p{
+          overflow: hidden;
+          transition: 300ms;
         }
       }
       margin: 40px 38px;
@@ -32,8 +37,10 @@
         font-size: 15px;
         line-height: 22px;
         color: #727683;
+        transition: 300ms;
       }
       strong{
+        min-height: 60px;
         text-transform: capitalize;
         color: #fff;
         font-size: 20px;
