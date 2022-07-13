@@ -135,3 +135,29 @@ a{
 		line-height: 48px;
 	}
 }
+
+.H-3{
+	font-size: 48px;
+	line-height: 59px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.par{
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #fff;
+	&-sm{
+		font-size: 18px;
+		line-height: 30px;
+		@include d($sm){
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	@include d($sm){
+		font-size: 18px;
+		line-height: 22px;
+	}
+}

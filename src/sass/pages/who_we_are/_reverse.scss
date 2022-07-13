@@ -1,0 +1,11 @@
+.reverse{
+  .H-3{
+    margin: 0 0 40px 0;
+  }
+  p{
+    margin: 0 0 30px 0;
+    &:last-child{
+      margin: 0;
+    }
+  }
+}

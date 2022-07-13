@@ -1,5 +1,15 @@
 .caption{
   margin: 118px 0 218px 0;
+  &.align-center{
+    text-align: center;
+  }
+  .par{
+    max-width: 870px;
+    margin: 40px auto 0;
+  }
+  &__img{
+    margin: 100px 0 0 0;
+  }
   @include d($sm){
     margin: 80px 0;
   }
