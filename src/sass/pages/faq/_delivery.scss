@@ -1,5 +1,8 @@
 .delivery{
   margin: 160px 0;
+  @include d($sm){
+    margin: 80px 0;
+  }
   ul{
     overflow: hidden;
     margin: 40px -38px 0;

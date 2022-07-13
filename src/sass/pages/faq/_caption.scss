@@ -1,3 +1,6 @@
 .caption{
   margin: 118px 0 218px 0;
+  @include d($sm){
+    margin: 80px 0;
+  }
 }
