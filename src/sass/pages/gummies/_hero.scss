@@ -79,6 +79,7 @@
 					}
 					.rating{
 						margin: 35px auto 0;
+						max-width: 180px;
 							img{
 								@include imageContain(center top);
 							}

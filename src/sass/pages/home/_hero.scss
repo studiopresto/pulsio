@@ -1,0 +1,36 @@
+.hero.home{
+	z-index: 1;
+		.hero{
+				&-banner{
+					//max-width: 850px;
+					max-width: 1440px;
+					height: 765px;
+					top: 100px;
+						img, picture{
+							@include imageContain(right bottom);
+						}
+						&:after{
+							display: none;
+						}
+						&:before{
+							content: '';
+							position: absolute;
+							inset: -500px -400px -200px -400px;
+							background-repeat: no-repeat;
+							background-image: url(../images/hero/hero-home-shadow.svg);
+							background-position: left top;
+							background-size: contain;
+							z-index: -1;
+							pointer-events: none;
+						}
+				}
+				&-content{
+					height: auto;
+					margin-left: -38px;
+					min-height: 800px;
+						&-title{
+							font-size: 50px;
+						}
+				}
+		}
+}
