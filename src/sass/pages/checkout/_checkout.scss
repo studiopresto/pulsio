@@ -1,7 +1,4 @@
-.checkout,
-.order{
-	background-color: #E4F0FC;
-	position: relative;
+.checkout{
 		&-bg{
 			position: absolute;
 			pointer-events: none;
@@ -306,26 +303,31 @@
 						}
 				}
 		}
+}
+
+.order{
+	background-color: #E4F0FC;
+	position: relative;
 		.basket{
-				&:not(.basket-result){
-					margin-top: -6px;
-					margin-bottom: 34px;
-						@include d($md){
-							margin-bottom: 38px;
-							margin-top: 28px;
-						}
+			&:not(.basket-result){
+				margin-top: -6px;
+				margin-bottom: 34px;
+				@include d($md){
+					margin-bottom: 38px;
+					margin-top: 28px;
 				}
-				&-result{
-					margin-bottom: 25px;
-						@include d($md){
-							margin-bottom: 14px;
-						}
+			}
+			&-result{
+				margin-bottom: 25px;
+				@include d($md){
+					margin-bottom: 14px;
 				}
+			}
 		}
 		.discount{
 			margin-bottom: 15px;
-				@include d($md){
-					margin-bottom: 6px;
-				}
+			@include d($md){
+				margin-bottom: 6px;
+			}
 		}
 }

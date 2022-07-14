@@ -1,0 +1,27 @@
+.stripe{
+
+}
+
+#wc-stripe-cc-form{
+	.form-row{
+		@extend .input-container, .input-container-border;
+	}
+}
+
+.wc-stripe-elements-field,
+.wc-stripe-iban-element-field{
+	height: 52px;
+	padding: 16px !important;
+	margin: 0;
+	border: 1px #D9E5F1 solid !important;
+	border-radius: 8px;
+		&.invalid{
+			border-color: tomato !important;
+		}
+}
+
+.payment_method_stripe{
+		label{
+			top: -4px !important;
+		}
+}

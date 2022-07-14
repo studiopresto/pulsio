@@ -62,13 +62,14 @@
 		&-label{
 			position: absolute;
 			left: 18px;
-			top: -12px;
+			top: -10px;
 			padding: 0 8px;
 			font-size: 12px;
 			font-family: var(--font-medium);
 			color: #A6B4C1;
 			background-color: var(--color-white);
 			text-transform: capitalize;
+			line-height: 2em;
 		}
 		&::-webkit-input-placeholder {
 			color: #B7B7B7;
@@ -93,6 +94,26 @@
 				&:focus{
 					box-shadow: 0 10px 30px rgba(185, 207, 228, 0.2);
 					border-color: #2EAADA;
+				}
+				&[type="text"],
+				&[type="email"],
+				&[type="url"],
+				&[type="password"],
+				&[type="search"],
+				&[type="number"],
+				&[type="tel"],
+				&[type="range"],
+				&[type="date"],
+				&[type="month"],
+				&[type="week"],
+				&[type="time"],
+				&[type="datetime"],
+				&[type="datetime-local"],
+				&[type="color"]{
+					color: inherit;
+					border: 1px #D9E5F1 solid;
+					border-radius: 8px;
+					padding: 0 16px;
 				}
 		}
 		/*

@@ -38,6 +38,12 @@ body{
 				font-size: 12px;
 			}
 		}
+		&-banner{
+			height: 460px;
+				img, picture{
+					@include imageCover(center);
+				}
+		}
 }
 
 .container{
@@ -218,6 +224,25 @@ body{
 						@include d($xs){
 							width: 114px;
 						}
+				}
+		}
+}
+
+.tabs{
+		&-content{
+				&-item{
+					&:not(.is-active){
+						display: none;
+					}
+				}
+		}
+		&-btns{
+		
+		}
+		&-btn{
+			cursor: pointer;
+				&.is-active{
+					color: #6596B1;
 				}
 		}
 }

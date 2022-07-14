@@ -1,0 +1,83 @@
+.story{
+	padding: 10px 0 100px;
+		&-box{
+			border-radius: 32px;
+			overflow: hidden;
+			background-color: var(--color-white);
+			max-width: 418px;
+			color: var(--color-black);
+			padding-bottom: 30px;
+				&-thumb{
+					height: 420px;
+					margin-bottom: 40px;
+						img, picture{
+							@include imageCover(center top);
+						}
+				}
+				&-title{
+					text-align: center;
+					font-size: 20px;
+					font-family: var(--font-semibold);
+					text-transform: uppercase;
+					line-height: 1.1em;
+					padding: 0 20px;
+				}
+				&-subtitle{
+					text-align: center;
+					font-size: 10px;
+					font-family: var(--font-medium);
+					text-transform: uppercase;
+					color: #5B5B5B;
+					padding: 0 20px;
+				}
+				&-description{
+					text-align: center;
+					color: #5B5B5B;
+					padding: 9px 20px;
+					font-size: 12px;
+					line-height: 1.5em;
+					max-width: 385px;
+					margin: 0 auto;
+				}
+		}
+		&-tabs{
+			margin-top: 120px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+				&-item{
+					font-size: 40px;
+					font-family: var(--font-semibold);
+					text-transform: uppercase;
+					padding-left: 24px;
+					position: relative;
+					line-height: 1em;
+					transition: color var(--duration) var(--ease);
+					display: inline-block;
+						&:not(:last-child){
+							margin-bottom: 45px;
+						}
+						&:before{
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 5px;
+							height: 100%;
+							background-color: currentColor;
+							pointer-events: none;
+						}
+						@include hover($md){
+							&:hover{
+								color: #6596B1;
+							}
+						}
+				}
+		}
+		.section{
+			&-title{
+				font-size: 60px;
+				margin-top: 60px;
+			}
+		}
+}

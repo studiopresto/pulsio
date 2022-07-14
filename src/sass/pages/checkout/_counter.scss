@@ -27,5 +27,10 @@
 			text-align: center;
 			font-size: 12px;
 			font-family: var(--font-medium);
+				&[type="number"]{
+					border: none;
+					padding: 0 2px;
+					color: inherit;
+				}
 		}
 }

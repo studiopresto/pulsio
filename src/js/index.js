@@ -15,9 +15,10 @@ import {initReviewsCommentsCarousel} from "./carousel/initReviewsCommentsCarouse
 import {closeNav, toggleNavListener} from "./content/toggleNav";
 import {toggleModal} from "./content/modal/toggleModal";
 import {initParallax} from "./scroll/parallax";
-import {initCounter} from "./content/counter";
+// import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
+import {initTabs} from "./content/tabs/initTabs";
 
 scrollListener();
 initParallax();
@@ -50,9 +51,10 @@ attachmentSwitcher();
 toggleNavListener();
 setStickyBannerPosition();
 toggleModal();
-initCounter();
+// initCounter();
 initInputMask();
 heroBannerParallax();
+initTabs();
 /*
 Validation
  */
