@@ -1,4 +1,97 @@
 .reverse{
+  position: relative;
+  margin: 120px 0;
+  &__img{
+    position: absolute;
+    top: -284px;
+    left: 0;
+    width: 550px;
+    height: 730px;
+    img{
+      position: relative;
+      z-index: 2;
+    }
+    @include d($md){
+      left: initial;
+      right: 0;
+      top: -50px;
+      width: 300px;
+      height: 400px;
+      img{
+        z-index: 1;
+      }
+    }
+    &.bg{
+      &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1000px;
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      &.__grey{
+        &:after{
+          background-image: url("../images/who_we_are/bg_grey.png");
+        }
+      }
+      &.__red{
+        &:after{
+          background-image: url("../images/who_we_are/bg_red.png");
+        }
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    @include d($md){
+      flex-direction: column;
+    }
+  }
+  &__col{
+    position: relative;
+    flex: 0 1 50%;
+    &:first-child{
+      z-index: 2;
+    }
+  }
+  &__description{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    margin: 0 0 0 70px;
+    @include d($md){
+      margin: 270px 0 0 0;
+    }
+    p{
+      $border: 2px;
+      position: relative;
+      padding: 40px;
+      border-radius: 16px;
+      background: #12151E;
+      background-clip: padding-box;
+      color: #949BB0;
+      border: $border solid transparent;
+      &:before{
+        content: '';
+        position: absolute;
+        border-radius: inherit;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, rgba(45, 48, 62, 1), rgba(45, 48, 62, 0));
+        margin: -$border;
+      }
+    }
+  }
   .H-3{
     margin: 0 0 40px 0;
   }

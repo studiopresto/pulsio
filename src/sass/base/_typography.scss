@@ -141,6 +141,14 @@ a{
 	line-height: 59px;
 	font-weight: 700;
 	text-transform: uppercase;
+	@include d($lg){
+		font-size: 38px;
+		line-height: 49px;
+	}
+	@include d($sm){
+		font-size: 28px;
+		line-height: 39px;
+	}
 }
 
 .par{
