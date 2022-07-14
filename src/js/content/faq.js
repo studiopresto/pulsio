@@ -31,13 +31,10 @@ export const showText = () => {
     })
 }
 
-export const countItems = () => {
-    let section =document.querySelector('.delivery')
-    let items = section.querySelectorAll('ul>li');
-    items.forEach(item => {
-
-    })
-    // for(let i = 1; i<=items.length; i++){
-    //     console.log(i)
-    // }
-}
+// export const countItems = () => {
+//     let section =document.querySelector('.delivery')
+//     let items = section.querySelectorAll('ul>li');
+//     for(let i = 0; i <= items.length; i++){
+//         items[i].textContent = `${i+1}`;
+//     }
+// }
