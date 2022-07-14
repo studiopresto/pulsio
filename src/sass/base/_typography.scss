@@ -98,6 +98,18 @@ a{
 //content-pages styles
 
 .H-1{
+	&.mega{
+		font-size: 124px;
+		line-height: 124px;
+		@include d($md){
+			font-size: 80px;
+			line-height: 82px;
+		}
+		@include d($sm){
+			font-size: 60px;
+			line-height: 62px;
+		}
+	}
 	font-size: 80px;
 	line-height: 82px;
 	font-weight: 800;
