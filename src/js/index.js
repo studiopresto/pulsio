@@ -18,7 +18,7 @@ import {initParallax} from "./scroll/parallax";
 import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
-import {showText} from "./content/faq";
+import {countItems, showText} from "./content/faq";
 
 
 scrollListener();
@@ -56,6 +56,7 @@ initCounter();
 initInputMask();
 heroBannerParallax();
 showText();
+countItems();
 /*
 Validation
  */
