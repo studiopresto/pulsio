@@ -1,0 +1,22 @@
+.description{
+  margin: 150px 0 40px 0;
+  @include d($md){
+    margin: 80px 0 20px 0;
+  }
+  &__content{
+    padding: 100px 113px;
+    @include d($md){
+      padding: 50px 60px;
+    }
+    @include d($sm){
+      padding: 40px 20px;
+    }
+    p{
+      @extend .par;
+      margin: 0 0 30px 0;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.editor{
+  margin: 0 0 100px 0;
+  @include d ($md){
+    margin: 0 0 70px 0;
+  }
+  &__content{
+    h1,h2,h3,h4,h5,h6,h7{
+      color: #2EAADA;
+      margin: 60px 0 20px 0;
+    }
+    p{
+      font-size: 16px;
+      line-height: 28px;
+      a{
+        color: #2EAADA;
+      }
+      strong{
+        font-weight: 700;
+      }
+    }
+    ul{
+      li{
+        list-style-type: disc;
+        margin: 0 0 0 20px;
+      }
+    }
+    ol{
+      li{
+        list-style-type: inherit;
+        margin: 0 0 0 20px;
+        &::marker{
+          color: #7E869C;
+        }
+      }
+    }
+  }
+}
