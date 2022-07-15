@@ -43,6 +43,9 @@ body{
 				img, picture{
 					@include imageCover(center);
 				}
+				@include d($xs){
+					height: 56vw;
+				}
 		}
 }
 

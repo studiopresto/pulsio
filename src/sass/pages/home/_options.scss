@@ -32,6 +32,9 @@
 						img, picture{
 							@include imageCover(center);
 						}
+						@include d($xs){
+							border-radius: 24px;
+						}
 				}
 				&-title{
 					position: relative;
@@ -39,6 +42,9 @@
 					font-size: 35px;
 					font-family: var(--font-semibold);
 					margin-bottom: 14px;
+						@include d($xs){
+							font-size: 24px;
+						}
 				}
 				&-description{
 					position: relative;
@@ -47,6 +53,9 @@
 					font-family: var(--font-semibold);
 					max-width: 315px;
 					margin: 0 auto;
+						@include d($xs){
+							font-size: 14px;
+						}
 				}
 				&-action{
 					position: absolute;
@@ -60,6 +69,10 @@
 					justify-content: space-between;
 						.link{
 							text-transform: capitalize;
+						}
+						@include d($xs){
+							bottom: 37px;
+							width: 200px;
 						}
 				}
 				&-btn{
@@ -79,6 +92,9 @@
 								transform: rotate(-45deg);
 							}
 						}
+						@include d($xs){
+							display: none;
+						}
 				}
 				&:before{
 					content: '';
@@ -88,5 +104,20 @@
 					border-radius: 50px;
 					pointer-events: none;
 				}
+				@include d($lg){
+					height: 490px;
+				}
+				@include d($md){
+					height: 75vw;
+				}
+				@include d($xs){
+					height: 92vw;
+					border-radius: 24px;
+					padding: 75px 40px 60px;
+					margin-bottom: 55px;
+				}
+		}
+		@include d($xs){
+			padding-bottom: 15px;
 		}
 }

@@ -1,0 +1,5 @@
+.reviews.home{
+		@include d($xs){
+			padding: 55px 0 40px;
+		}
+}

@@ -13,6 +13,10 @@
 						img, picture{
 							@include imageCover(center top);
 						}
+						@include d($xs){
+							height: 345px;
+							margin-bottom: 25px;
+						}
 				}
 				&-title{
 					text-align: center;
@@ -39,6 +43,12 @@
 					max-width: 385px;
 					margin: 0 auto;
 				}
+				@include d($md){
+					margin: 0 auto;
+				}
+				@include d($xs){
+					padding-bottom: 15px;
+				}
 		}
 		&-tabs{
 			margin-top: 120px;
@@ -56,6 +66,9 @@
 					display: inline-block;
 						&:not(:last-child){
 							margin-bottom: 45px;
+								@include d($sm){
+									margin-bottom: 28px;
+								}
 						}
 						&:before{
 							content: '';
@@ -72,12 +85,46 @@
 								color: #6596B1;
 							}
 						}
+						@include d($xl){
+							font-size: 34px;
+						}
+						@include d($sm){
+							font-size: 30px;
+						}
+						@include d($xs){
+							font-size: 20px;
+							padding-left: 18px;
+						}
+				}
+				@include d($md){
+					margin-top: 50px;
+					margin-bottom: 50px;
+				}
+				@include d($xs){
+					margin-top: 30px;
+					margin-bottom: 42px;
 				}
 		}
 		.section{
 			&-title{
 				font-size: 60px;
 				margin-top: 60px;
+					@include d($xl){
+						font-size: 54px;
+					}
+					@include d($lg){
+						font-size: 48px;
+					}
+					@include d($md){
+						font-size: 44px;
+					}
+					@include d($sm){
+						font-size: 36px;
+					}
+					@include d($xs){
+						font-size: 23px;
+						margin-top: 83px;
+					}
 			}
 		}
 }

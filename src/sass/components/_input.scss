@@ -70,6 +70,12 @@
 			background-color: var(--color-white);
 			text-transform: capitalize;
 			line-height: 2em;
+				@include d($xs){
+					left: 12px;
+					padding: 0 3px;
+					font-size: 10px;
+					line-height: 2.3em;
+				}
 		}
 		&::-webkit-input-placeholder {
 			color: #B7B7B7;

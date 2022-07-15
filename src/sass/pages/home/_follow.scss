@@ -1,3 +1,113 @@
 .follow{
-
+	padding: 56px 0;
+		&-list{
+			display: flex;
+			flex-wrap: wrap;
+				&-item{
+					height: 700px;
+					position: relative;
+					width: calc(100% - 8px);
+					margin: 4px;
+						&:not(:last-child){
+							width: calc(50% - 8px);
+							height: 400px;
+								@include d($lg){
+									height: 350px;
+								}
+								@include d($sm){
+									width: 100%;
+									height: 70vw;
+								}
+								@include d($xs){
+									height: 56vw;
+								}
+						}
+						&:last-child{
+							.follow-action{
+								transform: translate(0,-50%);
+								left: 80px;
+								top: 48%;
+									.btn{
+											&-border{
+												@include d($xs){
+													width: 100%;
+													height: 60px;
+													line-height: 60px;
+												}
+											}
+									}
+									@include d($xs){
+										left: 50%;
+										transform: translate(-50%,0);
+										top: auto;
+										bottom: 26px;
+									}
+							}
+						}
+						@include d($lg){
+							height: 600px;
+						}
+						@include d($sm){
+							height: 100vw;
+						}
+						@include d($xs){
+							height: 97vw;
+						}
+				}
+		}
+		&-thumb{
+			position: absolute;
+			inset: 0;
+				img, picture{
+					@include imageCover(center);
+				}
+		}
+		&-action{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+				&-box{
+					background: linear-gradient(137.48deg, rgba(105, 152, 178, 0.48) 15.13%, rgba(123, 123, 123, 0.48) 87.01%);
+					box-shadow: 0 4px 50px rgba(0, 0, 0, 0.49);
+					backdrop-filter: blur(41.9417px);
+					border-radius: 30px;
+					padding: 60px 42px 40px;
+					text-align: center;
+					color: var(--color-white);
+					max-width: 310px;
+					width: 100%;
+					border: 3px #6897B2 solid;
+						.btn{
+								&-border{
+									box-shadow: none;
+									border-color: var(--color-white);
+									border-width: 1px;
+									background: linear-gradient(137.48deg, rgba(105, 152, 178, 0.48) 15.13%, rgba(123, 123, 123, 0.48) 87.01%);
+									backdrop-filter: none;
+										@include hover($md){
+											&:hover{
+												background: linear-gradient(137.48deg, rgba(105, 152, 178, 0.48) 15.13%, rgba(123, 123, 123, 0.48) 87.01%);
+											}
+										}
+								}
+						}
+						@include d($xs){
+							padding: 24px 37px 30px;
+						}
+				}
+				&-title{
+					font-size: 25px;
+					font-family: var(--font-bold);
+					margin-bottom: 20px;
+						@include d($xs){
+							font-size: 16px;
+							margin: 0 auto 20px;
+							max-width: 200px;
+						}
+				}
+		}
+		@include d($xs){
+			padding: 10px 0;
+		}
 }

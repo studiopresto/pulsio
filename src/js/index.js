@@ -19,6 +19,7 @@ import {initParallax} from "./scroll/parallax";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
 import {initTabs} from "./content/tabs/initTabs";
+import {initChooseCarousel} from "./carousel/initChooseCarousel";
 
 scrollListener();
 initParallax();
@@ -40,6 +41,7 @@ initProductCarousel();
 initReviewsCarousel();
 initCompareCarousel();
 initReviewsCommentsCarousel();
+initChooseCarousel();
 
 /*
 Content

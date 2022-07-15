@@ -1,0 +1,14 @@
+.peace.home{
+	padding: 100px 0 120px;
+		.peace{
+			&-list{
+				padding-top: 35px;
+					@include d($xs){
+						padding-top: 22px;
+					}
+			}
+		}
+		@include d($xs){
+			padding: 36px 0 120px;
+		}
+}
