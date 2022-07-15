@@ -168,6 +168,13 @@ a{
 	line-height: 28px;
 	font-weight: 500;
 	color: #fff;
+	a{
+		color: #2EAADA;
+		transition: 300ms;
+		&:hover{
+			opacity: .7;
+		}
+	}
 	&-sm{
 		font-size: 18px;
 		line-height: 30px;

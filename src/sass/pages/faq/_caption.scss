@@ -1,11 +1,14 @@
 .caption{
   margin: 118px 0 0 0;
+  .par{
+    margin: 40px 0 0 0;
+  }
   &.align-center{
     text-align: center;
-  }
-  .par{
-    max-width: 870px;
-    margin: 40px auto 0;
+    .par{
+      max-width: 870px;
+      margin: 40px auto 0;
+    }
   }
   &__img{
     position: relative;
