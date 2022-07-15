@@ -27,6 +27,26 @@
     @include d($md){
       margin: 30px -28px 0;
     }
+    &.counter-list{
+      li{
+        counter-increment: step-counter;
+        &:before {
+          content: counter(step-counter);
+          padding: 4px;
+          position: absolute;
+          z-index: -1;
+          top: -70px;
+          left: 0;
+          font-size: 200px;
+          line-height: 200px;
+          font-weight: 800;
+          color: #000;
+          background: linear-gradient(180deg, rgba(73, 82, 114, 1), rgba(50, 56, 78, 0));
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 3px transparent;
+        }
+      }
+    }
     li{
       position: relative;
       &.show-text{
@@ -48,7 +68,6 @@
           }
         }
       }
-      counter-increment: step-counter;
       margin: 40px 38px;
       width: calc((100% - (38px * 6))/ 3);
       @include d($md){
@@ -98,21 +117,6 @@
           background-size: 12px 12px;
           background-position: center center;
         }
-      }
-      &:before {
-        content: counter(step-counter);
-        padding: 4px;
-        position: absolute;
-        z-index: -1;
-        top: -90px;
-        left: 0;
-        font-size: 200px;
-        line-height: 200px;
-        font-weight: 800;
-        color: #000;
-        background: linear-gradient(180deg, rgba(73, 82, 114, 1), rgba(50, 56, 78, 0));
-        -webkit-background-clip: text;
-        -webkit-text-stroke: 3px transparent;
       }
     }
   }
