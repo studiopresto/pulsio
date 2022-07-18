@@ -75,7 +75,7 @@ module.exports = {
 		port: 3000,
 	},
 	plugins: [
-		...buildHTML(['index', 'checkout', 'elite', 'gummies', 'faq', 'who_we_are', 'buying_guide', 'refunds_and_returns', 'privacy']),
+		...buildHTML(['index', 'checkout', 'elite', 'gummies', 'faq', 'who_we_are', 'buying_guide', 'refunds_and_returns', 'privacy', 'what_we_do']),
 		// new CleanWebpackPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
