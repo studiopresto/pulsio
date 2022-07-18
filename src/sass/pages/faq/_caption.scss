@@ -3,6 +3,27 @@
   .par{
     margin: 40px 0 0 0;
   }
+  .mod-text{
+    padding: 27px 0 0 0;
+    margin: 100px 0 0 100px;
+    max-width: 415px;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 144px;
+      background: #2EAADA;
+      border-radius: 5px;
+    }
+    @include d($md){
+      margin: 60px 0 0 0;
+    }
+  }
   &.align-center{
     text-align: center;
     .par{
@@ -21,6 +42,21 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(180deg, rgba(13, 15, 22, 0) 0%, #0D0F16 100%);
+    }
+    &.absolute-img{
+      position: absolute;
+      z-index: -1;
+      margin: 0 0 0 262px;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 705px;
+      height: 635px;
+      @include d($md){
+        width: 600px;
+        height: 400px;
+        margin: 0 0 0 162px;
+      }
     }
   }
   @include d($sm){
