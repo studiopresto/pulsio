@@ -19,6 +19,7 @@ import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
 import {showText} from "./content/faq";
+import {initPaginationCarousel} from "./carousel/initPaginationCarousel";
 
 
 scrollListener();
@@ -41,6 +42,7 @@ initProductCarousel();
 initReviewsCarousel();
 initCompareCarousel();
 initReviewsCommentsCarousel();
+initPaginationCarousel();
 
 /*
 Content

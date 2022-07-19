@@ -1,4 +1,25 @@
 .splide{
+	&.pagination-carousel{
+		.splide{
+			&__arrows{
+				top: 13px;
+				right: 0;
+				height: 18px;
+				left: initial;
+				transform: initial;
+				margin: 0 -50px;
+			}
+			&__arrow{
+				background: initial;
+				border: initial;
+				border-radius: initial;
+				padding: 0;
+				width: 11px;
+				height: 18px;
+				margin: 0 50px;
+			}
+		}
+	}
 		&__pagination{
 			position: absolute;
 			bottom: 8px;
@@ -23,6 +44,9 @@
 				.is-active{
 					background-color: var(--color-primary);
 				}
+			&.pagination-fraction{
+				display: none;
+			}
 		}
 		&__arrows{
 			position: absolute;
@@ -51,5 +75,13 @@
 						background-color: var(--color-primary);
 					}
 				}
+		}
+		&__fractions{
+			text-align: right;
+			font-size: 36px;
+			line-height: 44px;
+			font-weight: 600;
+			margin: 0 0 63px 0;
+			padding: 0 40px 0 0;
 		}
 }
