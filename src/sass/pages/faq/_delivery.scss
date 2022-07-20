@@ -21,11 +21,11 @@
   }
   ul{
     overflow: hidden;
-    margin: 40px -38px 0;
+    margin: 72px -8px 0;
     display: flex;
     flex-wrap: wrap;
     @include d($md){
-      margin: 30px -28px 0;
+      margin: 22px -8px 0;
     }
     &.counter-list{
       li{
@@ -49,6 +49,11 @@
     }
     li{
       position: relative;
+      border: 1.5px solid #EFF0F4;
+      border-radius: 16px;
+      padding: 40px;
+      margin: 8px;
+      width: calc((100% - (8px * 6))/ 3);
       &.show-text{
         p{
           max-height: 132px;
@@ -68,14 +73,11 @@
           }
         }
       }
-      margin: 40px 38px;
-      width: calc((100% - (38px * 6))/ 3);
       @include d($md){
-        margin: 30px 28px;
-        width: calc((100% - (28px * 4))/ 2);
+        width: calc((100% - (8px * 4))/ 2);
       }
       @include d($sm){
-        width: calc((100% - (28px * 2)));
+        width: calc((100% - (8px * 2)));
       }
       p, strong{
         margin: 0 0 32px 0;
@@ -89,7 +91,7 @@
       strong{
         min-height: 60px;
         text-transform: capitalize;
-        color: #fff;
+        color: var(--color-black-dark);
         font-size: 20px;
         line-height: 30px;
         font-weight: 700;

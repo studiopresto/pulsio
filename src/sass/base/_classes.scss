@@ -166,7 +166,8 @@
       //    -webkit-text-fill-color: transparent;
       //  }
         &-left{
-          background: linear-gradient(90deg, #6595B0 31.89%, #FFFFFF 78.96%), #FFFFFF;          -webkit-background-clip: text;
+          background: linear-gradient(90deg, #6595B0 31.89%, #3A4467 78.96%), #494949;
+          -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
       }
