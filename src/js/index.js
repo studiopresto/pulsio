@@ -43,7 +43,6 @@ initReviewsCarousel();
 initCompareCarousel();
 initReviewsCommentsCarousel();
 initPaginationCarousel();
-
 /*
 Content
  */

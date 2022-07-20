@@ -1,13 +1,86 @@
 .splide{
 	&.pagination-carousel{
+		margin: 140px 0;
+		@include d($sm){
+			padding: 0 0 64px 0;
+		}
+		@include d($md){
+			margin: 80px 0;
+		}
 		.splide{
+			&__top{
+				position: relative;
+				display: flex;
+				align-items: center;
+				height: 78px;
+				margin: 0 0 60px 0;
+				@include d($sm){
+					position: static;
+					margin: 0 0 40px 0;
+					height: initial;
+				}
+			}
+			&__title{
+				font-size: 64px;
+				line-height: 78px;
+				font-weight: 800;
+				text-transform: uppercase;
+				@include d($lg){
+					font-size: 48px;
+				}
+				@include d($sm){
+					font-size: 32px;
+					line-height: 34px;
+				}
+			}
+			&__slide{
+				height: inherit;
+				max-height: 100%;
+				&.reviews-carousel-item{
+					background: initial;
+				}
+				.video{
+					height: 240px;
+				}
+				strong{
+					display: block;
+					font-size: 20px;
+					line-height: 24px;
+					font-weight: 600;
+					margin: 24px 0 0 0;
+					@include d($sm){
+						text-align: center;
+					}
+				}
+				p{
+					font-size: 15px;
+					line-height: 22px;
+					color: #727683;
+					margin: 8px 0 0 0;
+					@include d($sm){
+						text-align: center;
+					}
+				}
+			}
 			&__arrows{
-				top: 13px;
+				top: 30px;
 				right: 0;
 				height: 18px;
 				left: initial;
-				transform: initial;
+				transform: inherit;
 				margin: 0 -50px;
+				@include d($sm){
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					top: initial;
+					bottom: 0;
+					margin: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 82px;
+					height: 24px;
+				}
 			}
 			&__arrow{
 				background: initial;
@@ -17,6 +90,26 @@
 				width: 11px;
 				height: 18px;
 				margin: 0 50px;
+				@include d($sm){
+					margin: 0;
+				}
+			}
+			&__fractions{
+				flex: 0 1 100%;
+				text-align: right;
+				font-size: 36px;
+				line-height: 44px;
+				font-weight: 600;
+				padding: 0 40px 0 0;
+				@include d($sm){
+					position: absolute;
+					font-size: 20px;
+					line-height: 24px;
+					bottom: 0;
+					padding: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
 			}
 		}
 	}
@@ -75,13 +168,5 @@
 						background-color: var(--color-primary);
 					}
 				}
-		}
-		&__fractions{
-			text-align: right;
-			font-size: 36px;
-			line-height: 44px;
-			font-weight: 600;
-			margin: 0 0 63px 0;
-			padding: 0 40px 0 0;
 		}
 }
