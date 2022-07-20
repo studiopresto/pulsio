@@ -1,0 +1,118 @@
+.attachment.extension{
+	padding: 130px 0 202px;
+		&:before{
+			background: linear-gradient(180deg, #6794AD 0%, #E8F9FF 100%);
+		}
+		.attachment{
+				&-box{
+					margin-left: 0;
+					max-width: 532px;
+					padding: 58px 60px 40px;
+						.h-1{
+							line-height: 1.2em;
+						}
+						.paragraph{
+							font-size: 16px;
+							padding-top: 9px;
+							max-width: 380px;
+								@include d($md){
+									max-width: 100%;
+								}
+						}
+						.tags{
+							margin-top: 32px;
+						}
+						@include d($md){
+							max-width: 100%;
+							padding: 1px 25px 25px;
+						}
+				}
+				&-switcher{
+					padding-top: 52px;
+				}
+				&-points{
+						&-icon{
+							width: 56px;
+							height: 56px;
+						}
+						&-item{
+							&:nth-child(1){
+								width: 232px;
+								height: auto;
+								top: 16%;
+								left: 31.6%;
+									.attachment-points-icon{
+										top: 22%;
+										left: 37%;
+									}
+									@include d($xl){
+										top: 6%;
+										left: 22.6%;
+									}
+									@include d($xs){
+										width: 182px;
+										top: -7%;
+									}
+							}
+							&:nth-child(2){
+								width: 224px;
+								height: auto;
+								top: 42.7%;
+								left: -7.5%;
+									.attachment-points-icon{
+										top: 30%;
+										left: 61%;
+									}
+									@include d($md){
+										left: 1.5%;
+									}
+									@include d($xs){
+										width: 174px;
+										left: -7.5%;
+										top: 26.7%;
+									}
+							}
+							&:nth-child(3){
+								width: 232px;
+								height: auto;
+								top: 61.7%;
+								left: 25.7%;
+									.attachment-points-icon{
+										top: 34%;
+										left: 74%;
+									}
+									@include d($xl){
+										left: 35.7%;
+									}
+									@include d($xs){
+										width: 182px;
+										left: 25.7%;
+										top: 57.7%;
+									}
+							}
+							&:nth-child(4){
+								width: 226px;
+								height: auto;
+								top: 40%;
+								left: 65%;
+									.attachment-points-icon{
+										top: 13%;
+										left: 54%;
+									}
+									@include d($xl){
+										top: 33%;
+									}
+									@include d($xs){
+										width: 176px;
+										top: 25%;
+										left: 53%;
+									}
+							}
+						}
+						@include d($md){
+							margin-left: auto;
+							margin-right: auto;
+						}
+				}
+		}
+}

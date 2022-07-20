@@ -11,9 +11,11 @@ export const toggleNavListener = () => {
 
 export const openNav = () => {
 	const burger = document.querySelector('.burger');
-	if (!!burger) {
+	const header = document.querySelector('.header');
+	if (!!burger && !!header) {
 		const nav = document.querySelector('.header .nav');
 		burger.classList.add('is-active');
+		header.classList.add('is-open-nav');
 		Tween.set(nav, {
 			display: 'flex',
 			onComplete: () => {
@@ -27,8 +29,10 @@ export const openNav = () => {
 
 export const closeNav = () => {
 	const burger = document.querySelector('.burger');
-	if (!!burger) {
+	const header = document.querySelector('.header');
+	if (!!burger && !!header) {
 		burger.classList.remove('is-active');
+		header.classList.remove('is-open-nav');
 		const nav = document.querySelector('.header .nav');
 		Tween.to(nav, {
 			opacity: 0,

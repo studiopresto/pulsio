@@ -249,3 +249,23 @@ body{
 				}
 		}
 }
+
+.tags{
+	display: flex;
+	flex-wrap: wrap;
+		&-item{
+			display: inline-block;
+			font-size: 12px;
+			font-family: var(--font-semibold);
+			color: #024E78;
+			text-transform: uppercase;
+			padding: 10px 16px;
+			border-radius: 50px;
+			background-color: #E7F8FF;
+			line-height: 1em;
+			margin-bottom: 8px;
+				&:not(:last-child){
+					margin-right: 8px;
+				}
+		}
+}

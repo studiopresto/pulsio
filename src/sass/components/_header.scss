@@ -38,6 +38,21 @@
 					margin-top: 10px;
 				}
 		}
+		&.is-open-nav{
+			color: var(--color-white);
+		}
+		/*
+		Themes
+		 */
+		&-dark{
+			color: var(--color-black);
+				.burger{
+					color: inherit;
+						&.is-active{
+							color: var(--color-white);
+						}
+				}
+		}
 		.nav{
 				.link{
 					@include d($md){
