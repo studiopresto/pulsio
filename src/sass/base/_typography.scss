@@ -164,6 +164,20 @@ a{
 	}
 }
 
+.H-4{
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 600;
+	@include d($lg){
+		font-size: 30px;
+		line-height: 32px;
+	}
+	@include d($sm){
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
 .par{
 	font-size: 20px;
 	line-height: 28px;
