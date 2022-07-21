@@ -18,7 +18,7 @@ import {initParallax} from "./scroll/parallax";
 import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
-import {showMenu, showText} from "./content/faq";
+import {showMenu, showText, textBG} from "./content/faq";
 import {initPaginationCarousel} from "./carousel/initPaginationCarousel";
 
 
@@ -58,6 +58,7 @@ initInputMask();
 heroBannerParallax();
 showText();
 showMenu();
+textBG();
 /*
 Validation
  */

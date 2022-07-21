@@ -35,12 +35,36 @@ export const showMenu = () => {
     document.addEventListener('DOMContentLoaded', function () {
         let sections = document.querySelectorAll('.delivery');
         sections.forEach(section => {
-            let title = section.querySelector('.H-2');
+            let title = section.querySelector('.delivery__title');
             if(section){
                 title.onclick = () => {
                     section.classList.toggle('active');
                 }
             }
+        })
+    })
+}
+
+export const textBG = () => {
+    document.addEventListener('DOMContentLoaded', function () {
+        let sectionsDelivery = document.querySelectorAll('.delivery');
+        sectionsDelivery.forEach(section => {
+            let title = section.querySelector('.H-2');
+            let titlesArray = '';
+                for(let i = 0; i < 15; i++){
+                    titlesArray += title.textContent + '';
+                }
+                let addText = () => {
+                    let leftText = section.querySelector('.delivery__title-left');
+                    let rightText = section.querySelector('.delivery__title-right');
+                    leftText.innerHTML = titlesArray;
+                    rightText.innerHTML = titlesArray;
+                    let titleWidth = title.offsetWidth + 10 + 'px';
+                    rightText.style.right = 'initial';
+                    rightText.style.left = titleWidth;
+                }
+            addText()
+            window.addEventListener('resize', addText)
         })
     })
 }
