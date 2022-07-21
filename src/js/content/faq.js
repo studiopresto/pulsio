@@ -31,10 +31,16 @@ export const showText = () => {
     })
 }
 
-// export const countItems = () => {
-//     let section =document.querySelector('.delivery')
-//     let items = section.querySelectorAll('ul>li');
-//     for(let i = 0; i <= items.length; i++){
-//         items[i].textContent = `${i+1}`;
-//     }
-// }
+export const showMenu = () => {
+    document.addEventListener('DOMContentLoaded', function () {
+        let sections = document.querySelectorAll('.delivery');
+        sections.forEach(section => {
+            let title = section.querySelector('.H-2');
+            if(section){
+                title.onclick = () => {
+                    section.classList.toggle('active');
+                }
+            }
+        })
+    })
+}
