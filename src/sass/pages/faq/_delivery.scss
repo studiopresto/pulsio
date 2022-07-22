@@ -50,9 +50,20 @@
     @include d($md){
       margin: 22px -8px 0;
     }
+    &.no-border{
+      li{
+        border: initial;
+      }
+    }
     &.counter-list{
       li{
         counter-increment: step-counter;
+        &.no-counting{
+          counter-increment: none;
+          &:before{
+            content: '';
+          }
+        }
         &:before {
           content: counter(step-counter);
           padding: 4px;
@@ -63,8 +74,8 @@
           font-size: 200px;
           line-height: 200px;
           font-weight: 800;
-          color: #000;
-          background: linear-gradient(180deg, rgba(73, 82, 114, 1), rgba(50, 56, 78, 0));
+          color: #fff;
+          background: linear-gradient(180deg, rgba(73, 82, 114, 0.15), rgba(50, 56, 78, 0));
           -webkit-background-clip: text;
           -webkit-text-stroke: 3px transparent;
         }
@@ -79,6 +90,43 @@
       width: calc((100% - (8px * 6))/ 3);
       align-self: flex-start;
       min-height: 365px;
+      .img-mode{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 500px;
+        height: 550px;
+        img{
+          position: relative;
+          z-index: 2;
+        }
+        //&:after{
+        //  content: '';
+        //  position: absolute;
+        //  top: 50%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+        //  width: 500px;
+        //  height: 500px;
+        //  background-repeat: no-repeat;
+        //  background-position: center;
+        //}
+        //&.__grey{
+        //  &:after{
+        //    background: radial-gradient(circle, rgba(217,217,217,1) 0%, rgba(255,255,255,0) 100%);
+        //  }
+        //}
+        //&.__grey-dark{
+        //  &:after{
+        //    background-image: url("../images/who_we_are/bg_grey-dark.png");
+        //  }
+        //}
+        //&.__red{
+        //  &:after{
+        //    background-image: url("../images/who_we_are/bg_red.png");
+        //  }
+        //}
+      }
       &.show-text{
         p{
           max-height: 132px;
