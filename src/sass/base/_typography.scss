@@ -100,3 +100,112 @@ a{
 			text-decoration: none;
 		}
 }
+
+//content-pages styles
+
+.H-1{
+	&.mega{
+		font-size: 124px;
+		line-height: 124px;
+		@include d($md){
+			font-size: 80px;
+			line-height: 82px;
+		}
+		@include d($sm){
+			font-size: 60px;
+			line-height: 62px;
+		}
+	}
+	font-size: 80px;
+	line-height: 82px;
+	font-weight: 800;
+	@include d($lg){
+		font-size: 60px;
+		line-height: 62px;
+	}
+	@include d($sm){
+		font-size: 50px;
+		line-height: 52px;
+	}
+	@include d($xs){
+		font-size: 40px;
+		line-height: 42px;
+	}
+}
+
+.H-2{
+	font-size: 62px;
+	line-height: 78px;
+	font-weight: 800;
+	color: var(--color-dark-grey);
+	&.uppercase{
+		text-transform: uppercase;
+	}
+	@include d($lg){
+		font-size: 52px;
+		line-height: 68px;
+	}
+	@include d($sm){
+		font-size: 42px;
+		line-height: 58px;
+	}
+	@include d($xs){
+		font-size: 32px;
+		line-height: 48px;
+	}
+}
+
+.H-3{
+	font-size: 48px;
+	line-height: 59px;
+	font-weight: 700;
+	text-transform: uppercase;
+	@include d($lg){
+		font-size: 38px;
+		line-height: 49px;
+	}
+	@include d($sm){
+		font-size: 28px;
+		line-height: 39px;
+	}
+}
+
+.H-4{
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 600;
+	@include d($lg){
+		font-size: 30px;
+		line-height: 32px;
+	}
+	@include d($sm){
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+.par{
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #fff;
+	a{
+		color: #2EAADA;
+		transition: 300ms;
+		&:hover{
+			opacity: .7;
+		}
+	}
+	&-sm{
+		font-size: 18px;
+		line-height: 30px;
+		@include d($sm){
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	@include d($sm){
+		font-size: 18px;
+		line-height: 22px;
+	}
+}

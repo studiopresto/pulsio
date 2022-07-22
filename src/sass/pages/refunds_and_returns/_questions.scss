@@ -1,0 +1,55 @@
+.questions{
+  margin: 200px 0;
+  @include d($md){
+    margin: 80px 0 0 0;
+  }
+  &__content{
+    display: flex;
+    @include d ($md){
+      flex-direction: column;
+    }
+  }
+  &__img{
+    flex: 0 1 30%;
+    height: 746px;
+    img{
+      width: 100%;
+      height: 100%;
+      max-height: initial;
+      max-width: initial;
+      object-fit: cover;
+    }
+    @include d ($md){
+      position: relative;
+      flex: initial;
+      order: 2;
+      margin: 77px 0 0 0;
+      img{
+        position: absolute;
+        width: 100vw;
+        left: -15px;
+        object-fit: cover;
+      }
+    }
+  }
+  .delivery{
+    flex: 0 1 70%;
+    margin: 0 0 0 64px;
+    padding: 0;
+    border-bottom: 0;
+    @include d($md){
+      flex: 0 1 100%;
+      margin: 0;
+    }
+    ul{
+      margin: -8px;
+      li{
+        width: calc((100% - (8px * 4))/ 2);
+        margin: 8px;
+        @include d($md){
+          width: calc(100% - (8px * 2));
+        }
+      }
+    }
+  }
+}

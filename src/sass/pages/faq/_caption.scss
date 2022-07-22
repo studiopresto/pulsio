@@ -1,0 +1,82 @@
+.caption{
+  margin: 118px 0 0 0;
+  .par{
+    color: #B2B2B2;
+    margin: 40px 0 0 0;
+  }
+  .mod-text{
+    padding: 27px 0 0 0;
+    margin: 100px 0 0 100px;
+    max-width: 415px;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D0F16;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 144px;
+      background: #2EAADA;
+      border-radius: 5px;
+    }
+    @include d($md){
+      margin: 60px 0 0 0;
+    }
+  }
+  &.align-center{
+    text-align: center;
+    .par{
+      max-width: 870px;
+      margin: 40px auto 0;
+    }
+  }
+  &__img{
+    position: relative;
+    margin: 100px 0 0 0;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(13, 15, 22, 0) 0%, #0D0F16 100%);
+    }
+    &.white-gradient{
+      &:before{
+        content: '';
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      }
+    }
+    &.absolute-img{
+      position: absolute;
+      z-index: -1;
+      margin: 0 0 0 332px;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 705px;
+      height: 635px;
+      @include d($md){
+        position: static;
+        transform: initial;
+        top: 0;
+        width: 335px;
+        height: 300px;
+        margin: 50px auto 0;
+      }
+      @include d($sm){
+        width: 320px;
+      }
+      &:before{
+        display: none;
+      }
+    }
+  }
+  @include d($sm){
+    margin: 80px 0;
+  }
+}

@@ -4,6 +4,24 @@ body{
 	font-family: var(--font-regular);
 	line-height: 1.714em;
 	font-size: 14px;
+	&.white-theme{
+		background-color: var(--color-white);
+		background-image: url("../images/bg-inners-grey.png");
+		background-size: contain;
+		background-position: top;
+		background-repeat: no-repeat;
+		.header{
+			color: #000;
+			.burger-box-arrow{
+				color: var(--color-black-bg);
+			}
+			nav{
+				@include d($md){
+					background-color: var(--color-white);
+				}
+			}
+		}
+	}
 }
 
 .theme{

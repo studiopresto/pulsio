@@ -15,11 +15,13 @@ import {initReviewsCommentsCarousel} from "./carousel/initReviewsCommentsCarouse
 import {closeNav, toggleNavListener} from "./content/toggleNav";
 import {toggleModal} from "./content/modal/toggleModal";
 import {initParallax} from "./scroll/parallax";
-// import {initCounter} from "./content/counter";
+import {initCounter} from "./content/counter";
 import {initInputMask} from "./content/input/initInputMask";
 import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
-import {initTabs} from "./content/tabs/initTabs";
-import {initChooseCarousel} from "./carousel/initChooseCarousel";
+import {showMenu, showText, textBG} from "./content/faq";
+import {initPaginationCarousel} from "./carousel/initPaginationCarousel";
+import {showMenuPrivacy} from "./content/privacy";
+
 
 scrollListener();
 initParallax();
@@ -41,8 +43,7 @@ initProductCarousel();
 initReviewsCarousel();
 initCompareCarousel();
 initReviewsCommentsCarousel();
-initChooseCarousel();
-
+initPaginationCarousel();
 /*
 Content
  */
@@ -53,10 +54,13 @@ attachmentSwitcher();
 toggleNavListener();
 setStickyBannerPosition();
 toggleModal();
-// initCounter();
+initCounter();
 initInputMask();
 heroBannerParallax();
-initTabs();
+showText();
+showMenu();
+textBG();
+showMenuPrivacy();
 /*
 Validation
  */
@@ -75,4 +79,4 @@ window.addEventListener('scroll', () => {
 	window.innerWidth < 992 ? closeNav() :null;
 });
 
-//a2antknoazlkrrjkyxemov37vghjugv7rslrdtfsex5omjt227nq
+//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

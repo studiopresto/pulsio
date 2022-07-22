@@ -1,0 +1,78 @@
+.editor{
+  margin: 0 0 100px 0;
+  color: rgba(13, 15, 22, 1);
+  @include d ($md){
+    margin: 0 0 70px 0;
+  }
+  &__content{
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid #EFF0F4;
+    &.active{
+      .editor{
+        &__content{
+          &-title{
+            &:before{
+              transform: translateY(-50%) rotateX(180deg);
+            }
+          }
+          &-list{
+            max-height: 100%;
+          }
+        }
+      }
+    }
+    &-title{
+      cursor: pointer;
+      position: relative;
+      padding: 0 30px 0 0;
+      &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        box-shadow: 0px 10px 30px rgba(47, 53, 77, 0.05);
+        background-image: url("../images/faq/down-arrow-black.svg");
+        background-size: 24px 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 300ms;
+      }
+      h1,h2,h3,h4,h5,h6,h7{
+        margin: 60px 0 20px 0;
+      }
+    }
+    &-list{
+      max-height: 0;
+      overflow: hidden;
+      p{
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0 0 20px 0;
+        a{
+          color: #2EAADA;
+        }
+        strong{
+          font-weight: 700;
+        }
+      }
+      ul{
+        li{
+          list-style-type: disc;
+          margin: 0 0 20px 20px;
+        }
+      }
+      ol{
+        li{
+          list-style-type: inherit;
+          margin: 0 0 20px 20px;
+          &::marker{
+            color: #7E869C;
+          }
+        }
+      }
+    }
+  }
+}
