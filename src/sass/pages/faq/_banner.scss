@@ -7,6 +7,18 @@
     padding: 50px;
     border-radius: 24px;
     overflow: hidden;
+    @include d ($md){
+      padding: 50px 50px 270px;
+      text-align: center;
+      flex-direction: column;
+    }
+    @include d ($xs){
+      text-align: center;
+      flex-direction: column;
+    }
+    @include d ($xxs){
+      padding: 30px 30px 270px;
+    }
     &:before{
       content: '';
       position: absolute;
@@ -30,32 +42,54 @@
     }
     &:nth-child(1){
       margin: 0 220px 0 0;
-      flex: 0 1 60%;
+      flex: 0 1 65%;
+      @include d ($md){
+        margin: 0;
+      }
     }
     &:nth-child(2){
-      flex: 0 1 40%;
+      flex: 0 1 35%;
       display: flex;
       align-items: center;
       a{
         display: inline-block;
+        text-align: center;
+        white-space: nowrap;
         font-size: 18px;
         line-height: 26px;
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
-        padding: 22px 59px;
+        padding: 22px;
+        max-width: 243px;
+        width: 100%;
         border-radius: 50px;
         background: #2EAADA;
+      }
+      @include d ($md){
+        a{
+          margin: 24px auto 0;
+        }
       }
     }
   }
   &__bg-img{
     position: absolute;
     bottom: 0;
-    left: 456px;
-    width: 440px;
+    right: 270px;
+    width: auto;
     height: 320px;
-    max-height: initial;
-    max-width: initial;
+    img{
+      max-width: initial;
+      max-height: initial;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include d ($md){
+      right: 50%;
+      transform: translateX(50%);
+      height: 250px;
+    }
   }
 }
