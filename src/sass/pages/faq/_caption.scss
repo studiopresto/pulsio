@@ -11,6 +11,7 @@
     position: relative;
     font-size: 16px;
     line-height: 24px;
+    color: #0D0F16;
     &:before{
       content: '';
       position: absolute;
@@ -53,16 +54,25 @@
     &.absolute-img{
       position: absolute;
       z-index: -1;
-      margin: 0 0 0 262px;
+      margin: 0 0 0 332px;
       top: -80px;
       left: 50%;
       transform: translateX(-50%);
       width: 705px;
       height: 635px;
       @include d($md){
-        width: 600px;
-        height: 400px;
-        margin: 0 0 0 162px;
+        position: static;
+        transform: initial;
+        top: 0;
+        width: 335px;
+        height: 300px;
+        margin: 50px auto 0;
+      }
+      @include d($sm){
+        width: 320px;
+      }
+      &:before{
+        display: none;
       }
     }
   }

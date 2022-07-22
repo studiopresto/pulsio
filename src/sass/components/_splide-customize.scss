@@ -1,4 +1,15 @@
 .splide{
+	&.black-theme{
+		margin: 70px 0!important;
+		@include d($md){
+			margin: 35px 0!important;
+		}
+		.splide{
+			&__title{
+				color: #0D0F16;
+			}
+		}
+	}
 	&.pagination-carousel{
 		margin: 140px 0;
 		@include d($sm){
@@ -43,6 +54,7 @@
 					height: 240px;
 				}
 				strong{
+					color: #0D0F16;
 					display: block;
 					font-size: 20px;
 					line-height: 24px;
@@ -95,6 +107,7 @@
 				}
 			}
 			&__fractions{
+				color: #0D0F16;
 				flex: 0 1 100%;
 				text-align: right;
 				font-size: 36px;
