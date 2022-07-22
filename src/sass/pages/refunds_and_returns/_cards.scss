@@ -18,12 +18,15 @@
       }
       img{
         position: absolute;
+        z-index: 2;
         top: 40px;
         right: 40px;
         width: 48px;
         height: 48px;
       }
       p{
+        position: relative;
+        z-index: 2;
         &.par{
           font-size: 16px;
           line-height: 20px;

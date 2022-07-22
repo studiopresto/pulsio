@@ -23,6 +23,8 @@
   }
   &.double-column{
     ul{
+      max-height: initial;
+      opacity: initial;
       margin: -120px -75px;
       @include d($sm){
         margin: -60px -40px;

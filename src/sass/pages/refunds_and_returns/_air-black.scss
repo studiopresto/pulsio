@@ -28,7 +28,8 @@
       position: relative;
       z-index: 2;
       max-width: 644px;
-      @include d($md){
+      color: rgba(68, 73, 91, 1);
+      @include d($lg){
         max-width: 100%;
       }
       h2{
@@ -37,6 +38,7 @@
         text-transform: uppercase;
         margin: 0 0 40px 0;
         font-weight: 800;
+        color: #0D0F16;
         @include d($lg){
           font-size: 54px;
           line-height: 68px;
@@ -51,9 +53,34 @@
         }
       }
       p{
-        font-size: 16px;
-        line-height: 28px;
-        margin: 28px 0 0 0;
+        color: rgba(68, 73, 91, 1);
+        font-size: 18px;
+        line-height: 22px;
+        margin: 61px 0 24px 0;
+      }
+      ul{
+        li{
+          position: relative;
+          counter-increment: step-counter;
+          font-size: 16px;
+          line-height: 28px;
+          margin: 28px 0 0 0;
+          padding: 0 0 0 46px;
+          &:before{
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--color-primary);
+            text-align: center;
+            font-weight: bold;
+            font-size: 80%;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-primary);
+          }
+        }
       }
     }
   }
@@ -63,10 +90,8 @@
     right: 0;
     width: 592px;
     height: 707px;
-    @include d($md){
-      top: -150px;
-      width: 300px;
-      height: 400px;
+    @include d($lg){
+      display: none;
     }
     img{
       width: 100%;
@@ -86,21 +111,67 @@
       font-weight: 800;
       text-transform: uppercase;
       white-space: nowrap;
-      color: #000;
-      background: linear-gradient(180deg, rgba(73, 82, 114, 1), rgba(50, 56, 78, 0));
+      color: #fff;
+      background: linear-gradient(180deg, rgba(73, 82, 114, 0.15), rgba(50, 56, 78, 0));
       -webkit-background-clip: text;
       -webkit-text-stroke: 3px transparent;
       @include d($md){
         font-size: 120px;
         line-height: 120px;
       }
-      @include d($sm){
-        font-size: 80px;
-        line-height: 80px;
+    }
+  }
+  &__shipping{
+    max-width: 644px;
+    color: rgba(68, 73, 91, 1);
+    margin: 60px 0 0 0;
+    @include d($lg){
+      max-width: 100%;
+    }
+    &:hover{
+      h4{
+        &:before{
+          background-image: url("../images/refunds_and_returns/minuse-ico.svg");
+        }
       }
-      @include d($xs){
-        font-size: 60px;
-        line-height: 60px;
+      ul{
+        max-height: 100%;
+        opacity: 1;
+      }
+    }
+    h4{
+      position: relative;
+      display: block;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0 0 35px 0;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transition: 300ms;
+        transform: translateY(-50%);
+        height: 18px;
+        width: 18px;
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../images/refunds_and_returns/plus-ico.svg");
+      }
+      @include d($md){
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    ul{
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: 300ms;
+      li{
+        font-size: 16px;
+        line-height: 28px;
       }
     }
   }

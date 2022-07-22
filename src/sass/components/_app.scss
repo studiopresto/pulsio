@@ -12,6 +12,9 @@ body{
 		background-repeat: no-repeat;
 		.header{
 			color: #000;
+			.burger-box-arrow{
+				color: var(--color-black-bg);
+			}
 		}
 	}
 }

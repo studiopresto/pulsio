@@ -1,34 +1,53 @@
 .questions{
   margin: 200px 0;
   @include d($md){
-    margin: 80px 0;
+    margin: 80px 0 0 0;
   }
   &__content{
     display: flex;
+    @include d ($md){
+      flex-direction: column;
+    }
   }
   &__img{
     flex: 0 1 30%;
-    @include d($xs){
-      display: none;
+    height: 746px;
+    img{
+      width: 100%;
+      height: 100%;
+      max-height: initial;
+      max-width: initial;
+      object-fit: cover;
+    }
+    @include d ($md){
+      position: relative;
+      flex: initial;
+      order: 2;
+      margin: 77px 0 0 0;
+      img{
+        position: absolute;
+        width: 100vw;
+        left: -15px;
+        object-fit: cover;
+      }
     }
   }
   .delivery{
-    flex: 0 1 60%;
-    margin: 0 0 0 84px;
+    flex: 0 1 70%;
+    margin: 0 0 0 64px;
+    padding: 0;
+    border-bottom: 0;
     @include d($md){
-      margin: 0 0 0 40px;
-    }
-    @include d($xs){
       flex: 0 1 100%;
       margin: 0;
     }
     ul{
-      margin: -40px;
+      margin: -8px;
       li{
-        width: calc((100% - (40px * 4))/ 2);
-        margin: 40px;
+        width: calc((100% - (8px * 4))/ 2);
+        margin: 8px;
         @include d($md){
-          width: calc(100% - (40px * 2));
+          width: calc(100% - (8px * 2));
         }
       }
     }
