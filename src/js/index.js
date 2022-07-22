@@ -21,6 +21,7 @@ import {heroBannerParallax} from "./content/parallax/heroBannerParallax";
 import {showMenu, showText, textBG} from "./content/faq";
 import {initPaginationCarousel} from "./carousel/initPaginationCarousel";
 import {showMenuPrivacy} from "./content/privacy";
+import {initChooseCarousel} from "./carousel/initChooseCarousel";
 
 
 scrollListener();
@@ -43,6 +44,7 @@ initProductCarousel();
 initReviewsCarousel();
 initCompareCarousel();
 initReviewsCommentsCarousel();
+initChooseCarousel();
 initPaginationCarousel();
 /*
 Content
