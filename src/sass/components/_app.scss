@@ -15,6 +15,11 @@ body{
 			.burger-box-arrow{
 				color: var(--color-black-bg);
 			}
+			nav{
+				@include d($md){
+					background-color: var(--color-white);
+				}
+			}
 		}
 	}
 }

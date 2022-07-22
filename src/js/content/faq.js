@@ -33,14 +33,16 @@ export const showText = () => {
 
 export const showMenu = () => {
     let sections = document.querySelectorAll('.delivery');
-    sections.forEach(section => {
-        let title = section.querySelector('.delivery__title');
-        if(section){
-            title.onclick = () => {
-                section.classList.toggle('active');
+    if(sections.length>0){
+        sections.forEach(section => {
+            let title = section.querySelector('.delivery__title');
+            if(section){
+                title.onclick = () => {
+                    section.classList.toggle('active');
+                }
             }
-        }
-    })
+        })
+    }
 }
 
 export const textBG = () => {
