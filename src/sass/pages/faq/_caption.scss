@@ -53,12 +53,12 @@
     &.absolute-img{
       position: absolute;
       z-index: -1;
-      margin: 0 0 0 332px;
+      margin: 0 0 0 420px;
       top: -80px;
       left: 50%;
       transform: translateX(-50%);
       width: 705px;
-      height: 635px;
+      height: 535px;
       @include d($md){
         position: static;
         transform: initial;
