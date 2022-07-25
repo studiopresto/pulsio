@@ -1,0 +1,49 @@
+.contact-form{
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  right: 15px;
+  width: 100%;
+  max-width: 418px;
+  @include d($md){
+    position: static;
+    width: 100%;
+    margin: 22px auto 0;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    background-color: #0C436B;
+    padding: 50px 40px;
+    border-radius: 16px;
+  }
+  &__input-wrap{
+    margin: 0 0 16px 0;
+    &:last-child{
+      margin: 0;
+    }
+    input, textarea{
+      border-radius: 8px;
+      width: 100%;
+      padding: 20px;
+      border: initial;
+      &::placeholder{
+        font-size: 14px;
+        line-height: 17px;
+        color: #B7B7B7;
+      }
+    }
+    button{
+      width: 100%;
+      border-radius: 50px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 22px;
+      background-color: #2EAADA;
+      border: initial;
+    }
+  }
+}

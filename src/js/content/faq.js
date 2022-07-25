@@ -33,8 +33,8 @@ export const showText = () => {
 
 export const showMenu = () => {
     let sections = document.querySelectorAll('.delivery');
-    let sectionVariant = document.querySelector('.double-column');
-    if(sections.length>0 && !sectionVariant){
+    let sectionVariant = document.querySelectorAll('.delivery__title');
+    if(sectionVariant.length > 0){
         sections.forEach(section => {
             let title = section.querySelector('.delivery__title');
             if(section){
