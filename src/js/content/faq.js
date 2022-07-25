@@ -33,7 +33,8 @@ export const showText = () => {
 
 export const showMenu = () => {
     let sections = document.querySelectorAll('.delivery');
-    if(sections.length>0){
+    let sectionVariant = document.querySelector('.double-column');
+    if(sections.length>0 && !sectionVariant){
         sections.forEach(section => {
             let title = section.querySelector('.delivery__title');
             if(section){
@@ -50,21 +51,23 @@ export const textBG = () => {
         let sectionsDelivery = document.querySelectorAll('.delivery');
         sectionsDelivery.forEach(section => {
             let title = section.querySelector('.H-2');
-            let titlesArray = '';
-            for(let i = 0; i < 15; i++){
-                titlesArray += title.textContent + '';
+            let leftText = section.querySelector('.delivery__title-left');
+            let rightText = section.querySelector('.delivery__title-right');
+            if(leftText && rightText){
+                let titlesArray = '';
+                for(let i = 0; i < 15; i++){
+                    titlesArray += title.textContent + '';
+                }
+                let addText = () => {
+                    leftText.innerHTML = titlesArray;
+                    rightText.innerHTML = titlesArray;
+                    let titleWidth = title.offsetWidth + 10 + 'px';
+                    rightText.style.right = 'initial';
+                    rightText.style.left = titleWidth;
+                }
+                addText()
+                window.addEventListener('resize', addText)
             }
-            let addText = () => {
-                let leftText = section.querySelector('.delivery__title-left');
-                let rightText = section.querySelector('.delivery__title-right');
-                leftText.innerHTML = titlesArray;
-                rightText.innerHTML = titlesArray;
-                let titleWidth = title.offsetWidth + 10 + 'px';
-                rightText.style.right = 'initial';
-                rightText.style.left = titleWidth;
-            }
-            addText()
-            window.addEventListener('resize', addText)
         })
     }, 500)
 }
