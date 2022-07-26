@@ -3,6 +3,9 @@
   .par{
     color: #B2B2B2;
     margin: 40px 0 0 0;
+    &.dark{
+      color: #44495B;
+    }
   }
   .mod-text{
     padding: 27px 0 0 0;

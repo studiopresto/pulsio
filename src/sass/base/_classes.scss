@@ -294,13 +294,6 @@
   }
 }
 
-.section-margin{
-  margin: 100px 0 190px 0;
-  @include d($sm){
-    margin: 80px 0 100px 0;
-  }
-}
-
 .absolute-text{
   position: absolute;
   z-index: -1;
