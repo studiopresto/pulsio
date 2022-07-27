@@ -21,4 +21,4 @@ npm install
 npm run build
 ```
 
-## Build on [localhost:3000](http://localhost:3000/)
+## Build on [localhost:3030](http://localhost:3030/)
