@@ -181,12 +181,20 @@
 					@include d($md){
 						margin-left: 15px;
 						margin-right: 0;
-						margin-top: 30px;
+						margin-top: 60px;
 					}
 					@include d($sm){
 						height: 100vw;
 					}
 			}
+		}
+		@include d($md){
+			background: transparent;
+			background-color: var(--color-white);
+				&:before{
+					background: linear-gradient(180deg, #6797B2 0%, rgba(231, 248, 255, 0) 54.17%);
+					opacity: 1;
+				}
 		}
 		@include d($sm){
 			padding: 50px 0 54px;
