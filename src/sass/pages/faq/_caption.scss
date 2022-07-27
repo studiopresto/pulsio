@@ -3,6 +3,9 @@
   .par{
     color: #B2B2B2;
     margin: 40px 0 0 0;
+    &.dark{
+      color: #44495B;
+    }
   }
   .mod-text{
     padding: 27px 0 0 0;
@@ -43,7 +46,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(180deg, rgba(13, 15, 22, 0) 0%, #0D0F16 100%);
     }
     &.white-gradient{
       &:before{
@@ -54,12 +56,12 @@
     &.absolute-img{
       position: absolute;
       z-index: -1;
-      margin: 0 0 0 332px;
+      margin: 0 0 0 420px;
       top: -80px;
       left: 50%;
       transform: translateX(-50%);
       width: 705px;
-      height: 635px;
+      height: 535px;
       @include d($md){
         position: static;
         transform: initial;

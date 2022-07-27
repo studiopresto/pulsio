@@ -22,6 +22,7 @@ import {showMenu, showText, textBG} from "./content/faq";
 import {initPaginationCarousel} from "./carousel/initPaginationCarousel";
 import {showMenuPrivacy} from "./content/privacy";
 import {initChooseCarousel} from "./carousel/initChooseCarousel";
+import {orderItems} from "./content/buyingGuide";
 
 
 scrollListener();
@@ -63,6 +64,7 @@ showText();
 showMenu();
 textBG();
 showMenuPrivacy();
+orderItems();
 /*
 Validation
  */

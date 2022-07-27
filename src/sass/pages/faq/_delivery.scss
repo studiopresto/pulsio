@@ -7,6 +7,16 @@
     margin: 80px 0 0 0;
     padding: 0 0 80px 0;
   }
+  &.small-space{
+    margin: 60px 0 100px 0;
+    padding: 0;
+    border-bottom: initial;
+    &.active{
+      ul{
+        margin: 0 -8px;
+      }
+    }
+  }
   &.active{
     ul{
       max-height: 100%;
@@ -22,18 +32,23 @@
     }
   }
   &.double-column{
+    margin: 100px 0;
+    border-bottom: initial;
     ul{
       max-height: initial;
       opacity: initial;
       margin: -120px -75px;
-      @include d($sm){
+      overflow: initial;
+      @include d($lg){
         margin: -60px -40px;
       }
       li{
         margin: 120px 75px;
         width: calc((100% - (75px * 4))/ 2);
-        @include d($sm){
+        @include d($lg){
           margin: 60px 40px;
+        }
+        @include d($md){
           width: calc((100% - (40px * 2)));
         }
       }
@@ -96,36 +111,48 @@
         left: 0;
         width: 500px;
         height: 550px;
+        @include d($lg){
+          width: 400px;
+          height: 430px;
+        }
+        @include d($md){
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        @include d($sm){
+          width: 300px;
+          height: 310px;
+        }
         img{
           position: relative;
           z-index: 2;
         }
-        //&:after{
-        //  content: '';
-        //  position: absolute;
-        //  top: 50%;
-        //  left: 50%;
-        //  transform: translate(-50%, -50%);
-        //  width: 500px;
-        //  height: 500px;
-        //  background-repeat: no-repeat;
-        //  background-position: center;
-        //}
-        //&.__grey{
-        //  &:after{
-        //    background: radial-gradient(circle, rgba(217,217,217,1) 0%, rgba(255,255,255,0) 100%);
-        //  }
-        //}
-        //&.__grey-dark{
-        //  &:after{
-        //    background-image: url("../images/who_we_are/bg_grey-dark.png");
-        //  }
-        //}
-        //&.__red{
-        //  &:after{
-        //    background-image: url("../images/who_we_are/bg_red.png");
-        //  }
-        //}
+        &:after{
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 600px;
+          height: 600px;
+          @include d($sm){
+            width: 400px;
+            height: 400px;
+          }
+        }
+        &.__grey-dark{
+          &:after{
+            background: radial-gradient(circle, rgba(31,36,52,0.3) 0%, rgba(252,70,107,0) 60%);          }
+        }
+        &.__grey{
+          &:after{
+            background: radial-gradient(circle, rgba(170,185,218,0.7) 0%, rgba(252,70,107,0) 60%);          }
+        }
+        &.__red{
+          &:after{
+            background: radial-gradient(circle, rgba(203,59,78,0.4) 0%, rgba(252,70,107,0) 60%);          }
+        }
+
       }
       &.show-text{
         p{
