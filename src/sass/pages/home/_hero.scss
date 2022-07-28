@@ -22,6 +22,11 @@
 							background-size: contain;
 							z-index: -1;
 							pointer-events: none;
+								@include d($md){
+									width: auto;
+									height: auto;
+									inset: 0 -100px 0 -200px;
+								}
 						}
 						@include d($xl){
 							height: 650px;
@@ -87,5 +92,8 @@
 							min-height: 730px;
 						}
 				}
+		}
+		@include d($xs){
+			z-index: 0;
 		}
 }

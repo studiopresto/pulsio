@@ -79,6 +79,19 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: flex-start;
+			position: relative;
+				&-detail{
+					position: absolute;
+					bottom: 40px;
+					left: -80px;
+					display: flex;
+						@include d($xl){
+							left: -40px;
+						}
+						@include d($md){
+							display: none;
+						}
+				}
 				.logo{
 					margin-bottom: 32px;
 				}
@@ -111,5 +124,20 @@
 			@include d($sm){
 				display: none;
 			}
+		}
+		&-detail{
+			&:not(:last-child){
+				margin-right: 45px;
+			}
+				&-icon{
+					height: 48px;
+					text-align: center;
+					margin-bottom: 12px;
+				}
+				&-title{
+					text-align: center;
+					font-family: var(--font-semibold);
+					font-size: 12px;
+				}
 		}
 }
