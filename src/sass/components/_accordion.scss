@@ -13,16 +13,16 @@
 				}
 				&-arrow{
 					position: absolute;
-					top: 3px;
+					top: 0;
 					right: 0;
-					width: 18px;
-					height: 18px;
+					width: 24px;
+					height: 24px;
 					//border: 2px var(--color-primary) solid;
 					border-radius: 50%;
 					color: var(--color-primary);
 					background-repeat: no-repeat;
-					background-image: url(../images/tick.png);
-					background-size: contain;
+					background-image: url(../images/plus-circle-dark.svg);
+					background-size: 100% 100%;
 					background-position: center;
 						.svg{
 							display: none;
@@ -42,10 +42,11 @@
 							display: block;
 						}
 						&-arrow{
-							.svg{
-								transform: scaleY(-1);
-								margin-top: -4px;
-							}
+							background-image: url(../images/minus-circle-dark.svg);
+								.svg{
+									transform: scaleY(-1);
+									margin-top: -4px;
+								}
 						}
 					}
 				}

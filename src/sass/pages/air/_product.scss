@@ -27,12 +27,15 @@
 					margin: 25px 0 40px;
 				}
 				&-action{
-					margin: 41px 0 15px;
+					margin: 41px 0 35px;
 						.btn{
 							flex: 1;
 								&-grey{
 									font-size: 15px;
 								}
+						}
+						@include d($xs){
+							margin: 40px 0 10px;
 						}
 				}
 				&-attention{
@@ -149,6 +152,9 @@
 		&-more{
 			text-align: center;
 			line-height: 1.2em;
+			font-size: 16px;
+			max-width: 570px;
+			margin: 0 auto;
 		}
 		&.__2{
 			padding: 84px 0 43px;
@@ -169,11 +175,14 @@
 						}
 				}
 				@include d($xs){
-					padding: 84px 0 10px;
+					padding: 84px 0 50px;
 				}
 		}
 		.accordion{
 			margin-top: 48px;
+				@include d($xs){
+					margin-top: 0;
+				}
 		}
 		.list{
 			display: flex;
