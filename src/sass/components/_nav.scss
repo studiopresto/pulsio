@@ -3,7 +3,13 @@
 	justify-content: flex-end;
 	align-items: center;
 	padding: 10px 0;
-		.link{
+			ul{
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+		.link,
+		li{
 				&:not(:last-child){
 					margin-right: 48px;
 						@include d($lg){
