@@ -154,6 +154,7 @@
 							height: 26vw;
 							padding: 5px;
 							margin-bottom: 0;
+							border-color: #2EAADA;
 						}
 				}
 				&-content{
@@ -232,7 +233,7 @@
 				}
 				&:nth-child(2){
 						.btn{
-							background-color: #147CA4;
+							background-color: #2EAADA;
 								@include hover($md){
 									&:hover{
 										background-color: var(--color-black);
@@ -247,7 +248,7 @@
 				}
 				&:nth-child(3){
 						.btn{
-							background-color: #005272;
+							background-color: #2EAADA;
 								@include hover($md){
 									&:hover{
 										background-color: var(--color-black);
@@ -263,6 +264,10 @@
 				.btn{
 					white-space: normal;
 					line-height: 1em;
+						@include d($xs){
+							max-width: 95px;
+							font-size: 10px;
+						}
 				}
 				@include d($lg){
 					max-width: calc(33.33% - 11px);
