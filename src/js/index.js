@@ -22,6 +22,7 @@ import {initPaginationCarousel} from "./carousel/initPaginationCarousel";
 import {showMenuPrivacy} from "./content/privacy";
 import {initChooseCarousel} from "./carousel/initChooseCarousel";
 import {orderItems} from "./content/buyingGuide";
+import {initTabs} from "./content/tabs/initTabs";
 
 
 scrollListener();
@@ -63,6 +64,7 @@ showMenu();
 textBG();
 showMenuPrivacy();
 orderItems();
+initTabs();
 /*
 Validation
  */
@@ -81,4 +83,4 @@ window.addEventListener('scroll', () => {
 	window.innerWidth < 992 ? closeNav() :null;
 });
 
-//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
+//dt2pynedsrxl46aptiktjaih7psokgeodfjekniw3gftscropjka
