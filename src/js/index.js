@@ -82,5 +82,3 @@ document.addEventListener('DOMContentLoaded', function(event) {
 window.addEventListener('scroll', () => {
 	window.innerWidth < 992 ? closeNav() :null;
 });
-
-//dt2pynedsrxl46aptiktjaih7psokgeodfjekniw3gftscropjka
